@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="nojs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<script>(function(){var r=document.documentElement,t='';r.className=r.className.replace('nojs','js');try{t=localStorage.getItem('twss-theme')||'';}catch(e){}if(t==='light'||t==='dark'){r.setAttribute('data-theme',t);var m=document.querySelector('meta[name="color-scheme"]');if(m){m.setAttribute('content',t);}}})();</script>
+<meta name="robots" content="noindex, nofollow">
+<title>台股盤後選股 2026-10-30（星期五）</title>
+<style>
+:root{--page:#ffffff;--surface:#f5f5f7;--nav:#fafafc;--ink:#1d1d1f;--ink2:#4f4f53;--ink3:#6e6e73;--link:#0066cc;--accent:#0071e3;--btn:#0071e3;--btn-hover:#0076df;--btn-active:#006edb;--on-btn:#ffffff;--hairline:rgba(0,0,0,.22);--band:#bdbdc2;--up:#a50e26;--down:#0b5e28;--warn:#873c00;--cap:#6b2fa3;color-scheme:light;
+--f-display:"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,"PingFang TC","Microsoft JhengHei",sans-serif;
+--f-text:"SF Pro Text","Helvetica Neue",Helvetica,Arial,"PingFang TC","Microsoft JhengHei",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#000000;--surface:#1d1d1f;--nav:#161617;--ink:#f5f5f7;--ink2:#aeaeb2;--ink3:#8e8e93;--link:#2997ff;--accent:#2997ff;--btn:#0071e3;--btn-hover:#0076df;--btn-active:#006edb;--on-btn:#ffffff;--hairline:rgba(255,255,255,.3);--band:#545458;--up:#ff8a80;--down:#30d158;--warn:#ffa94d;--cap:#d09cff;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#000000;--surface:#1d1d1f;--nav:#161617;--ink:#f5f5f7;--ink2:#aeaeb2;--ink3:#8e8e93;--link:#2997ff;--accent:#2997ff;--btn:#0071e3;--btn-hover:#0076df;--btn-active:#006edb;--on-btn:#ffffff;--hairline:rgba(255,255,255,.3);--band:#545458;--up:#ff8a80;--down:#30d158;--warn:#ffa94d;--cap:#d09cff;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 17px/25px var(--f-text);letter-spacing:-.022em}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;margin:0;text-wrap:balance}
+h1{font-size:40px;line-height:44px}
+h2{font-size:28px;line-height:32px}
+h3{font-size:21px;line-height:25px}
+p{margin:0}
+.wrap{max-width:1028px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.topnav{position:sticky;top:0;z-index:5;background:var(--nav);border-bottom:1px solid var(--hairline)}
+.topnav .wrap{height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:14px;line-height:18px;font-weight:600}
+.navdate{font-size:12px;line-height:16px;color:var(--ink2)}
+.navr{display:flex;align-items:center;gap:16px;min-width:0}
+.theme{display:inline-flex;gap:2px;padding:2px;border:1px solid var(--ink3);border-radius:980px}
+.tm{position:relative;touch-action:manipulation;font:inherit;font-size:12px;line-height:16px;letter-spacing:normal;color:var(--ink2);background:none;border:0;border-radius:980px;padding:4px 10px;min-width:44px;cursor:pointer}
+.tm::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-10px}
+.tm:hover{color:var(--ink)}
+.tm[aria-pressed="true"]{background:var(--ink);color:var(--page)}
+.sec{display:inline-block;margin-left:8px;font-size:12px;line-height:16px;font-weight:400;color:var(--ink2);white-space:nowrap}
+.kd{display:inline-block;margin-left:8px;font-size:12px;line-height:14px;font-weight:400;color:var(--ink2);border:1px solid var(--ink3);border-radius:5px;padding:0 5px;white-space:nowrap}
+.band{padding-block:48px 56px;--card:var(--surface);scroll-margin-top:44px}
+.band.alt{background:var(--surface);--card:var(--page)}
+.stack{display:flex;flex-direction:column;gap:24px}
+.sub{font-size:21px;line-height:25px;color:var(--ink2)}
+.fine{font-size:12px;line-height:16px;color:var(--ink2)}
+.cap14{font-size:14px;line-height:18px;color:var(--ink2)}
+.jump{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px;line-height:18px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0}
+.stats div{border-top:1px solid var(--hairline);padding-top:16px;min-width:0}
+.stats dt{font-size:14px;line-height:18px;color:var(--ink2)}
+.stats dd{margin:4px 0 0;font:600 28px/32px var(--f-display);font-variant-numeric:tabular-nums}
+.stats dd small{font:400 14px/18px var(--f-text);color:var(--ink2);margin-left:4px}
+.warn{color:var(--warn);font-weight:600}
+.warn::before{content:"! ";}
+.card{background:var(--card);border-radius:16px;padding:8px 24px;min-width:0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:12px 8px;text-align:left;vertical-align:top}
+thead th{font-size:12px;line-height:16px;font-weight:600;color:var(--ink2);border-bottom:1px solid var(--hairline);white-space:nowrap}
+tbody th{font-weight:400}
+.n{text-align:right}
+td.n{white-space:nowrap}
+.ct th.nm{min-width:180px}
+.sb{touch-action:manipulation;font:inherit;color:inherit;background:none;border:0;padding:4px 0;cursor:pointer;letter-spacing:inherit;text-align:inherit}
+.sb:hover{color:var(--ink)}
+.si::after{content:" \2195"}
+th[aria-sort=ascending] .si::after{content:" \25B2";opacity:1}
+th[aria-sort=descending] .si::after{content:" \25BC";opacity:1}
+th[aria-sort] .sb{color:var(--ink)}
+.ct tbody+tbody .r1>*{border-top:1px solid var(--hairline)}
+.ct .r1>*{padding-top:16px}
+.ct .r2 td{padding-top:0;padding-bottom:16px}
+.nm .code{font-weight:600;margin-right:8px}
+.nm .name{font-weight:600}
+.nm .tag{margin-bottom:4px}
+.tag{display:inline-block;font-size:12px;line-height:16px;font-weight:600;border:1px solid currentColor;border-radius:980px;padding:1px 8px;white-space:nowrap}
+.t-break{color:var(--up)}
+.t-pull{color:var(--ink)}
+.up{color:var(--up)}
+.down{color:var(--down)}
+.flat{color:var(--ink2)}
+.d-ok{color:var(--down)}
+.d-mid{color:var(--warn)}
+.d-wide{color:var(--up)}
+.g{display:inline-block;font-size:12px;line-height:16px;font-weight:600;border:1px solid currentColor;border-radius:5px;padding:0 4px;margin-left:6px;vertical-align:1px}
+.ct td.pos{font-size:17px;white-space:normal;min-width:120px}
+.pos small{display:block;font-size:12px;line-height:16px;color:var(--ink2)}
+.pos small.flag{color:inherit;font-weight:600}
+.p-zero{color:var(--ink2)}
+.p-cap{color:var(--cap)}
+.p-odd{color:var(--warn)}
+.r2 .inner{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:8px 24px;align-items:start}
+.desc{font-size:14px;line-height:18px;color:var(--ink2)}
+.pb{position:relative;height:20px;margin:2px 6px 0}
+.pb span{position:absolute}
+.pb-track{left:0;right:0;top:9px;height:2px;background:var(--ink3)}
+.pb-band{top:6px;height:8px;background:var(--band);border-radius:5px}
+.pb-risk{top:8px;height:4px;background:var(--warn)}
+.pb-stop,.pb-ma{top:2px;width:2px;height:16px;margin-left:-1px}
+.pb-stop{background:var(--warn)}
+.pb-ma{background:var(--ink2)}
+.pb-close{top:4px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2px var(--card)}
+.pb-key{display:flex;flex-wrap:wrap;gap:0 12px;font-size:12px;line-height:16px;color:var(--ink2);margin-top:6px}
+.k::before{content:"";display:inline-block;vertical-align:middle;margin-right:4px}
+.k-stop::before{width:2px;height:12px;background:var(--warn)}
+.k-ma::before{width:2px;height:12px;background:var(--ink2)}
+.k-close::before{width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.k-band::before{width:14px;height:8px;border-radius:4px;background:var(--band)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tools{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:flex-end}
+.seg{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;min-width:0}
+.seg legend{font-size:12px;line-height:16px;color:var(--ink2);padding:0;margin-bottom:6px;width:100%}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg span{display:inline-block;font-size:14px;line-height:18px;padding:7px 14px;border:1px solid var(--ink3);border-radius:980px;cursor:pointer;white-space:nowrap;touch-action:manipulation}
+.seg input:not(:checked)+span:hover{border-color:var(--ink)}
+.seg input:checked+span{background:var(--ink);color:var(--page);border-color:var(--ink)}
+.seg input:focus-visible+span{outline:2px solid var(--accent);outline-offset:3px}
+.subs{flex:1 1 100%}
+.sublg{font-size:12px;line-height:16px;color:var(--ink2);margin-bottom:-2px;width:100%}
+.chip{touch-action:manipulation;font:inherit;font-size:14px;line-height:18px;letter-spacing:normal;color:var(--ink);background:none;padding:7px 14px;border:1px solid var(--ink3);border-radius:980px;cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--page);border-color:var(--ink)}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:16px;color:var(--ink2)}
+.fld input,.fld select{font:inherit;font-size:14px;line-height:18px;color:var(--ink);background:var(--page);border:1px solid var(--ink3);border-radius:8px;padding:7px 12px;min-width:0;letter-spacing:normal}
+.fld input{width:200px;max-width:100%}
+.status{font-size:14px;line-height:18px;color:var(--ink2)}
+.btn{touch-action:manipulation;font:inherit;font-size:14px;line-height:18px;border-radius:980px;padding:8px 18px;cursor:pointer;letter-spacing:inherit}
+.btn-p{background:var(--btn);color:var(--on-btn);border:1px solid var(--btn)}
+.btn-p:hover{background:var(--btn-hover)}
+.btn-p:active{background:var(--btn-active)}
+.y{text-align:center}
+.x{text-align:center;color:var(--ink2)}
+details>summary{cursor:pointer;touch-action:manipulation;width:max-content;max-width:100%;list-style:none;font-size:17px;line-height:25px;color:var(--link);border:1px solid var(--link);border-radius:980px;padding:8px 20px}
+details>summary::-webkit-details-marker{display:none}
+details>summary:hover{background:var(--btn);border-color:var(--btn);color:var(--on-btn)}
+details[open]>summary{margin-bottom:24px}
+.mini>summary{font-size:14px;line-height:18px;padding:6px 16px}
+.list{margin:0;padding-left:20px;font-size:14px;line-height:18px;display:flex;flex-direction:column;gap:6px}
+.help>*{max-width:720px}
+.help ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:12px}
+footer{border-top:1px solid var(--hairline);padding-block:24px 40px}
+.nojs .needs-js{display:none}
+.empty{color:var(--ink2)}
+@media (max-width:1068px){
+.band{padding-block:54px 61px}
+h1{font-size:32px;line-height:36px}
+.sub{font-size:19px;line-height:23px}
+}
+@media (max-width:734px){
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.navdate{display:none}
+.band{padding-block:39px 43px}
+h1{font-size:28px;line-height:32px}
+h2{font-size:24px;line-height:28px}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fld input{width:100%}
+.fld{flex:1 1 100%}
+.cards thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.cards table,.cards tbody,.cards tr,.cards td,.cards th{display:block}
+.cards.card,.card.cards{background:none;padding:0}
+.ct tbody,.wt tbody tr{background:var(--card);border-radius:16px;padding:16px;margin-bottom:16px}
+.ct tbody+tbody .r1>*{border-top:0}
+.ct .r1,.wt tbody tr{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px 12px}
+.cards .r1>*,.wt tbody tr>*{grid-column:span 2}
+.cards .r1>.pos{grid-column:span 3}
+.cards td,.cards th{padding:0!important;text-align:left;min-width:0}
+.cards .nm{grid-column:1/-1}
+.nw{white-space:nowrap}
+.cards td[data-label]::before{content:attr(data-label);display:block;font-size:12px;line-height:16px;color:var(--ink2)}
+.ct .r2 td{padding-top:16px!important}
+.r2 .inner{grid-template-columns:minmax(0,1fr)}
+.st{font-size:14px;line-height:18px}
+.st th,.st td{padding:8px 3px}
+.st .lo{display:none}
+.st th:not([aria-sort]) .si{display:none}
+thead th{white-space:normal}
+}
+@media print{.topnav{position:static}.needs-js{display:none}}
+</style>
+</head>
+<body>
+<div class="topnav"><div class="wrap"><span class="brand">台股盤後選股</span><div class="navr"><span class="navdate">資料日期 2026-10-30（星期五）</span><div class="theme needs-js" role="group" aria-label="頁面顏色"><button type="button" class="tm" data-set="auto" aria-pressed="true">自動</button><button type="button" class="tm" data-set="light" aria-pressed="false">淺色</button><button type="button" class="tm" data-set="dark" aria-pressed="false">深色</button></div></div></div></div><main>
+<header class="band alt" id="top"><div class="wrap stack">
+<div class="stack" style="gap:8px"><h1><span class="nw">台股盤後選股</span> <span class="nw">2026-10-30（星期五）</span></h1><p class="sub">收盤資料｜全市場掃描 2318 檔（資料有效 2280 檔）</p></div>
+<dl class="stats"><div><dt>候選標的</dt><dd>23<small>檔</small></dd></div><div><dt>突破型</dt><dd>1<small>檔</small></dd></div><div><dt>回測型</dt><dd>22<small>檔</small></dd></div></dl>
+<p class="cap14">分享版：只列出今天的候選標的與關卡說明。僅供研究，非投資建議。</p>
+<nav class="jump" aria-label="本頁段落"><a href="#cands">候選標的</a><a href="#help">怎麼看這一頁</a></nav>
+</div></header>
+<section class="band" id="cands" aria-labelledby="cands-h"><div class="wrap stack">
+<h2 id="cands-h">候選標的（23 檔）</h2>
+<p class="cap14">類股：建材營造 3 檔・科技-電腦週邊 2 檔・科技-電子零組件 2 檔・傳產-橡膠 2 檔・傳產-其他 2 檔・生技醫療 2 檔・ETF-債券 2 檔・科技-半導體 1 檔・科技-通信網路 1 檔・科技-資訊服務 1 檔・科技-數位雲端 1 檔・傳產-水泥 1 檔・傳產-電機機械 1 檔・綠能環保 1 檔・ETF-槓桿反向 1 檔</p>
+<div class="tools needs-js"><fieldset class="seg"><legend>型態</legend><label><input type="radio" name="ft" value="all" checked><span>全部 23</span></label><label><input type="radio" name="ft" value="突破型"><span>突破型 1</span></label><label><input type="radio" name="ft" value="回測型"><span>回測型 22</span></label></fieldset><fieldset class="seg"><legend>類別</legend><label><input type="radio" name="fk" value="all" checked><span>全部 23</span></label><label><input type="radio" name="fk" value="stock"><span>個股 20</span></label><label><input type="radio" name="fk" value="etf"><span>ETF 3</span></label></fieldset><div class="seg subs" id="csub" role="group" aria-label="ETF 子類" hidden><p class="sublg" aria-hidden="true">ETF 子類</p><button type="button" class="chip" data-sub="all" aria-pressed="true">全部 3</button><button type="button" class="chip" data-sub="ETF-債券" aria-pressed="false">債券 2</button><button type="button" class="chip" data-sub="ETF-槓桿反向" aria-pressed="false">槓桿反向 1</button></div><label class="fld" for="csec">類股<select id="csec"><option value="all">全部 23</option><option value="科技">科技（全部）8</option><option value="科技-半導體">科技-半導體 1</option><option value="科技-電腦週邊">科技-電腦週邊 2</option><option value="科技-通信網路">科技-通信網路 1</option><option value="科技-電子零組件">科技-電子零組件 2</option><option value="科技-資訊服務">科技-資訊服務 1</option><option value="科技-數位雲端">科技-數位雲端 1</option><option value="傳產">傳產（全部）6</option><option value="傳產-水泥">傳產-水泥 1</option><option value="傳產-電機機械">傳產-電機機械 1</option><option value="傳產-橡膠">傳產-橡膠 2</option><option value="傳產-其他">傳產-其他 2</option><option value="生技醫療">生技醫療 2</option><option value="建材營造">建材營造 3</option><option value="綠能環保">綠能環保 1</option><option value="ETF">ETF（全部）3</option><option value="ETF-槓桿反向">ETF-槓桿反向 1</option><option value="ETF-債券">ETF-債券 2</option></select></label><label class="fld" for="cq">搜尋代號或名稱<input type="search" id="cq" autocomplete="off" placeholder="輸入代號或名稱"></label><label class="fld" for="csort">排序<select id="csort"><option value="i|ascending">預設（型態，量比大到小）</option><option value="vr|descending">量比大到小</option><option value="vr|ascending">量比小到大</option><option value="chg|descending">漲跌% 大到小</option><option value="chg|ascending">漲跌% 小到大</option><option value="dist|ascending">停損距離 近到遠</option><option value="dist|descending">停損距離 遠到近</option><option value="close|descending">收盤 高到低</option><option value="close|ascending">收盤 低到高</option><option value="code|ascending">代號</option></select></label></div><p class="status needs-js" id="cstatus" role="status" aria-live="polite"></p>
+<div class="card tw cards"><table class="sortable ct" id="ct"><caption class="vh">候選標的；按欄位名稱可以排序</caption><thead><tr><th scope="col" class="nm"><button type="button" class="sb" data-key="code">標的<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="close" data-num="1">收盤<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="chg" data-num="1">漲跌%<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="vr" data-num="1">量比<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="stop" data-num="1">建議停損<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="dist" data-num="1">停損距離<span class="si" aria-hidden="true"></span></button></th></tr></thead>
+<tbody class="cand" data-i="0" data-type="回測型" data-kind="stock" data-code="8081" data-name="致新" data-close="266.0" data-chg="-2.03" data-vr="0.76" data-stop="261.19" data-dist="1.8" data-sec="科技-半導體" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">8081</span><span class="name">致新</span><span class="sec">科技-半導體</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">266.0</td><td class="n" data-label="漲跌%"><span class="down">▼ -2.03%</span></td><td class="n" data-label="量比">0.76</td><td class="n" data-label="建議停損">261.19</td><td class="n d-ok" data-label="停損距離">1.8%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.7%;width:22.5%"></span><span class="pb-stop" style="left:40.7%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:63.2%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 261.19</span><span class="k k-ma">MA20 263.18</span><span class="k k-close">收盤 266.0</span><span class="k k-band">布林 253.28～273.07</span></p></div><p class="desc">近 20 日沿月線，量縮 0.76 倍回測 MA20 止跌；停損：跌破 MA20 263.18 或今日低點 262.5</p></div></td></tr></tbody>
+<tbody class="cand" data-i="1" data-type="回測型" data-kind="stock" data-code="1102" data-name="亞泥" data-close="38.05" data-chg="0.66" data-vr="0.7" data-stop="36.86" data-dist="3.1" data-sec="傳產-水泥" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1102</span><span class="name">亞泥</span><span class="sec">傳產-水泥</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">38.05</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.66%</span></td><td class="n" data-label="量比">0.70</td><td class="n" data-label="建議停損">36.86</td><td class="n d-mid" data-label="停損距離">3.1%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:46.0%;width:24.9%"></span><span class="pb-stop" style="left:46.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:70.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 36.86</span><span class="k k-ma">MA20 37.05</span><span class="k k-close">收盤 38.05</span><span class="k k-band">布林 34.84～39.26</span></p></div><p class="desc">近 20 日沿月線，量縮 0.7 倍回測 MA20 止跌；停損：跌破 MA20 37.05 或今日低點 37.5</p></div></td></tr></tbody>
+<tbody class="cand" data-i="2" data-type="回測型" data-kind="stock" data-code="3114" data-name="好德" data-close="40.35" data-chg="-2.54" data-vr="0.7" data-stop="39.1" data-dist="3.1" data-sec="科技-電子零組件" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">3114</span><span class="name">好德</span><span class="sec">科技-電子零組件</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">40.35</td><td class="n" data-label="漲跌%"><span class="down">▼ -2.54%</span></td><td class="n" data-label="量比">0.70</td><td class="n" data-label="建議停損">39.1</td><td class="n d-mid" data-label="停損距離">3.1%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:42.5%;width:13.7%"></span><span class="pb-stop" style="left:42.5%"></span><span class="pb-ma" style="left:49.9%"></span><span class="pb-close" style="left:56.2%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 39.1</span><span class="k k-ma">MA20 39.78</span><span class="k k-close">收盤 40.35</span><span class="k k-band">布林 35.58～43.99</span></p></div><p class="desc">近 20 日沿月線，量縮 0.7 倍回測 MA20 止跌；停損：跌破 MA20 39.78 或今日低點 39.3</p></div></td></tr></tbody>
+<tbody class="cand" data-i="3" data-type="回測型" data-kind="stock" data-code="2480" data-name="敦陽科" data-close="184.5" data-chg="0.82" data-vr="0.68" data-stop="177.21" data-dist="4.0" data-sec="科技-資訊服務" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">2480</span><span class="name">敦陽科</span><span class="sec">科技-資訊服務</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">184.5</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.82%</span></td><td class="n" data-label="量比">0.68</td><td class="n" data-label="建議停損">177.21</td><td class="n d-mid" data-label="停損距離">4.0%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:48.1%;width:15.3%"></span><span class="pb-stop" style="left:48.1%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:63.4%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 177.21</span><span class="k k-ma">MA20 178.1</span><span class="k k-close">收盤 184.5</span><span class="k k-band">布林 155.99～200.21</span></p></div><p class="desc">近 20 日沿月線，量縮 0.68 倍回測 MA20 止跌；停損：跌破 MA20 178.1 或今日低點 180.0</p></div></td></tr></tbody>
+<tbody class="cand" data-i="4" data-type="回測型" data-kind="stock" data-code="6811" data-name="宏碁資訊" data-close="278.0" data-chg="-0.36" data-vr="0.68" data-stop="266.16" data-dist="4.3" data-sec="科技-數位雲端" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6811</span><span class="name">宏碁資訊</span><span class="sec">科技-數位雲端</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">278.0</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.36%</span></td><td class="n" data-label="量比">0.68</td><td class="n" data-label="建議停損">266.16</td><td class="n d-mid" data-label="停損距離">4.3%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:43.4%;width:16.9%"></span><span class="pb-stop" style="left:43.4%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:60.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 266.16</span><span class="k k-ma">MA20 270.8</span><span class="k k-close">收盤 278.0</span><span class="k k-band">布林 238.43～303.17</span></p></div><p class="desc">近 20 日沿月線，量縮 0.68 倍回測 MA20 止跌；停損：跌破 MA20 270.8 或今日低點 267.5</p></div></td></tr></tbody>
+<tbody class="cand" data-i="5" data-type="回測型" data-kind="etf" data-code="00849B" data-name="中信EM主權債0-5" data-close="38.14" data-chg="0.63" data-vr="0.67" data-stop="37.25" data-dist="2.3" data-sec="ETF-債券" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00849B</span><span class="name">中信EM主權債0-5</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">38.14</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.63%</span></td><td class="n" data-label="量比">0.67</td><td class="n" data-label="建議停損">37.25</td><td class="n d-ok" data-label="停損距離">2.3%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.3%;width:45.3%"></span><span class="pb-stop" style="left:40.3%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:85.6%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 37.25</span><span class="k k-ma">MA20 37.44</span><span class="k k-close">收盤 38.14</span><span class="k k-band">布林 36.53～38.35</span></p></div><p class="desc">近 20 日沿月線，量縮 0.67 倍回測 MA20 止跌；停損：跌破 MA20 37.44 或今日低點 37.83</p></div></td></tr></tbody>
+<tbody class="cand" data-i="6" data-type="回測型" data-kind="stock" data-code="2107" data-name="厚生" data-close="28.5" data-chg="-0.18" data-vr="0.64" data-stop="28.06" data-dist="1.5" data-sec="傳產-橡膠" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">2107</span><span class="name">厚生</span><span class="sec">傳產-橡膠</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">28.5</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.18%</span></td><td class="n" data-label="量比">0.64</td><td class="n" data-label="建議停損">28.06</td><td class="n d-ok" data-label="停損距離">1.5%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.2%;width:15.1%"></span><span class="pb-stop" style="left:45.2%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:60.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 28.06</span><span class="k k-ma">MA20 28.2</span><span class="k k-close">收盤 28.5</span><span class="k k-band">布林 26.85～29.55</span></p></div><p class="desc">近 20 日沿月線，量縮 0.64 倍回測 MA20 止跌；停損：跌破 MA20 28.2 或今日低點 28.2</p></div></td></tr></tbody>
+<tbody class="cand" data-i="7" data-type="回測型" data-kind="stock" data-code="3705" data-name="永信" data-close="59.7" data-chg="-0.17" data-vr="0.64" data-stop="58.7" data-dist="1.7" data-sec="生技醫療" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">3705</span><span class="name">永信</span><span class="sec">生技醫療</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">59.7</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.17%</span></td><td class="n" data-label="量比">0.64</td><td class="n" data-label="建議停損">58.7</td><td class="n d-ok" data-label="停損距離">1.7%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.7%;width:14.3%"></span><span class="pb-stop" style="left:45.7%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:60.0%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 58.7</span><span class="k k-ma">MA20 59.0</span><span class="k k-close">收盤 59.7</span><span class="k k-band">布林 55.75～62.25</span></p></div><p class="desc">近 20 日沿月線，量縮 0.64 倍回測 MA20 止跌；停損：跌破 MA20 59.0 或今日低點 59.4</p></div></td></tr></tbody>
+<tbody class="cand" data-i="8" data-type="回測型" data-kind="stock" data-code="3287" data-name="廣寰科" data-close="58.8" data-chg="-1.84" data-vr="0.63" data-stop="53.53" data-dist="9.0" data-sec="科技-電腦週邊" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">3287</span><span class="name">廣寰科</span><span class="sec">科技-電腦週邊</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">58.8</td><td class="n" data-label="漲跌%"><span class="down">▼ -1.84%</span></td><td class="n" data-label="量比">0.63</td><td class="n" data-label="建議停損">53.53</td><td class="n d-wide" data-label="停損距離">9.0%<span class="g">遠</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:49.4%;width:11.7%"></span><span class="pb-stop" style="left:49.4%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:61.1%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 53.53</span><span class="k k-ma">MA20 53.8</span><span class="k k-close">收盤 58.8</span><span class="k k-band">布林 33.02～74.59</span></p></div><p class="desc">近 20 日沿月線，量縮 0.63 倍回測 MA20 止跌；停損：跌破 MA20 53.8 或今日低點 54.3</p></div></td></tr></tbody>
+<tbody class="cand" data-i="9" data-type="回測型" data-kind="stock" data-code="2105" data-name="正新" data-close="31.3" data-chg="0.48" data-vr="0.62" data-stop="30.7" data-dist="1.9" data-sec="傳產-橡膠" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">2105</span><span class="name">正新</span><span class="sec">傳產-橡膠</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">31.3</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.48%</span></td><td class="n" data-label="量比">0.62</td><td class="n" data-label="建議停損">30.7</td><td class="n d-ok" data-label="停損距離">1.9%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:35.7%;width:18.6%"></span><span class="pb-stop" style="left:35.7%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:54.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 30.7</span><span class="k k-ma">MA20 31.16</span><span class="k k-close">收盤 31.3</span><span class="k k-band">布林 29.67～32.65</span></p></div><p class="desc">近 20 日沿月線，量縮 0.62 倍回測 MA20 止跌；停損：跌破 MA20 31.16 或今日低點 30.85</p></div></td></tr></tbody>
+<tbody class="cand" data-i="10" data-type="回測型" data-kind="stock" data-code="6179" data-name="亞通" data-close="38.05" data-chg="2.28" data-vr="0.58" data-stop="36.52" data-dist="4.0" data-sec="傳產-其他" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6179</span><span class="name">亞通</span><span class="sec">傳產-其他</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">38.05</td><td class="n" data-label="漲跌%"><span class="up">▲ +2.28%</span></td><td class="n" data-label="量比">0.58</td><td class="n" data-label="建議停損">36.52</td><td class="n d-mid" data-label="停損距離">4.0%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:28.1%;width:36.8%"></span><span class="pb-stop" style="left:28.1%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:64.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 36.52</span><span class="k k-ma">MA20 37.43</span><span class="k k-close">收盤 38.05</span><span class="k k-band">布林 35.51～39.35</span></p></div><p class="desc">近 20 日沿月線，量縮 0.58 倍回測 MA20 止跌；停損：跌破 MA20 37.43 或今日低點 36.7</p></div></td></tr></tbody>
+<tbody class="cand" data-i="11" data-type="回測型" data-kind="etf" data-code="00985B" data-name="群益ESG投等債0-5" data-close="10.33" data-chg="0.49" data-vr="0.53" data-stop="10.1" data-dist="2.2" data-sec="ETF-債券" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00985B</span><span class="name">群益ESG投等債0-5</span><span class="sec">ETF-債券</span><span class="kd">ETF·上市</span></th><td class="n" data-label="收盤">10.33</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.49%</span></td><td class="n" data-label="量比">0.53</td><td class="n" data-label="建議停損">10.1</td><td class="n d-ok" data-label="停損距離">2.2%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:39.5%;width:48.4%"></span><span class="pb-stop" style="left:39.5%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:87.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 10.1</span><span class="k k-ma">MA20 10.15</span><span class="k k-close">收盤 10.33</span><span class="k k-band">布林 9.93～10.37</span></p></div><p class="desc">近 20 日沿月線，量縮 0.53 倍回測 MA20 止跌；停損：跌破 MA20 10.15 或今日低點 10.3</p></div></td></tr></tbody>
+<tbody class="cand" data-i="12" data-type="回測型" data-kind="stock" data-code="4527" data-name="方土霖" data-close="44.45" data-chg="0.0" data-vr="0.53" data-stop="43.64" data-dist="1.8" data-sec="傳產-電機機械" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">4527</span><span class="name">方土霖</span><span class="sec">傳產-電機機械</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">44.45</td><td class="n" data-label="漲跌%"><span class="flat">平 0.00%</span></td><td class="n" data-label="量比">0.53</td><td class="n" data-label="建議停損">43.64</td><td class="n d-ok" data-label="停損距離">1.8%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:47.1%;width:10.6%"></span><span class="pb-stop" style="left:47.1%"></span><span class="pb-ma" style="left:49.9%"></span><span class="pb-close" style="left:57.7%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 43.64</span><span class="k k-ma">MA20 43.86</span><span class="k k-close">收盤 44.45</span><span class="k k-band">布林 40.33～47.4</span></p></div><p class="desc">近 20 日沿月線，量縮 0.53 倍回測 MA20 止跌；停損：跌破 MA20 43.86 或今日低點 44.25</p></div></td></tr></tbody>
+<tbody class="cand" data-i="13" data-type="回測型" data-kind="stock" data-code="5516" data-name="雙喜" data-close="12.85" data-chg="1.98" data-vr="0.49" data-stop="12.34" data-dist="4.0" data-sec="建材營造" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">5516</span><span class="name">雙喜</span><span class="sec">建材營造</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">12.85</td><td class="n" data-label="漲跌%"><span class="up">▲ +1.98%</span></td><td class="n" data-label="量比">0.49</td><td class="n" data-label="建議停損">12.34</td><td class="n d-mid" data-label="停損距離">4.0%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.0%;width:29.9%"></span><span class="pb-stop" style="left:40.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:69.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 12.34</span><span class="k k-ma">MA20 12.51</span><span class="k k-close">收盤 12.85</span><span class="k k-band">布林 11.72～13.3</span></p></div><p class="desc">近 20 日沿月線，量縮 0.49 倍回測 MA20 止跌；停損：跌破 MA20 12.51 或今日低點 12.4</p></div></td></tr></tbody>
+<tbody class="cand" data-i="14" data-type="回測型" data-kind="stock" data-code="6894" data-name="衛司特" data-close="396.0" data-chg="-2.34" data-vr="0.47" data-stop="381.41" data-dist="3.7" data-sec="綠能環保" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6894</span><span class="name">衛司特</span><span class="sec">綠能環保</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">396.0</td><td class="n" data-label="漲跌%"><span class="down">▼ -2.34%</span></td><td class="n" data-label="量比">0.47</td><td class="n" data-label="建議停損">381.41</td><td class="n d-mid" data-label="停損距離">3.7%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:48.0%;width:14.9%"></span><span class="pb-stop" style="left:48.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:62.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 381.41</span><span class="k k-ma">MA20 383.33</span><span class="k k-close">收盤 396.0</span><span class="k k-band">布林 338.01～428.64</span></p></div><p class="desc">近 20 日沿月線，量縮 0.47 倍回測 MA20 止跌；停損：跌破 MA20 383.33 或今日低點 390.0</p></div></td></tr></tbody>
+<tbody class="cand" data-i="15" data-type="回測型" data-kind="stock" data-code="1456" data-name="怡華" data-close="15.45" data-chg="0.0" data-vr="0.46" data-stop="14.96" data-dist="3.2" data-sec="建材營造" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1456</span><span class="name">怡華</span><span class="sec">建材營造</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">15.45</td><td class="n" data-label="漲跌%"><span class="flat">平 0.00%</span></td><td class="n" data-label="量比">0.46</td><td class="n" data-label="建議停損">14.96</td><td class="n d-mid" data-label="停損距離">3.2%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.3%;width:29.0%"></span><span class="pb-stop" style="left:45.3%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:74.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 14.96</span><span class="k k-ma">MA20 15.04</span><span class="k k-close">收盤 15.45</span><span class="k k-band">布林 14.26～15.82</span></p></div><p class="desc">近 20 日沿月線，量縮 0.46 倍回測 MA20 止跌；停損：跌破 MA20 15.04 或今日低點 15.2</p></div></td></tr></tbody>
+<tbody class="cand" data-i="16" data-type="回測型" data-kind="stock" data-code="6108" data-name="競國" data-close="29.45" data-chg="-4.38" data-vr="0.44" data-stop="28.35" data-dist="3.7" data-sec="科技-電子零組件" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6108</span><span class="name">競國</span><span class="sec">科技-電子零組件</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">29.45</td><td class="n" data-label="漲跌%"><span class="down">▼ -4.38%</span></td><td class="n" data-label="量比">0.44</td><td class="n" data-label="建議停損">28.35</td><td class="n d-mid" data-label="停損距離">3.7%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:49.0%;width:7.6%"></span><span class="pb-stop" style="left:49.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:56.6%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 28.35</span><span class="k k-ma">MA20 28.49</span><span class="k k-close">收盤 29.45</span><span class="k k-band">布林 21.74～35.24</span></p></div><p class="desc">近 20 日沿月線，量縮 0.44 倍回測 MA20 止跌；停損：跌破 MA20 28.49 或今日低點 28.6</p></div></td></tr></tbody>
+<tbody class="cand" data-i="17" data-type="回測型" data-kind="stock" data-code="9917" data-name="中保科" data-close="108.0" data-chg="0.0" data-vr="0.44" data-stop="106.47" data-dist="1.4" data-sec="傳產-其他" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">9917</span><span class="name">中保科</span><span class="sec">傳產-其他</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">108.0</td><td class="n" data-label="漲跌%"><span class="flat">平 0.00%</span></td><td class="n" data-label="量比">0.44</td><td class="n" data-label="建議停損">106.47</td><td class="n d-ok" data-label="停損距離">1.4%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:28.2%;width:42.7%"></span><span class="pb-stop" style="left:28.2%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:70.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 106.47</span><span class="k k-ma">MA20 107.25</span><span class="k k-close">收盤 108.0</span><span class="k k-band">布林 105.59～108.91</span></p></div><p class="desc">近 20 日沿月線，量縮 0.44 倍回測 MA20 止跌；停損：跌破 MA20 107.25 或今日低點 107.0</p></div></td></tr></tbody>
+<tbody class="cand" data-i="18" data-type="回測型" data-kind="stock" data-code="6136" data-name="富爾特" data-close="26.35" data-chg="-0.57" data-vr="0.36" data-stop="26.12" data-dist="0.9" data-sec="科技-通信網路" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6136</span><span class="name">富爾特</span><span class="sec">科技-通信網路</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">26.35</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.57%</span></td><td class="n" data-label="量比">0.36</td><td class="n" data-label="建議停損">26.12</td><td class="n d-ok" data-label="停損距離">0.9%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.0%;width:6.1%"></span><span class="pb-stop" style="left:45.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:51.1%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 26.12</span><span class="k k-ma">MA20 26.31</span><span class="k k-close">收盤 26.35</span><span class="k k-band">布林 24.56～28.06</span></p></div><p class="desc">近 20 日沿月線，量縮 0.36 倍回測 MA20 止跌；停損：跌破 MA20 26.31 或今日低點 26.25</p></div></td></tr></tbody>
+<tbody class="cand" data-i="19" data-type="回測型" data-kind="stock" data-code="5465" data-name="富驊" data-close="37.8" data-chg="2.44" data-vr="0.33" data-stop="35.73" data-dist="5.5" data-sec="科技-電腦週邊" data-mkt="上櫃"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">5465</span><span class="name">富驊</span><span class="sec">科技-電腦週邊</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">37.8</td><td class="n" data-label="漲跌%"><span class="up">▲ +2.44%</span></td><td class="n" data-label="量比">0.33</td><td class="n" data-label="建議停損">35.73</td><td class="n d-mid" data-label="停損距離">5.5%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:48.5%;width:17.8%"></span><span class="pb-stop" style="left:48.5%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:66.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 35.73</span><span class="k k-ma">MA20 35.91</span><span class="k k-close">收盤 37.8</span><span class="k k-band">布林 30.53～41.29</span></p></div><p class="desc">近 20 日沿月線，量縮 0.33 倍回測 MA20 止跌；停損：跌破 MA20 35.91 或今日低點 36.2</p></div></td></tr></tbody>
+<tbody class="cand" data-i="20" data-type="回測型" data-kind="stock" data-code="6491" data-name="晶碩" data-close="419.0" data-chg="-0.83" data-vr="0.25" data-stop="412.18" data-dist="1.6" data-sec="生技醫療" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6491</span><span class="name">晶碩</span><span class="sec">生技醫療</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">419.0</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.83%</span></td><td class="n" data-label="量比">0.25</td><td class="n" data-label="建議停損">412.18</td><td class="n d-ok" data-label="停損距離">1.6%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:44.9%;width:16.7%"></span><span class="pb-stop" style="left:44.9%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:61.6%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 412.18</span><span class="k k-ma">MA20 414.25</span><span class="k k-close">收盤 419.0</span><span class="k k-band">布林 395.35～433.15</span></p></div><p class="desc">近 20 日沿月線，量縮 0.25 倍回測 MA20 止跌；停損：跌破 MA20 414.25 或今日低點 416.0</p></div></td></tr></tbody>
+<tbody class="cand" data-i="21" data-type="回測型" data-kind="etf" data-code="00666R" data-name="富邦恒生國企反1" data-close="9.65" data-chg="-0.82" data-vr="0.12" data-stop="9.44" data-dist="2.2" data-sec="ETF-槓桿反向" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00666R</span><span class="name">富邦恒生國企反1</span><span class="sec">ETF-槓桿反向</span><span class="kd">ETF·上市</span></th><td class="n" data-label="收盤">9.65</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.82%</span></td><td class="n" data-label="量比">0.12</td><td class="n" data-label="建議停損">9.44</td><td class="n d-ok" data-label="停損距離">2.2%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:43.0%;width:26.7%"></span><span class="pb-stop" style="left:43.0%"></span><span class="pb-ma" style="left:49.4%"></span><span class="pb-close" style="left:69.7%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 9.44</span><span class="k k-ma">MA20 9.49</span><span class="k k-close">收盤 9.65</span><span class="k k-band">布林 9.13～9.86</span></p></div><p class="desc">近 20 日沿月線，量縮 0.12 倍回測 MA20 止跌；停損：跌破 MA20 9.49 或今日低點 9.62</p></div></td></tr></tbody>
+<tbody class="cand" data-i="22" data-type="突破型" data-kind="stock" data-code="2516" data-name="新建" data-close="16.25" data-chg="3.83" data-vr="2.25" data-stop="15.5" data-dist="4.6" data-sec="建材營造" data-mkt="上市"><tr class="r1"><th scope="row" class="nm"><span class="tag t-break">突破型</span><br><span class="code">2516</span><span class="name">新建</span><span class="sec">建材營造</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">16.25</td><td class="n" data-label="漲跌%"><span class="up">▲ +3.83%</span></td><td class="n" data-label="量比">2.25</td><td class="n" data-label="建議停損">15.5</td><td class="n d-mid" data-label="停損距離">4.6%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:78.5%"></span><span class="pb-risk" style="left:54.0%;width:42.3%"></span><span class="pb-stop" style="left:54.0%"></span><span class="pb-ma" style="left:43.2%"></span><span class="pb-close" style="left:96.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 15.5</span><span class="k k-ma">MA20 15.31</span><span class="k k-close">收盤 16.25</span><span class="k k-band">布林 14.61～16.0</span></p></div><p class="desc">今日突破，箱型整理後；停損：長紅 K 低點 15.5、MA20 15.31，取較近者</p></div></td></tr></tbody>
+</table></div><p class="empty" id="cnone" hidden>沒有符合篩選條件的標的。</p></div></section>
+<section class="band alt" id="help" aria-labelledby="help-h"><div class="wrap stack help">
+<h2 id="help-h">怎麼看這一頁</h2>
+<h3>關卡說明</h3><ul>
+<li>第 0 關 週線：週 MACD 在零軸上（或柱狀體剛翻紅），收盤在週 MA13、MA26 之上，週線不是空頭排列。</li>
+<li>第 1 關 趨勢：收盤在 MA60 之上，MA20 在 MA60 之上，MA20 不下彎、MA60 上彎。</li>
+<li>第 2 關 動能：日 OSC 今天由負翻正；或 3 日內 DIF 上穿 DEA，而且今天的柱狀體比昨天大。</li>
+<li>第 3 關 量能：今天的量大於前 5 日均量的 1.3 倍，而且收紅。</li>
+<li>第 4 關 型態：突破型要過第 0～3 關，是整理或布林縮口之後，帶量長紅 K 收在布林上軌之上；回測型要過第 0～1 關，是沿月線爬升、量縮回測 MA20 附近止跌。</li>
+<li>建議停損：突破型取長紅 K 低點與 MA20 中較高的一個；回測型取 MA20 與當日低點中較低的一個。</li>
+</ul>
+<h3>怎麼看這一頁</h3><ul>
+<li>最上面是摘要：資料日期、掃描檔數，以及候選標的有幾檔突破型和回測型。</li>
+<li>候選標的可以用「型態」「類別」（00 開頭的代號算 ETF）篩選，也可以搜尋代號或名稱；用「排序」選單或點表格欄位名稱排序，再點一次反過來排。</li>
+<li>型態：<span class="tag t-break">突破型</span> 整理後帶量長紅突破；<span class="tag t-pull">回測型</span> 沿月線上行、量縮回測月線止跌。</li>
+<li>漲跌%：依台灣習慣，<span class="up">▲ 紅色是上漲</span>、<span class="down">▼ 綠色是下跌</span>，也都會寫正負號。</li>
+<li>停損距離：<span class="d-ok">近</span> 3% 以內，停損很近；<span class="d-mid">中</span> 3%～6%，普通；<span class="d-wide">遠</span> 超過 6%，停損很遠，一旦停損虧損會偏大。</li>
+<li>價位圖：一條刻度上畫出收盤（圓點）、MA20（灰線）、建議停損（橘線，橘色粗段是收盤到停損的距離），有資料時灰色底是布林通道上下軌；實際數字寫在圖下方。</li>
+<li>類股：官方的產業別，例如「科技-半導體」「航運」；ETF 依代號最後一碼與名稱分成主動式、高股息、科技、海外、市值型、債券等；旁邊的小框寫個股或 ETF 與上市／上櫃；候選標的可以用「類股」選單篩選。</li>
+<li>頁面右上角可切換自動（跟著電腦或手機）／淺色／深色，選擇記在這個瀏覽器；無痕或封鎖網站資料時只在這次有效。手機上表格會改成一張一張的卡片。</li>
+</ul>
+<p class="cap14">本頁僅供程式與技術分析研究，不是投資建議，也不保證任何績效。資料可能延遲、缺漏或有誤，請以交易所公告為準。投資決定與後果由使用者自行承擔。</p>
+</div></section>
+</main><footer><div class="wrap"><p class="fine">資料日期 2026-10-30｜僅供研究，非投資建議。</p></div></footer>
+<script>
+(function () {
+  var d = document;
+  d.documentElement.className = d.documentElement.className.replace('nojs', 'js');
+  function all(s, r) { return Array.prototype.slice.call((r || d).querySelectorAll(s)); }
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  var TK = 'twss-theme';
+  function setTheme(t, keep) {
+    var r = d.documentElement, m = d.querySelector('meta[name="color-scheme"]');
+    if (t !== 'light' && t !== 'dark') { t = 'auto'; }
+    if (t === 'auto') { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', t); }
+    if (m) { m.setAttribute('content', t === 'auto' ? 'light dark' : t); }
+    all('.tm').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-set') === t ? 'true' : 'false'); });
+    if (keep) {
+      try { if (t === 'auto') { localStorage.removeItem(TK); } else { localStorage.setItem(TK, t); } } catch (e) { }
+    }
+  }
+  var t0 = 'auto';
+  try { t0 = localStorage.getItem(TK) || 'auto'; } catch (e) { }
+  setTheme(t0, false);
+  all('.tm').forEach(function (b) { b.addEventListener('click', function () { setTheme(b.getAttribute('data-set'), true); }); });
+  var COLL = null;
+  try { COLL = new Intl.Collator('zh-Hant'); } catch (e) { }
+  function cmp(x, y, num) {
+    if (num) {
+      x = parseFloat(x); y = parseFloat(y);
+      if (isNaN(x)) { x = -Infinity; }
+      if (isNaN(y)) { y = -Infinity; }
+      return x < y ? -1 : (x > y ? 1 : 0);
+    }
+    return COLL ? COLL.compare(String(x), String(y)) : String(x).localeCompare(String(y), 'zh-Hant');
+  }
+  function mark(table, key, dir) {
+    all('thead th', table).forEach(function (th) {
+      var b = th.querySelector('.sb');
+      if (b && b.getAttribute('data-key') === key && dir) { th.setAttribute('aria-sort', dir); } else { th.removeAttribute('aria-sort'); }
+    });
+  }
+  function nextDir(table, btn) {
+    var th = btn.parentNode, cur = th.getAttribute('aria-sort');
+    if (cur) { return cur === 'ascending' ? 'descending' : 'ascending'; }
+    return btn.getAttribute('data-num') ? 'descending' : 'ascending';
+  }
+  function makeSortable(table, items, box, onSort) {
+    function sort(key, dir) {
+      var btn = table.querySelector('.sb[data-key="' + key + '"]');
+      var num = key === 'i' || (btn && btn.getAttribute('data-num'));
+      items.sort(function (a, b) {
+        var r = cmp(a.getAttribute('data-' + key), b.getAttribute('data-' + key), num);
+        if (dir === 'descending') { r = -r; }
+        return r || (a.getAttribute('data-i') - b.getAttribute('data-i'));
+      });
+      var f = d.createDocumentFragment();
+      items.forEach(function (x) { f.appendChild(x); });
+      box.appendChild(f);
+      mark(table, key, key === 'i' ? '' : dir);
+      if (onSort) { onSort(key, dir); }
+    }
+    all('.sb', table).forEach(function (btn) {
+      btn.addEventListener('click', function () { sort(btn.getAttribute('data-key'), nextDir(table, btn)); });
+    });
+    return sort;
+  }
+
+  var ct = d.getElementById('ct');
+  if (ct) {
+    var cands = all('tbody.cand', ct), sel = d.getElementById('csort'), q = d.getElementById('cq');
+    var st = d.getElementById('cstatus'), none = d.getElementById('cnone'), csec = d.getElementById('csec');
+    var subBox = d.getElementById('csub'), subs = subBox ? all('.chip', subBox) : [], sub = 'all';
+    var lastK = 'all', isSub = function (v) { return v !== 'all' && subs.some(function (b) { return b.getAttribute('data-sub') === v; }); };
+    var hasOpt = function (v) { return csec && all('option', csec).some(function (o) { return o.value === v; }); };
+    var sortC = makeSortable(ct, cands, ct, function (key, dir) {
+      var v = key + '|' + dir;
+      if (sel) { sel.value = key === 'i' ? 'i|ascending' : v; if (sel.value !== (key === 'i' ? 'i|ascending' : v)) { sel.selectedIndex = -1; } }
+      say();
+    });
+    if (sel) {
+      sel.addEventListener('change', function () { var p = sel.value.split('|'); sortC(p[0], p[1]); });
+    }
+    var radio = function (name) { var c = d.querySelector('input[name="' + name + '"]:checked'); return c ? c.value : 'all'; };
+    var shown = cands.length;
+    var say = function () {
+      var o = sel && sel.selectedIndex >= 0 ? sel.options[sel.selectedIndex].text : '';
+      if (st) { st.textContent = '顯示 ' + shown + ' / ' + cands.length + ' 檔' + (o ? '，' + o : ''); }
+    };
+    var filter = function () {
+      var t = radio('ft'), k = radio('fk'), g = csec ? csec.value : 'all', s = q ? q.value.replace(/^\s+|\s+$/g, '').toLowerCase() : '';
+      if (k !== 'etf') {
+        sub = 'all';
+        if (lastK === 'etf' && g.indexOf('ETF') === 0) { g = 'all'; if (csec) { csec.value = 'all'; } }
+      } else if (isSub(g)) { sub = g; }
+      lastK = k;
+      if (subBox) {
+        subBox.hidden = k !== 'etf';
+        subs.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sub') === sub ? 'true' : 'false'); });
+      }
+      shown = 0;
+      cands.forEach(function (c) {
+        var ok = (t === 'all' || c.getAttribute('data-type') === t) && (k === 'all' || c.getAttribute('data-kind') === k)
+          && (g === 'all' || (g === 'none' ? !c.getAttribute('data-sec') : (c.getAttribute('data-sec') === g || c.getAttribute('data-sec').split('-')[0] === g)))
+          && (sub === 'all' || c.getAttribute('data-sec') === sub)
+          && (!s || (c.getAttribute('data-code') + ' ' + c.getAttribute('data-name')).toLowerCase().indexOf(s) >= 0);
+        c.hidden = !ok;
+        if (ok) { shown++; }
+      });
+      if (none) { none.hidden = shown > 0; }
+      say();
+    };
+    all('input[name="ft"],input[name="fk"]').forEach(function (r) { r.addEventListener('change', filter); });
+    if (q) { q.addEventListener('input', filter); }
+    if (csec) {
+      csec.addEventListener('change', function () {
+        var v = csec.value;
+        sub = isSub(v) ? v : 'all';
+        filter();
+      });
+    }
+    subs.forEach(function (b) {
+      b.addEventListener('click', function () {
+        sub = b.getAttribute('data-sub');
+        if (csec) { csec.value = sub !== 'all' && hasOpt(sub) ? sub : 'all'; }
+        filter();
+      });
+    });
+    filter();
+  }
+
+})();
+</script>
+</body>
+</html>
