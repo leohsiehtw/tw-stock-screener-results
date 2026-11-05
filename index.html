@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-title" content="台股選股">
-<title>台股盤後選股 2026-11-04（星期三）</title>
+<title>台股盤後選股 2026-11-05（星期四）</title>
 <style>
 :root{--page:#ffffff;--surface:#f5f5f7;--nav:#fafafc;--ink:#1d1d1f;--ink2:#4f4f53;--ink3:#6e6e73;--link:#0066cc;--accent:#0071e3;--btn:#0071e3;--btn-hover:#0076df;--btn-active:#006edb;--on-btn:#ffffff;--hairline:rgba(0,0,0,.22);--band:#bdbdc2;--up:#a50e26;--down:#0b5e28;--warn:#873c00;--cap:#6b2fa3;color-scheme:light;
 --f-display:"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,"PingFang TC","Microsoft JhengHei",sans-serif;
@@ -122,23 +122,29 @@ th[aria-sort] .sb{color:var(--ink)}
 .chp{margin-top:12px}
 .chp svg{display:block;width:100%;height:auto}
 .chk{display:flex;flex-wrap:wrap;gap:4px 16px;margin:8px 0 0;padding:0;list-style:none;font-size:12px;line-height:16px;color:var(--ink2)}
-.chk li::before{content:"";display:inline-block;width:16px;margin-right:4px;vertical-align:middle;border-top:2px var(--ks,solid) var(--kc,var(--ink2))}
-.chk .lg-bar::before{--kc:var(--up);border-top-width:8px}
-.chk .lg-m20::before,.chk .lg-dif::before{--kc:var(--link)}
-.chk .lg-m60::before{--kc:var(--cap);--ks:dashed}
-.chk .lg-dea::before{--kc:var(--cap);--ks:dashed}
-.chk .lg-bb::before{--ks:dotted}
-.chk .lg-stop::before{--kc:var(--warn);--ks:dashed}
-.chk .lg-dot::before{--kc:var(--ink);width:8px;height:8px;border:0;border-radius:50%;background:var(--ink)}
-.chk .lg-mv::before{--kc:var(--ink)}
-.chk .lg-osc::before{--kc:var(--down);border-top-width:8px}
+.chk li{display:flex;align-items:center}
+.chk svg{width:24px;height:10px;margin-right:4px;overflow:visible}
+.chz,.chi{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0}
+.chi>span,.chg{font-size:12px;line-height:16px;color:var(--ink2)}
+.chi>span{min-width:28px}
+.chp .chip{font-size:13px;padding:6px 12px;min-height:34px}
+.chp .chip:disabled{opacity:.5;cursor:default}
+.cho{margin:4px 0;font-size:12px;line-height:16px;color:var(--ink);font-variant-numeric:tabular-nums;white-space:pre-wrap;overflow-wrap:anywhere}
+.chq{touch-action:pan-y;-webkit-user-select:none;user-select:none;cursor:crosshair;border-radius:8px}
+.chs+.chs{border-top:1px solid var(--hairline)}
+.chh{display:flex;align-items:center;gap:6px;min-height:28px;font-size:12px;line-height:16px;color:var(--ink2)}
+.chn{flex:none;color:var(--ink);font-weight:600;border:1px solid var(--ink3);border-radius:6px;padding:0 6px}
+.chv{flex:1;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.chx{flex:none;touch-action:manipulation;font:inherit;font-size:16px;line-height:16px;color:var(--ink);background:none;min-width:32px;min-height:28px;border:1px solid var(--ink3);border-radius:8px;cursor:pointer}
+.chx:hover{border-color:var(--ink)}
+@media (max-width:734px){.chp .chip,.chx{min-height:44px;min-width:44px}}
 .chw{margin-top:8px;font-size:12px;line-height:16px;color:var(--ink2)}
 .chp .chb{margin-top:8px}
 .ct .r3 td{padding-top:0}
 .cx-up{fill:var(--up)}
 .cx-dn{fill:var(--down)}
 .cx-fl{fill:var(--ink2)}
-.cx-wu,.cx-wd,.cx-wf,.cx-ma20,.cx-ma60,.cx-bb,.cx-stop,.cx-mv5,.cx-dif,.cx-dea,.cx-grid{fill:none}
+.cx-wu,.cx-wd,.cx-wf,.cx-ma5,.cx-ma10,.cx-ma20,.cx-ma60,.cx-bb,.cx-stop,.cx-mv5,.cx-dif,.cx-dea,.cx-k,.cx-d,.cx-gd,.cx-x,.cx-grid{fill:none}
 .cx-wu{stroke:var(--up)}
 .cx-wd{stroke:var(--down)}
 .cx-wf{stroke:var(--ink2)}
@@ -150,6 +156,12 @@ th[aria-sort] .sb{color:var(--ink)}
 .cx-dif{stroke:var(--link);stroke-width:1.5}
 .cx-dea{stroke:var(--cap);stroke-width:1.5;stroke-dasharray:4 3}
 .cx-grid{stroke:var(--hairline);stroke-width:1}
+.cx-ma5{stroke:var(--warn);stroke-width:1}
+.cx-ma10{stroke:var(--ink);stroke-width:1.25;stroke-dasharray:8 2 2 2}
+.cx-k{stroke:var(--link);stroke-width:1.5}
+.cx-d{stroke:var(--cap);stroke-width:1.5;stroke-dasharray:4 3}
+.cx-gd{stroke:var(--ink3);stroke-width:1;stroke-dasharray:3 3}
+.cx-x{stroke:var(--ink);stroke-width:1;stroke-dasharray:3 2}
 .cx-cl{fill:var(--ink);stroke:var(--card);stroke-width:2}
 .cx-t,.cx-tb,.cx-ts{font-size:11px}
 .cx-t{fill:var(--ink2)}
@@ -261,36 +273,29 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
 </style>
 </head>
 <body>
-<div class="topnav"><div class="wrap"><span class="brand">台股盤後選股</span><div class="navr"><span class="navdate">資料日期 2026-11-04（星期三）</span><div class="theme needs-js" role="group" aria-label="頁面顏色"><button type="button" class="tm" data-set="auto" aria-pressed="true">自動</button><button type="button" class="tm" data-set="light" aria-pressed="false">淺色</button><button type="button" class="tm" data-set="dark" aria-pressed="false">深色</button></div></div></div></div><main>
+<div class="topnav"><div class="wrap"><span class="brand">台股盤後選股</span><div class="navr"><span class="navdate">資料日期 2026-11-05（星期四）</span><div class="theme needs-js" role="group" aria-label="頁面顏色"><button type="button" class="tm" data-set="auto" aria-pressed="true">自動</button><button type="button" class="tm" data-set="light" aria-pressed="false">淺色</button><button type="button" class="tm" data-set="dark" aria-pressed="false">深色</button></div></div></div></div><main>
 <header class="band alt" id="top"><div class="wrap stack">
-<div class="stack" style="gap:8px"><h1><span class="nw">台股盤後選股</span> <span class="nw">2026-11-04（星期三）</span></h1><p class="sub">收盤資料｜全市場掃描 2329 檔（資料有效 2291 檔）</p></div>
-<dl class="stats"><div><dt>候選標的</dt><dd>17<small>檔</small></dd></div><div><dt>突破型</dt><dd>2<small>檔</small></dd></div><div><dt>回測型</dt><dd>15<small>檔</small></dd></div></dl>
+<div class="stack" style="gap:8px"><h1><span class="nw">台股盤後選股</span> <span class="nw">2026-11-05（星期四）</span></h1><p class="sub">收盤資料｜全市場掃描 2329 檔（資料有效 2291 檔）</p></div>
+<dl class="stats"><div><dt>候選標的</dt><dd>10<small>檔</small></dd></div><div><dt>突破型</dt><dd>1<small>檔</small></dd></div><div><dt>回測型</dt><dd>9<small>檔</small></dd></div></dl>
 <p class="cap14">分享版：只列出今天的候選標的與關卡說明。僅供研究，非投資建議。</p>
 <div class="a2hs" id="a2hs" role="note" hidden></div>
 <nav class="jump" aria-label="本頁段落"><a href="#cands">候選標的</a><a href="#hist">歷史紀錄</a><a href="#help">怎麼看這一頁</a></nav>
 </div></header>
 <section class="band" id="cands" aria-labelledby="cands-h"><div class="wrap stack">
-<h2 id="cands-h">候選標的（17 檔）</h2><div class="hbar needs-js" id="hbar" data-day="2026-11-04" hidden></div><div id="hview" hidden></div>
-<p class="cap14">類股：ETF-債券 5 檔・科技-光電 1 檔・科技-電子零組件 1 檔・科技-資訊服務 1 檔・科技-其他電子 1 檔・傳產-食品 1 檔・傳產-電機機械 1 檔・傳產-文化創意 1 檔・傳產-其他 1 檔・生技醫療 1 檔・建材營造 1 檔・航運 1 檔・ETF-商品期貨 1 檔</p>
-<div class="tools needs-js"><fieldset class="seg"><legend>型態</legend><label><input type="radio" name="ft" value="all" checked><span>全部 17</span></label><label><input type="radio" name="ft" value="突破型"><span>突破型 2</span></label><label><input type="radio" name="ft" value="回測型"><span>回測型 15</span></label></fieldset><fieldset class="seg"><legend>類別</legend><label><input type="radio" name="fk" value="all" checked><span>全部 17</span></label><label><input type="radio" name="fk" value="stock"><span>個股 11</span></label><label><input type="radio" name="fk" value="etf"><span>ETF 6</span></label></fieldset><div class="seg subs" id="csub" role="group" aria-label="ETF 子類" hidden><p class="sublg" aria-hidden="true">ETF 子類</p><button type="button" class="chip" data-sub="all" aria-pressed="true">全部 6</button><button type="button" class="chip" data-sub="ETF-債券" aria-pressed="false">債券 5</button><button type="button" class="chip" data-sub="ETF-商品期貨" aria-pressed="false">商品期貨 1</button></div><label class="fld" for="csec">類股<select id="csec"><option value="all">全部 17</option><option value="科技">科技（全部）4</option><option value="科技-光電">科技-光電 1</option><option value="科技-電子零組件">科技-電子零組件 1</option><option value="科技-資訊服務">科技-資訊服務 1</option><option value="科技-其他電子">科技-其他電子 1</option><option value="傳產">傳產（全部）4</option><option value="傳產-食品">傳產-食品 1</option><option value="傳產-電機機械">傳產-電機機械 1</option><option value="傳產-文化創意">傳產-文化創意 1</option><option value="傳產-其他">傳產-其他 1</option><option value="生技醫療">生技醫療 1</option><option value="建材營造">建材營造 1</option><option value="航運">航運 1</option><option value="ETF">ETF（全部）6</option><option value="ETF-債券">ETF-債券 5</option><option value="ETF-商品期貨">ETF-商品期貨 1</option></select></label><label class="fld" for="cq">搜尋代號或名稱<input type="search" id="cq" autocomplete="off" placeholder="輸入代號或名稱"></label><label class="fld" for="csort">排序<select id="csort"><option value="i|ascending">預設（型態，量比大到小）</option><option value="vr|descending">量比大到小</option><option value="vr|ascending">量比小到大</option><option value="chg|descending">漲跌% 大到小</option><option value="chg|ascending">漲跌% 小到大</option><option value="dist|ascending">停損距離 近到遠</option><option value="dist|descending">停損距離 遠到近</option><option value="close|descending">收盤 高到低</option><option value="close|ascending">收盤 低到高</option><option value="code|ascending">代號</option></select></label></div><p class="status needs-js" id="cstatus" role="status" aria-live="polite"></p>
+<h2 id="cands-h">候選標的（10 檔）</h2><div class="hbar needs-js" id="hbar" data-day="2026-11-05" hidden></div><div id="hview" hidden></div>
+<p class="cap14">類股：ETF-債券 2 檔・ETF-海外 2 檔・科技-資訊服務 1 檔・傳產-貿易百貨 1 檔・傳產-其他 1 檔・生技醫療 1 檔・建材營造 1 檔・ETF-槓桿反向 1 檔</p>
+<div class="tools needs-js"><fieldset class="seg"><legend>型態</legend><label><input type="radio" name="ft" value="all" checked><span>全部 10</span></label><label><input type="radio" name="ft" value="突破型"><span>突破型 1</span></label><label><input type="radio" name="ft" value="回測型"><span>回測型 9</span></label></fieldset><fieldset class="seg"><legend>類別</legend><label><input type="radio" name="fk" value="all" checked><span>全部 10</span></label><label><input type="radio" name="fk" value="stock"><span>個股 5</span></label><label><input type="radio" name="fk" value="etf"><span>ETF 5</span></label></fieldset><div class="seg subs" id="csub" role="group" aria-label="ETF 子類" hidden><p class="sublg" aria-hidden="true">ETF 子類</p><button type="button" class="chip" data-sub="all" aria-pressed="true">全部 5</button><button type="button" class="chip" data-sub="ETF-債券" aria-pressed="false">債券 2</button><button type="button" class="chip" data-sub="ETF-海外" aria-pressed="false">海外 2</button><button type="button" class="chip" data-sub="ETF-槓桿反向" aria-pressed="false">槓桿反向 1</button></div><label class="fld" for="csec">類股<select id="csec"><option value="all">全部 10</option><option value="科技-資訊服務">科技-資訊服務 1</option><option value="傳產">傳產（全部）2</option><option value="傳產-貿易百貨">傳產-貿易百貨 1</option><option value="傳產-其他">傳產-其他 1</option><option value="生技醫療">生技醫療 1</option><option value="建材營造">建材營造 1</option><option value="ETF">ETF（全部）5</option><option value="ETF-槓桿反向">ETF-槓桿反向 1</option><option value="ETF-債券">ETF-債券 2</option><option value="ETF-海外">ETF-海外 2</option></select></label><label class="fld" for="cq">搜尋代號或名稱<input type="search" id="cq" autocomplete="off" placeholder="輸入代號或名稱"></label><label class="fld" for="csort">排序<select id="csort"><option value="i|ascending">預設（型態，量比大到小）</option><option value="vr|descending">量比大到小</option><option value="vr|ascending">量比小到大</option><option value="chg|descending">漲跌% 大到小</option><option value="chg|ascending">漲跌% 小到大</option><option value="dist|ascending">停損距離 近到遠</option><option value="dist|descending">停損距離 遠到近</option><option value="close|descending">收盤 高到低</option><option value="close|ascending">收盤 低到高</option><option value="code|ascending">代號</option></select></label></div><p class="status needs-js" id="cstatus" role="status" aria-live="polite"></p>
 <div class="card tw cards"><table class="sortable ct" id="ct"><caption class="vh">候選標的；按欄位名稱可以排序</caption><thead><tr><th scope="col" class="nm"><button type="button" class="sb" data-key="code">標的<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="close" data-num="1">收盤<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="chg" data-num="1">漲跌%<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="vr" data-num="1">量比<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="stop" data-num="1">建議停損<span class="si" aria-hidden="true"></span></button></th><th scope="col" class="n"><button type="button" class="sb" data-key="dist" data-num="1">停損距離<span class="si" aria-hidden="true"></span></button></th></tr></thead>
-<tbody class="cand" data-i="0" data-type="回測型" data-kind="stock" data-code="2603" data-name="長榮" data-close="268.0" data-chg="0.56" data-vr="0.78" data-stop="256.01" data-dist="4.5" data-sec="航運" data-mkt="上市" data-ch="bEqblegogBjhCfiDajDukEnlCYjCvBcHvCdjLcjFaDnBtajBkHwFaEirCvFtBjsCeBmCnCvIbtaDbBxBdDbCikuaHikFtGeBdkjDwkBnBnFkCiBxByBxCrBejCiCsBdttCsFaDcCruCsJqFaByEgEgtDlLnBetBoDmCrDmEpaDbDwChCsByCrEgCsBnBekkaDvBeBdBoEfBoDbaRsGotEpGoCrBxBnByBeBeBnIcCiGdBeBkDoBlFiBukBtaDfEgCwBashExEfCvsFaBjDgkBttDyBuDcBeBeDwByBoCskBeuaHhBeCiEpBotBoDvjBoDwDvBnBytaCiCsBeChBxtBoaBnEfChByjCrIvEpDlDlDvCsDwJgEzjkEzByDlDwuDcDvBeEfBnBeDvEpBejjBdBxEqaaChEqCrDcaKjIbChCsDlBeCsjCrjBnaIbCrEqCrfanffxBlxatBbBhBcBhkaBzBgsBqosoBlfaapaaakfpakpzpfaapkfkzpBezkazafakfkapakuapafBoaBezzuzfkfkBeffkaazkauuaBjpkaaapkfakpBjaaBtfByBezBoBekzByaaffffxafoBcoeaayaofBqBqBvaajsoejouafkkafBepfuakpfkzzfpaaaafpkkBjpazapupfppkBtkkBokfuBjBefBoBefBjuBtkfuBefBtukfuByuzpfpzfffkpfCdkzzkupfCsBefuuzBjaCUyiiabakkqmmkkkqwwwskimmBaBaubdjjjjnnxBbBhxttjlnrhfeekqsuyqqqsmmqiosyoqwBiBkBiBqBuBwBuBcBgBcBaBgBeBiBasmuoqgdbdjjbmkggagdcaewBgBcuBgyqsssusBiBkBcBcaCUmgieeciikigeaaegkgkecgccccbccbaadabaaccaecceegecgggigecececccegmkkimmoqssqigegiimiigiioqmsssuuussqoqoommuuwuwsssswuuwwuwaDycgcaagcscjjjhBaByCoBuyecaetBpCfiiswBaBeBmBauaxBpBjnnrBhBxBhrgewBcikrtvxBdkeBdfdsBaooqCkDmCyDaDeCcqrzxrxBlBxBxBhxBrBvBpfcahBlBjnigfbabcdalCkDeCcuBmyqgkmkeqsllDsDyDuKkHqHaUeIrMqNbLsOgLrMwPzPbQiLmJyJlJlJbJmHyIqNqZlGvGvJeKlGaLfHmGgEnCxKnDpJuGvCgDuDyGoCtHgEgIbEyCpCwCwCzFpCyCxDjClCiBpCoGeFgEaCoFrQcMwIqNdNyJlKeLvIuDmEoFhEkDxHkCjCrDqCvDqFlCyFhDsEnCrCrClCcCqCaCnCjDuBuDmCwQqZzInGkHkEkDpEmDuEoCpCeJvFhEmDvaEqtfCaBoBiGmCawCgBwCjBgcBeBkuaBfCpCfCxtvhBsGoBbjeBfHtBugBdCjBfhBnBkyfCreBhBpCaeBqpbBrpBzgeagfBhndBeBcskBgEaDcBwEgDiCrBbBiBtEdBzBxCzBxBovBbhjBnBgeqkiBbdBbrrhbasjqeFsIwCsBgBuEvIzBpzBdtnCeqbojCabaprpmiqeaabcqwBasghjhdafnzxrvtrtjfbbqoamiigokgamogkcdbbcicabcmqgeiBaBcBaBaBasezrtndldplrhjfafcgccacajfhdlfnjBeBiBaiuiafaaadmmddBchdrljoiocdbbbooogfpnjdafjrlfhdbdgiiksqakgeageafggbadjddacabdciiaacoqiiibnBfvpjbfchdhebegcgkeceaafddafbddBeBcqbidhlfbdfiihfdFLmBAc"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">2603</span><span class="name">長榮</span><span class="sec">航運</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">268.0</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.56%</span></td><td class="n" data-label="量比">0.78</td><td class="n" data-label="建議停損">256.01</td><td class="n d-mid" data-label="停損距離">4.5%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:47.6%;width:22.2%"></span><span class="pb-stop" style="left:47.6%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:69.8%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 256.01</span><span class="k k-ma">MA20 257.3</span><span class="k k-close">收盤 268.0</span><span class="k k-band">布林 232.3～282.3</span></p></div><p class="desc">近 20 日沿月線，量縮 0.78 倍回測 MA20 止跌；停損：跌破 MA20 257.3 或今日低點 261.0</p></div></td></tr></tbody>
-<tbody class="cand" data-i="1" data-type="回測型" data-kind="stock" data-code="6952" data-name="大武山" data-close="39.8" data-chg="0.38" data-vr="0.77" data-stop="39.16" data-dist="1.6" data-sec="傳產-其他" data-mkt="上市" data-ch="bEqalegrgBmhCiiDdjDvkEolFPkBxDvjuChBejktBeBxBxaCiDlBeDwEfaChCsDlChkBoutjkkjBdkBnChDwaajDvkaChuChCiDcBojkjEfCsjDlkHrCrOqChEfLoFkKkKkDbDvDbEfJpDcCrDwDmByCrBouBeBytIlJgIctBxatBxBoByByuEpChkCiaauBdCsaBdakaCiBnDwBnuChGekaCrjBeHhSwuByDvCiJqGyBoFaHikCsaBoBeFaDlCsauChBnBetBykDckChjDwkChCiBoDvDlChDcDwEftCiDcBojaIlkkEzByatBetMiFaGnChBnMrBoKjFjFkBoDcHiEqGdBdHhEfBxBnHiGnBdBnBxaCiFtuIlChChBnCrBnDbtEqCsaGdajEfBeCrDvCrDlBeaGdBnGxEftCiBojaaGnBnaaEvaaCnaaBjByauapaaCxBtuBypBtaBoCxkDhBykkfBjkaaakaBtaaaaCiaaBjfaaafaaaaaaByazkGoaaEqaBoBeCiBjaEvBtaaaakaCsaaukaBoBoCnFffafazaaaaaaaaapCxCdCnpaaaBtaapaapfaaazaaBjaBefkffBeaCdpaaaaaappByaafaBeBoufauaaaBtFfaCikCizkBtaBjEqpaDhDcaaDmaCxaaaDhzaaBeakCiaaafakaaBoBtfafByaaapauCxzDrBtpaaaaCnCnaaaaBouaBeazuaByaaBtapaFSphttxBdBfBjBbBfzvxljjdejjpjjlnhhjjhjhffjjfldfhlffflhdbbbdfdbdhpvbafiuBeBwBqBgBauiooquBcyBkBqwBcBiimifdcegwuBawmgkkkiigwibbacegieebmqqiimaFZjxxttzxvxvtxxxvxtprpllnnnnnlnlljllljhhhhljllnprpnnljlhhhfhlfhjbaekigeebcaccgecegggcimkkkkiikmmkkikkkmkmomommmmmmomqqqusoaIwisocdBfCdBhClClBvBvfligdabntkwkeabbdldcafmdBfhlmhgukscdbdfdcdbibBqBudacuBsEaFkDeBwBcmbajfblrCdDlxBnDhtfstlcierdtfhfpljjdhDdnfbaaidoggbBaogcdaKlLfJeGeEvEoFfCgCmDtDfLfHdJrBkXrFjGrFfCzEiDmEwLrHsFyDtDtCzDaJtOkFrJxHlJjDmCfCkDgNvDvDvDtFbEpEfIiIvHfJkHuDmGyJoCeCnMbDfZzFwFdQaEhOvUcJlDtFiCzEsFjDzCyCevBzBeGdCzJoBciDmFzBoBhDaDtFbCkEnDfCuPmCzoFhoBjDmEbDaFkCtCgMmDsDuCroClBpBqCuGfByCkEaCraHkCuicBfCjCjCtBllnCkCaCwxIgCjdBtqHtrtCqBwsclDlBxBoEiuCsBubEjBjCzBrBuesosDreBuCcwByBmBztBaCxCbDkBlGoBoBaBqkElFsBuExkErGdBrcxhBnBjBbBiiDmjhBbBgDfcBcchiBicjEegBnuvFrgBkxCaolDiirarDzvvcCgfiBabhCAzBsBdpurBaBcBuBgCoyhiCohBgEmowvCavCdxyBuBeBaBmBwBmoBcdBpCeCaBuBkBttjBvnBxqDgEcDcDaCeBnBcsCbBdGvHhGiDinJcLmRiVqOcHiCqCbJzFxHhDdaBcBrndmBmeHbBoHiEsBqulCjBdeBgBcDhExDxBnBnBnxBxkcBdBdvxytCigqBpDkCsBuBbBlnGdCodgBibBgBeBiuBoaxjBqziCyvjBpwBnCfvwBiqiquklavBxBmBaueChBbnBpfBjBaCyDaBqBeiCtajCnBhFnEvHaDinHgHwKwMeDqClFrIhMzHfGtCduBozekuBocFrCiGoDcapBnCtBfcyqCzDrCdeceqhBoBaddecBmbCigmBjCwBusBtBrrdBoDe"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6952</span><span class="name">大武山</span><span class="sec">傳產-其他</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">39.8</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.38%</span></td><td class="n" data-label="量比">0.77</td><td class="n" data-label="建議停損">39.16</td><td class="n d-ok" data-label="停損距離">1.6%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:38.8%;width:36.8%"></span><span class="pb-stop" style="left:38.8%"></span><span class="pb-ma" style="left:50.3%"></span><span class="pb-close" style="left:75.6%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 39.16</span><span class="k k-ma">MA20 39.36</span><span class="k k-close">收盤 39.8</span><span class="k k-band">布林 38.55～40.16</span></p></div><p class="desc">近 20 日沿月線，量縮 0.77 倍回測 MA20 止跌；停損：跌破 MA20 39.36 或今日低點 39.45</p></div></td></tr></tbody>
-<tbody class="cand" data-i="2" data-type="回測型" data-kind="stock" data-code="1777" data-name="生泰" data-close="77.3" data-chg="0.13" data-vr="0.74" data-stop="75.65" data-dist="2.1" data-sec="生技醫療" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlJZrCdCfaFeatusaBlusBmrsBmBlBmFbHgrraCwaaaFtsarFdDsBlsBmIuIaFwCyCeBlCdDqFkChGeCiuaDbChDbuuuutBoMiGyBoBntaBnaDbatuBotBnGyBnBnChBotGyuDvuaaNbBoCiBoDcBoBnBnBoChtDcuaImaBoCiuCiChEqEpFjDcDvBoChKaCiCiuuBlsCgaItaDsDqDpaBmCfrCxDrrBlruDrCdDptaCvaBlBlFcraaFeDraBlaDrJlFcCxCdDqBmDpFjCiGxFjtDbtCiCiGdaatBnBnKtBoCiChuBnCiaBnEpDbtChBnChIlaBoCiChaJfCiBotDvBnKaCiBnBnGdBnuDcaDbuttDbGxaGxChBnBnBoDbtGeuGyDvBoJzDbIlBnuBwBdakaCfaaBmtaCfkBmjDhtBvBcatasCeaaataBvajaajatjBcBcjBckjaBeauBokaaaaakBykauakaaaaaaBoaaBoaaaaaaaaaaBeaaaaaauuauuakkaaBeaaBeBeaBoaaBeuakaaaBoCikByuakCosaajkaBctjktatjktaaaaBdkBcsakkatBlatjasaBwatCfEbtaCikkBeuDmCiEgBoDcByBeBeaaByCikEgaCsDwuaBeByBouaBeDcDwByCiCiaCiBoBoBoDmaBoByBeuBeCsByByaaCiByaauaaCiCsByBoCsBeCiByCiCsBeuaByEgaJYtcbbfceageiegiigkkaaimmmkimiccecfddbdisBiBaBeBeBaBcBiBgBmByByByBwByBqBuBsBsBiwqBeBiBoBmBkBaBcuokmquywBcBcwwueecaceenfdbcccafffaaccckkmqBcBgBaoqimkwBcBgBeBcaKAxbdfabcaadhfbbeacecbaaaacbcbabbbdbbdbegkmoomkqqqsuusqqsoqsoqwBaBaBayywywuwwwuwwwwwwuyywuwuqsuuwywywusommooqqoqmmmikmmkqqqqsaCvaccBbecbgefaagheenaaqentqkgebbhdueigcqCkCyDcCuBwBeBoCcBiByBmBaojBxBzCxDrEpDjBzxBkCyCcsowckeeadjBbBfzBjBtCtDpjomaeceBmsicbaabdaeaaakiyBgBgBmbqbnbfjpahlfhCkDgKqGhCvGhCkCkCvDgIaFwBtJtGsJcTbVwIaIlDsFqEdJiDgCqGcBzMdJiBiJnSqEzJzCkGsGsPjVqEzTbNfMoLgMjQmQmMuIrDgGhCkHeKvEiBnEiGyHjGsRcEiDgIaDgBzGyDxBiGhGyIgDxBnJiFqMdHeNwIlZzOhMuLsMdVaWyDbJnDbIgDsLgOnCqCqwEzJzDbWcGcDmIlNfFwMjNfHjOcLmLmPvTbVaPjRoUoNwaEzzCmltBojDfBjesBkhCuBkmFiIarsCdFjHboCblgxBeCklBkGqCvikBbEtEeEqBcEyCqBdEdCyzBicBbDpEbFpCfwmBxubBjBaGeaBliBjGbBcgCrBgCamaeBenBqBiEyjIewCixBmBxDkDvvDrFbHrDiCafCfBdClBveHwCcppEcGnCoDyliCijBcEsCuBoCkByCbixaddiieegeaceecegaehieccgeeclhffpffdasBeBkBiBesimsisomedlppljhjhuBawmecffnnnlhjlcbflhhggfdddBfvnhaebdbdfaecsooqmmgmbnfnhlkmokkqdfdiccacabbacbacbahgcbaccabjhddjcbceuywskahdchcadfnprlhdbdauyoeddjhnhjdabdiebdabmibbaaxjbekkeaeabgeeqkgicedchrflfhmmkgcdNwBs"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1777</span><span class="name">生泰</span><span class="sec">生技醫療</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">77.3</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.13%</span></td><td class="n" data-label="量比">0.74</td><td class="n" data-label="建議停損">75.65</td><td class="n d-ok" data-label="停損距離">2.1%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:38.0%;width:52.0%"></span><span class="pb-stop" style="left:38.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:90.0%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 75.65</span><span class="k k-ma">MA20 76.03</span><span class="k k-close">收盤 77.3</span><span class="k k-band">布林 74.56～77.5</span></p></div><p class="desc">近 20 日沿月線，量縮 0.74 倍回測 MA20 止跌；停損：跌破 MA20 76.03 或今日低點 76.2</p></div></td></tr></tbody>
-<tbody class="cand" data-i="3" data-type="回測型" data-kind="etf" data-code="00859B" data-name="群益0-1年美債" data-close="42.05" data-chg="0.31" data-vr="0.67" data-stop="41.15" data-dist="2.1" data-sec="ETF-債券" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlFWpwejBqcexjBdwtdafylBebBanwmjvklokaBoiekgdcBaBaojihsiiBeqjszwigdqgxuBndeaeddBlBddacapshzBfufBahezBbpmBooBgduvllaBidqwaBfbmwcBiBcBwukyrqftBgyiwBaprceBbcfsdBiBtqquixmpctsdbgwComamaBjmfedcgpznkhBcojapphrBathdgppmpBosccfeeBkodBobbsaisufbzifhsueBjjzyiBeidahebvnBocltcahBhBhbBjBcpguBfpzlxaecfaabafaaaaaaeaaaaaafbaaabadaaebabbabaidacbedgfdadbafcdagaaccbaaaeaadbababaaeaaabacacaafbabaefdbbcabaaedcbggcihhaefidibagcamafacaeaececeffdfdkddafvcadaccjdaaakbbdegaabcdaafcfcqabhedbbcbbkcecdhgbdffacedcafadbbhfceecfhaaghdadpdfahabeefaaahaaFWtaaccecccacbbbbbaececccebaaaceegggigggiigggiiikmkkgiiiiikggceceeccbdddddfdfhhhhdfdfhjhbbaaaaabbcecgccceggiiikikkkmkkmkmmaFXccacacccacccaabaaaaaaaaaabaabaacaaaacacecceceeeeegeeeeeegegegeeecececcecececccccccaacaccccacacaacaacaaaaaacaccccccacccceauacaeeeabcdcabaaabbabeecaabccbigceaabeikeeeeaaaabbdaabbdfhbbhfhhffgokiggecaceadbbddbdffbaacaabbcaegecaadjdiuussiicbcccggUjShVhWnWnRtLcZlSbXxRzTaStUdWeTxVxViVgUsXzTbTnNrZfUoWnSeOtMlUnNcWoSjRiTwRnSvNgZzNxSmRqKgNrRaHoUkSzTrTuUhMfNxQmNgHrTtSuSvSfOiSrSjUrJuWbTzTgTcUcSwSqOkTcQwPoTjUjTbJxJdXoYjObLzQmUyVeUzUtOuWyUuNtUuWjObRtTrVjSmTyTaRwTpTxViXiSrTsUtUkRuLjTnXzSjViMtaTkfhCaBuBbCxBsBtocDeCrwruBeBcmpBqBdrDbBwBjBknmFdaDtBuBmByfBuBnBzDmCjklBfExBgEjBeDmCkBeFcDhBzBhCpEzDaByyCaCslduDjDcokpEcBfnBzaBhBhiCkaCtCpBsBqBzwCyBbBfCsDorwdCxaDcDnBfCkgBpCkotroqBsicijCdCxbBgtBkohEtwwkBqBiBeedBddtrpnibwsBgqBcBiofchckgBiBiBaBcymiwBkBkooakkiBaBeiqpccahaaxjBrBrBhBfvxBbBzCpCfBrBhzBhjlBdBttpkeilBdBfnBaBiCcBqBywkbbBcsBcBmBebfewqBmCaCwCuCkCiBeBconkuqyBgzyseBeqmlrBffrnhfocwoyeoobrjpbcawsiichheomhfrdfdkmjaxfffjbbvdBfzlhcbbvBdpbgmeuqbpmkBcsubpneBiBgBuyBaalrnmckqgvrhgcuBaBoBeomrlxBlnbfcidDou"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00859B</span><span class="name">群益0-1年美債</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">42.05</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.31%</span></td><td class="n" data-label="量比">0.67</td><td class="n" data-label="建議停損">41.15</td><td class="n d-ok" data-label="停損距離">2.1%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:39.2%;width:47.6%"></span><span class="pb-stop" style="left:39.2%"></span><span class="pb-ma" style="left:49.7%"></span><span class="pb-close" style="left:86.8%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 41.15</span><span class="k k-ma">MA20 41.35</span><span class="k k-close">收盤 42.05</span><span class="k k-band">布林 40.48～42.23</span></p></div><p class="desc">近 20 日沿月線，量縮 0.67 倍回測 MA20 止跌；停損：跌破 MA20 41.35 或今日低點 41.93</p></div></td></tr></tbody>
-<tbody class="cand" data-i="4" data-type="回測型" data-kind="stock" data-code="1236" data-name="宏亞" data-close="26.55" data-chg="0.38" data-vr="0.66" data-stop="25.89" data-dist="2.5" data-sec="傳產-食品" data-mkt="上市" data-ch="bEqalegogBjhCfiDajDukEnlDMrEhjhHxCmaaCeCoBbBchsBmsCoBcCesaakkthBcskajkjajBbhihDqButJpCrEqDbDcaBetjajaCsaFkBeBeauEgkCrChBoCiBeBdjBoajjBeuBdBeBeuuukkajtBxChaajkBntBejukkjByktaBnutuGeDljkByBokCsjChuLoDgBbiHyBjBmBmCvEsaCdtkBlBcjkkGbCyCgBwaCosBmaBbjajBbkBjuBcBmBkCfsBdJqCsEpFaDlaDvBnBojkBdBeByEzDmDlDcjEfkBykDmtDljDbCrBdajatjBdBdkDlBnujBdBxuChBytjBoBeuaCiBeCrjBdGeBxDbutChBeBoaEpEgBeCsDbBdjDljktaoffaaaaaaCefjeaafaaaaaajaoakffffafaaaafsDlBeaaaaCdpCnBjufazaakapapBouzaaffpfukfkzfuapzpaafaaafBeafukkpaaaBefpaakakaaaauCipfkkaazpaoxapoxoaBhjaaajtftBcaaBcjkjfyxofjjoffokjfxxBefaaakCxafppppBjByapafBefzaBouzazaaauuBeufpzBoaaukaaBoapuCsfpkpBjkapakzaaukuzuuzfkaapuzzkaDPxrvxBfBdppnlnllnjlljhhekmmussusoooookigeaegghjfhdffffhfhbbgiigckwwoususquuuusskkkmkgikmmicccaaabdbbbddfdddfhddaiegeimkomkkaDRodhfjhhhhffhjjjjhhhhfdfdfdfbdbbababaaaacbafhffbababbbbabaaaagiiikkkmikikikiiiggigigiigigeeeegecgegeecekiiigggkiiikiiigggaDyBgoeBumBcymcebbhjpvBfBdBjmsoonhlrjfnpvBbzBfrpbksiBeBqgsgcabaabbdaoqumkBgBcbchgeafjrzBlBdBpnjbdaooghfabddaaackeeccabfhlpprfaBmgeegkkwmccIgFgCmzHrBuCwDjBpCkCpBkBiBkEsBiDjClCmDrDkEpBjCsEmDwDpJlEkBqBjBcCeBrCrDzDrHeFrWtWlIjLxGgOgDfMzLgBlCbDjClCqDjEzDhKkEzDgCwJcZzVwJvHfIiImCnFiDoDgDqDvBsDhFxHlEiPcDuJcGgEnBxvByBtCeEcEyIoDlBwByCbDiBlCgyCfEcBbCfqBkCozByBnVkSwEaCmCbFvCwEnCxEpCsaFijtBjBuCpxkgCdinvbynwmklwolckejDgsBdzzCxBbkBcBaCaBqIaHkByBwiDlHrBwfBxExcEfDluBgbDgybtCiGgGsCsBshGzHtBtBlBzBzoBlbBcBoeFkgBglcFfBfCvBtzyBqCsqbxBdCbvejcidadhpadkIaGoBggeGfGjgeBaBfhHzHlFzErJrFfDpChmCyByCuCkCwDuDyFiFiGaFmEgDkCwCmBioBgBiBgueghjtBpBrBfBhBuCsBiGtHnCfEdtlqbfdhdCcBuFsFiFcDwDkFwEqBcBhdBmBqcribrBhjaBhjimswqkarBlCzEnDtDdCzCbDbCzBnBlpbedBmBkmizdvaEwBakoBwCoCgDqCkfgBgGfDtBzFpvoBmDmEqDaDcCcCcCmByCuCgCiBkgpvzBtBzBbrrxBfxBdzBdBnBhrpCaCiuFvFhaBnBmBkCcBcsqkmCeBkEiDeCiwkCguCdDrBzhbBjBrltBdBhjazbmqoqgehtBfCfCzBtznenlwsBiBkBkwBwBoogxangEcejdyBiuBukBtBbdEms"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1236</span><span class="name">宏亞</span><span class="sec">傳產-食品</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">26.55</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.38%</span></td><td class="n" data-label="量比">0.66</td><td class="n" data-label="建議停損">25.89</td><td class="n d-ok" data-label="停損距離">2.5%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:42.9%;width:36.0%"></span><span class="pb-stop" style="left:42.9%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:78.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 25.89</span><span class="k k-ma">MA20 26.02</span><span class="k k-close">收盤 26.55</span><span class="k k-band">布林 25.17～26.87</span></p></div><p class="desc">近 20 日沿月線，量縮 0.66 倍回測 MA20 止跌；停損：跌破 MA20 26.02 或今日低點 26.35</p></div></td></tr></tbody>
-<tbody class="cand" data-i="5" data-type="回測型" data-kind="stock" data-code="8213" data-name="志超" data-close="39.7" data-chg="-0.13" data-vr="0.65" data-stop="37.31" data-dist="6.0" data-sec="科技-電子零組件" data-mkt="上市" data-ch="bEqalegogBjhCfiDajDukEnlFWzSpBbIxBlCzjHmGiHmCfKkMzsBbFxCyFnElRlJsHvBoGiFeElCqFgBcCfBwDhIxDkEcHvEckCfJfBnCpuFxGiBdJpFvEgGeDvChEfIlGxDbKuBnaDwBejDcOgFuaChHiHhDvByBoChaBeCsaBxEqtEpBeaDbByDvjEqEfBokDmBoktjChNcDvByDbDmBAeFaGeEzQoMrBxBeQeOgLdGnQyGnMrHiLdjTiGaDsLyBdDakCfBvEdCgJhMquBcEurFoCqFdInGijBvaEwDhBvBeFyGrDsHuDjCpKkDhjCqLcBoEwBwIoEbCqHmImDlEpDwkHiGoHsFkEpDvDbtBxuBdJfkFkDcIlIcCiBnBxCijBeBxEgBnEfBdDwjCsByDbuBnBdFkBxjBxaCsCsBeCiJpDwDlFaCrBAdEpaFaMrGeFuGnNvJfKuGoNvuFaQdGoGoaaCbBdtCpBsoBnBhjEmCgCzBxfBxatBdCbBxBrCkafftBwzBstzBcaafpyftBwyaaajufCdzBjaafuBoBepzaffBtzpauapBeffuaDcaBjBeBjByzpafzCikpuBtapaaaaaafzfaEbCnBjEguBeCiCxBykBjCdBjBeCdDwpBdFooaEqfjtBnBwBsauBryDeBdBikBnfaEcaCbeaBdEqtaaaayfCgDejpBiayCqtBcaBekauuupDcppakkBezuaDwpzaafaukBokkauapfukkafuBtfaapBtukuaBjBeaakapDmkBypBozBtDwBjBjuElCsufImaFJoBmBemgrvliquBiwBawkobhCpBxBjBfnddbflxrBjBfBbvxvnlaphjzxtBjBxBtBhBpBpBjBxClChBxBzBxBfBbzxeceoBeqckosBcBoBuBgBgBmBgyBcwafhhlfabaggebbqeimmBwCgCmCkDgCkCmCmDgDuDeCwDsDkCwCqCeCeaFCzkecgiegggegceiecgefegggkikqqoomiokgmiiaabdhhntvppnnnrvxrxxBfBfxvlhfhjnrrtprnlnlhafdbhjhjjlljjddhdhabccequuuBeBaywBgBmBiBkBuBuBiBmBiBgaMoBtBhvjicjeuiBilxxnrcooBjCcBkoeicahBbzDlrBlBtnBtvheBkBeBcCiquCaCakpvnyBmBoCivBjBpxzxBhiioBcCiueoqkjBlClxBtBzBtChDlEbabkmBhiacaeecadCkoBakwIaGgFwCyFkCaqkCeEcBclwBdDpBrDrEdIsGnDaCdBozsBaBjCiBfEiCiBqBpClBbBgBdBqBluBeBawFdlwCfBcxxBcpoBctrpBttwrBzpkBjBnBeBapjsBtCbBfBdtnmhigBvBtyrBapojjljiwinrhskkkhhskklgBenighuBlopksIuInEpCyHzEfByBrHkZzMcEeSqImFpFyEkFoaElCgsgDfDdChthicBmochoBjjfajbabhBmdbmcBrgcpfcbdamdcaoldgihecjhgkgialpjhfoogeinlfdddbgaaeababbadcaacaecabadieeaaCyDeBqBaCyBvCpBdBuHgDeyGukIdClcFfiJcnnBfBdBfzhiukBchdhtltBbCdzBhxfkbeqqimcrdelacdtrrltabtxhiabhtBdxeeiqsquByByBqBcBmoegiaacgeaiehbdjdljahbbgigeadykmciCgCeCcBcCcmcaBeBwklwaBhnBnBjCsxtBfvtlgqykyjfhnflnBjblcqwmosseibndehccapjhbhkijlesgeblpjqoksqkmBgBcociltlhnjfbdfcbjfdjbhdebacikeaadseedcBqBeyburxtiwnBbenBlpBfvdLiHa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">8213</span><span class="name">志超</span><span class="sec">科技-電子零組件</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">39.7</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.13%</span></td><td class="n" data-label="量比">0.65</td><td class="n" data-label="建議停損">37.31</td><td class="n d-mid" data-label="停損距離">6.0%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:27.6%;width:24.2%"></span><span class="pb-stop" style="left:27.6%"></span><span class="pb-ma" style="left:50.1%"></span><span class="pb-close" style="left:51.8%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 37.31</span><span class="k k-ma">MA20 39.53</span><span class="k k-close">收盤 39.7</span><span class="k k-band">布林 34.94～44.11</span></p></div><p class="desc">近 20 日沿月線，量縮 0.65 倍回測 MA20 止跌；停損：跌破 MA20 39.53 或今日低點 37.5</p></div></td></tr></tbody>
-<tbody class="cand" data-i="6" data-type="回測型" data-kind="stock" data-code="1456" data-name="怡華" data-close="15.5" data-chg="0.0" data-vr="0.58" data-stop="15.08" data-dist="2.7" data-sec="建材營造" data-mkt="上市" data-ch="bEqalegogBjhCfiDajDukEnlCCgBxEptuaChjjukkBdBnBnuGoDcEqDbjtkByDcjEqCsuEptDbBnjBeDbuaBoBnBxDvEqBnCitkDlDmjDbBdDwauBdBeutuaukDlaBxCiktChjDwDbkEgBxBxByCsBeDbaDbFuChBoujDbaaBeDmChBxFutkBeCiBxChBdEgCitByuBnDvChBdIcujaaDcCraFuByIcBdCraBykutjBdBdBojChIvChBduBeChjFkChkEpChBeGeDmBoFuCsjBeByuBoEguOgDbBotBojDmDlBoaBeEfjauaDbBdaChBdBeEqaBeCrByBnkuBnDwkEfByByChtBduBoFkDlCiJgaChDcDmByBeBxkCsGdBojBnDbBoCiCsEpChtaBnByCiBoBeJzutBxkEpCsuzfaBekBoauBefkfpakaBjpkaaBoBjaBeaBjaaaakaaapBokaapaffkakkpaaapkakukkkBjufaBtByBtaBeCnBekaaaaaByaaBekafaaBtzBeapukaakakkazuuBjzBekaakpakaapakaaaaafaaaaakBtzpkBjaazBtBtBjkBtauzuBtByBoBouBeuBjaCxfBtBofapBjBezCiaaBjauauCsupafuByaBjaaafkpaaBeaaazppuBjaaaupkDckafafkBofaBezpkfafpppBeufafpaupzzapuaCBpfnplflhlhddhjhfgdcfaaikomwBaBcuuooqsogebabdafdfltpjnjdddbaadackcabdbebdbgdbcadbcebbfgcieeceeakgbikieiigigmimmoigeiooiimieaCAyeaacaaabababbbacceccacccgcceaaaaebbaaabbdbdaaabaacaaaeccaabacccccceeaceccgecabcaabcbbbdfdbbaabeaccececeeeggeceeegegeggeaDxhblhegigeecegmibjkxbakoysBgBkBccbjpBdBrBxpfcbeqaiccjtBvvpcfdjabafacjgbagafaicjgceaabgiaddkacgeahjaahaobgmuibpkokqqdlphgapeakccByBtzkjipmjpCyBpBarCaBoDbCpDrBmBfCbBqEdDpBmEyDeDcDlBwBzCbCiBbBdCfBgBsBvhEtBvClBeBpBtBeBgBdhBcChrBjvrrsqCdqBhBarBhBklBeyuBlndBwyxCmuBotysBqkZzHnCjEcCqCiBpCoCdCwEkBqBfCsCvBiEfBhDdCrBlBzCpBnuBrBmEjBehBduDtzvaDrgBfBdCzrldacBakgeonqqBgfdjjeweBcqjbeBdlhxhchfijBcgihoBfflblhmfcgdrafobiccjihaefaclkcfuidbarklKcCqsyyJlCjctcwangaBfBacebcxorrcfudffffbehalDzDrCfBnCzClBztbohBfBzpEyGqIyEqDiByBsCwEmDcFwGoFiczDpEjEbCnErDfCrzCbDhFptBtofgCnwkCbClBiBcBoiBiBqsBgyBkBiBrBjCpfgjCdBxBqBblDcytBaCyDgaaClCqeBkBqwBvBnBfbCseBlDmCaBsCgDiBaBjCbBoCwBkCmCggDdEnErCqCmBmymCqjnEyBhDxCxBblBjtfwBgBkmhviEwFcGaBiaBbBbcBkaCeCgyDlDrEzEpDlBnCzBdnBadBbCtBuoCiBiBiBdBuBeBdBdCaBmBmkyBccmgmkCfBjCdgmbBlzCcpcCyovsCeByBbvCpByhoubCdBlzeCibBlCuBcqyBqpChClyBuiBcsBbDnDzDfDgCmBemcBszxdDmBa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1456</span><span class="name">怡華</span><span class="sec">建材營造</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">15.5</td><td class="n" data-label="漲跌%"><span class="flat">平 0.00%</span></td><td class="n" data-label="量比">0.58</td><td class="n" data-label="建議停損">15.08</td><td class="n d-ok" data-label="停損距離">2.7%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.9%;width:22.8%"></span><span class="pb-stop" style="left:45.9%"></span><span class="pb-ma" style="left:50.3%"></span><span class="pb-close" style="left:68.7%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 15.08</span><span class="k k-ma">MA20 15.16</span><span class="k k-close">收盤 15.5</span><span class="k k-band">布林 14.3～16.01</span></p></div><p class="desc">近 20 日沿月線，量縮 0.58 倍回測 MA20 止跌；停損：跌破 MA20 15.16 或今日低點 15.3</p></div></td></tr></tbody>
-<tbody class="cand" data-i="7" data-type="回測型" data-kind="stock" data-code="4577" data-name="達航科技" data-close="128.0" data-chg="6.67" data-vr="0.48" data-stop="106.43" data-dist="16.9" data-sec="科技-其他電子" data-mkt="上櫃" data-ch="bEqblegogBjhCfiDajDukEnlCDaaIbCrBnChEpDcJgEgChGdJfDvBdEpaDbBvCviFvBmCfEcBjBvmGsHgCiDlHxCtBqCrxDeuFbdBhBtCrqBrFhtkuCeCtmFkFxFhBmCsFgsBoBepCfkuuiaBpqBbBnBiDmeGeBrBcBcBjaCaBcBnxCvgcnlCwfpxpeGmBnBgkCvaBkjBnDgDhDmGyCsIcIwJpImDwChDwJpGeCrBdIcEqBoDwEqjJfCsDcGeJgFuCsFaBoBoBaEpkFksEgChCyndFhaCrEqHyCgzEcyDdkFuBsBiCwCcBwBqDwCgyBkzCelFnFoCwsDjFlBqBndyBylwqhjldByCkrEnnGfEgBbBzuGqCtBgCsobmpfyBzBcCaBmijFlCunyDqyBjBcBkBjBwCnHpBdEzjIcIvuBnGnEqDlCszaBopBepBeaBjBoafuaakafdBeBkBcitisoaazpkrpkptCfcanmjaaaadlBaabaChivvazBaxxaojxBkBxBcpamaskarsBlBwbaCbimpgarBbfoaefqagjcawpcatogaBjaaaaCnpCsBoBjaBeukBjkukaBepffukufbBhapmBiaaharqaBjkbaackmvasbBbBsphaBhfdmoBfmaaphhasxaradmaedjcaBmajaBvlbckgegccipagaggbbaahkkabngBgBbaoxByBjpafuCsufFzaCIgbhjrvBbBlBpBnBbBvClBzBzClCdCdBrBtBvCdBrBrBjBhBfBhBlBhBbxxtrpphfhhbhhllprBbBhBjBhxlvzxvrjhfbdbaikigegebksysmmkikqokgggigkmmeedgcegcbacaieiqwBeBoBcBqBuBsBoBeBkaBRdBeyyywswwwuoigkgegeabbbbaadbeccdfdbffjfnrtttvxzBdBhBlBdBjBjBdBdBhBfBdvvvtrrrnnnrvtrnljhdfbbbaacbaabdfjfbadbaaacccceecigikmoumsyuwosaKscyBaBuBwCmBovBxtBpClddvtnBcBggowygiqcCbDpDvDfBnxzhjhbgegmusuBqBmwnBtBhfljoexBtvxphffagccbcddbaBjdfsukkqmcadddlhpBfBhlnaqekkabacaedcBmBqDoEwBeCiCiBeBycsFqEqJbEyDdCxDnCuGeNyKiGnGuHyElFpDtChDjCsCtFaEfCqDoCqBsBuEnGuPgFiFaClBpCvBlCxCzCsCdBiBvDqBsBmChBwwBbCjBktDmSwEaDrCgDbEyCoCtChBpBdBoChCpDoBiBcwxBdCzBkFiOnCwEjDjKeCnIuDkBqBxBfBnxBrBgBlBarpvFdFqCqCaBpBgCjvBlCmBlCgJyXtStGtRnSjZzFqGeFeFwaGnBfBqBnxBblCnoEiCyBgBqsDtBxBbBvBtrBdmwhibBhxsBiFcBmBgvBzEzBnvgmhblijhmaBdfihlBaHeswqdFnpjanBnjfeucdnrzscBwFksquByEtCkjtDhlCxzafcfbldBmBwwoiBnBhtdicaDqIyGmCeGcDkyFhdEzEzjGgBbBnBlBhBdBjremghxzvzrtppjrhhgecgwBiBgwabcbbgibbbdfddljdagaeqchbgsqssmgigiigccabaigsmkkeeeiabhffffcabdddmeggdbaadcdcsqBeBqkyymqjcEdalfbaakBaBcseljffaaccgaggqkiiuBaugllffhcehbdffbbhdaeiceobhaemkigcdbbabbfbdhbgckecabdbadfjhbddecabbaigecdbbadefcomuyfggdbvhdCCgBMy"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">4577</span><span class="name">達航科技</span><span class="sec">科技-其他電子</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">128.0</td><td class="n" data-label="漲跌%"><span class="up">▲ +6.67%</span></td><td class="n" data-label="量比">0.48</td><td class="n" data-label="建議停損">106.43</td><td class="n d-wide" data-label="停損距離">16.9%<span class="g">遠</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:49.3%;width:29.5%"></span><span class="pb-stop" style="left:49.3%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:78.8%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 106.43</span><span class="k k-ma">MA20 106.96</span><span class="k k-close">收盤 128.0</span><span class="k k-band">布林 73.17～140.75</span></p></div><p class="desc">近 20 日沿月線，量縮 0.48 倍回測 MA20 止跌；停損：跌破 MA20 106.96 或今日低點 108.0</p></div></td></tr></tbody>
-<tbody class="cand" data-i="8" data-type="回測型" data-kind="stock" data-code="6225" data-name="天瀚" data-close="84.7" data-chg="0.59" data-vr="0.48" data-stop="80.27" data-dist="5.2" data-sec="科技-光電" data-mkt="上市" data-ch="bEqalegogBjhCfiDajDukEnlCQsNoPcQkRrOtJrErFlaFgutKjCiBtvFdDkgBiBvChBaBcBhCqBiMnFaLlGaaJxDyJkBvLeChBvtBoEsCkIoDvCiChCoEpBaGzgIqMtfDrDeCpJcEmDyJcOiPqReTaUwFOiBKyBOuBSqBXgBMlSmTfBXzDwTfDwSmDbGyEqBUyBZoEqCExBEtXvBnBnXvBRbBNfBGiBMmBQiBUeKuGyImMhWiCCqLoCJoBBrWiBEtaQdBHvHsCIaDbaBoKtDwChKxaflCcafGiGuDdaEsKyDyCcLgDknfIqaHhaaaIhEdMoCjMuCpJiRmuJjBwLdDeBwBcllDjEdIoCcEyCkJcFuKkIiBoPwEeHwErJyBtHuEyEjaaaaaaaChaaDPcDwPkBYaXcTgDvSlaRrFjBVrBQhImBYaUtBBsHrVoHsaaCPrCRpGdaBOaGeLnXbWhBNzXvCFrBOuTfBAyaGdBIqaNvBEuaQdJfNbCmaaaIwuBmCjBsDeDyadkBiaadaBbaaaaaaEoEvaDdBhCfaBvCtaaaCihaDkDkCfCdahhuhBlaaBfFcCpBvEbaBieCcCcaaaaaaaaaaaDwaaaJqHsBeDmBeCiaaPkaZaaKuaImaaBoaaaaBoBeGoHiaQeaZuFkFuJgHsaHsaCsGeaDwDckaadaaaCqaaaaCcaaaxBfuBbBpaaaaaaaaaaBbaaaaaaaaBbavaaeFwagaaaaaaBfxaaaBskaCfaaaaaNwIcaaIcuQoaaJqSwaukaaaaaaByBeaFaaaaaaaNcImImaaDwaaTgDwByJgIcFuDmNmEqLoKuJqDwaCBbCuDoEiDiCwCoCcBwBsCaCcBoyumehfhpBlChCzCdBltnxpBlBfBdBdBbnnibdfagksqqkBesBiqsBouieffiqsyBmBwCyDuEyMaOcQaSsVcSsUiTkRaRcQgQaQqQkQePuRiTaSiOkFsCqmBtFlFrIpFzBniDqEaDkDyDaDyEgCiFcGqJgIwJaIgHsKiPgNmLoJmGsGiaCAsBaBiBmBcBasssqsqqiimgecaaabcccecccacgccggigkkmmoqsussoqoimecbbdbbfjjesBeBoEeEsFiGaGwGkGsGkFoFsFiFkFsFqFwFwGqHoHoGoGiFuFyFwFmEwEeEoFgFsGoGuGyGyGuHaHwIcJaIqJaIoImIkHuHuJaIyJaJaIuIuaOoFmHkJeDkbBrBxClCnCzDpCnCfBvzfqimoaChJdGhDdBnvBigBktBbCksjhkadjbmuCgBeBiuwivptCpCprriojhcBuEyHuKgMiOcCDmBRkBOiBMwBNaWcSaJmBdDxJlLnNrRxVdYfYvYjBEnBVvNnGrxBexIsMuFaBkaBqCiCyDiBuDqKaGwSgNmOyGqEsBkEnMdUpUpRxMxHnHlspuuzmfjegtbhhebimcBqbbkbaadhgewifqpdbccfdbefehtobehkciBhgoiqezBhqBahmDqoDiGkCcBfvFaBkBdBuBdtnooBcuBeBuCeBbBbBkBpBdBvCkBpZzHiBuBoIyCrCaBwClFtCrDgEzBlBiBdBiBkzCjwutwoalaegidddfhebbcbfccbqabbapaabccicaeehbbfdcaacaaiebaaddcmacccjgieecfyayCmqzeqBxlgeBrjflaagoqacebliocJuCmajDaJjCbakBhamBijBtptBldkddhatjueiiebddfdbbbdbdbbbbababaaaababbabbcaeccaccccccacaabbcdadabcacegiimmBmBmBkBkBksoejjnnjjhhakgjptpprzBbpfgmmkicioowimabfnlcaaddfkecebdffdbbaababaaacacaacaacbaaaabccaeacaaaacaaaababaadabaacaeceeeggBasomkhhpvtrnhffbekihllhdhjjciqsqiiceiimaahhjljeaabbbdFDiZi"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6225</span><span class="name">天瀚</span><span class="sec">科技-光電</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">84.7</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.59%</span></td><td class="n" data-label="量比">0.48</td><td class="n" data-label="建議停損">80.27</td><td class="n d-mid" data-label="停損距離">5.2%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:48.5%;width:16.7%"></span><span class="pb-stop" style="left:48.5%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:65.2%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 80.27</span><span class="k k-ma">MA20 80.68</span><span class="k k-close">收盤 84.7</span><span class="k k-band">布林 68.44～92.91</span></p></div><p class="desc">近 20 日沿月線，量縮 0.48 倍回測 MA20 止跌；停損：跌破 MA20 80.68 或今日低點 82.0</p></div></td></tr></tbody>
-<tbody class="cand" data-i="9" data-type="回測型" data-kind="etf" data-code="00694B" data-name="富邦美債1-3" data-close="42.87" data-chg="0.33" data-vr="0.47" data-stop="41.86" data-dist="2.4" data-sec="ETF-債券" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlGAkyepBmbixjzslaelBgtmsglyufzodjocBaBogkdfcBgBegrkjqqkBmodgBjqoeckivmBdajkedhBhznmcbvqaBlBdejBcbeBhzlgqoBepwntrqsloBamBjbowdCcsCgmyBaBbybpBcBigyBcnthqfphzgaBdqabzBfCdlphqfecqrgbdbBfffbhbbBfBddsjscpbBnCdhfmBpnddlhFnfCeaeddBaaqsccBjcixumsBvkBfdnksgjBhfCdqpEfnvBdBjmfhlBkjnrRpCbBfvltrmBbBvhGjetBrbacaaebdcadaacbdccbcdaabbabaeacbbdadbdaaaofabdciebaabaagbffaaabfbabbbbjbaaaaaahaadabaaddaaldfeabeacabaaaajcabkibnbkaacibjaaafefbakdaccgaaaaacbadjcabcccalceajbaacfabfaeaajlhaadefaabdjbcgdacbgbajfacdcabaaaffbaadaaaaaaaafaaqgcaaaaahcaaabaeacaaaaGAxabaaccaababbbdabcccccccaaacaeegggieigiiigggkikmkmigigiiiegceceeccdddfbdfdffjhhfffhjjhfdbddbdddbaaccabceeigkikkkmmmmomooaGBnacbacaaaaacbababababababababaaaaaaaaccccccceeeeeeeeeceegeegeecgcececcecececacccacaacaacacaaabaaabaabbaabaaaaaccacacacceawbaacacaacbcbdbaababacgcaaaacbekiiccaekkaeccacccbfhabaddhfbbhfjjffiomggegcccgecbadbabfbbdddfdfhdacceabacbimywuwkkeacecgguBxKqFxYuGhDtDyBoLvLxDxCsFhDfDiBpBwBqInFpDdBhBiyFbBhFqDsCmDuDyEdBtBoEgEkBmCmBpCjEaBcBlwClFpBpCrBpChBpCtCkDgEdwCrBsCoCsCaBzFzBqtExlBbCxCrGaCsClBoBiBvClzHiIbCtBkGhEnBuGrCgDgCvBmQpFtRjCfKcDfDaBcZzSnCdDsEgBsClvFuCjDlCtEyGdGpCrBmIoGtDpCeaGaEbqBcIaCeuCrBtFdCgcnBoDlDlxhBlCewsfdCzftBuyqnBcptjgezgctddlfaqgmibBpmbquhahfpmhBujtBepBzoumyonnBrdnCiCsklCeBdCnBqiBfpdEaBkFqfDmFjBbGlJmDkliBiJtGjnurscBseBshnBmgBfdhGzsueBiBaBcedvdlfbjsamwykBaBkydiehgeyByBqBmBakiBcBqBkiidemoBkBismxlddhdbxpBlBjBnzvvBbBxCjCjBnBbxBjnjBjBzBhBfacirBfBdpeuBqyBmwehiwkwBmBqeeoBcuCiCiDmDcDaCyBiBoybqBiyBeBoBlwseBaqmhnzfjdafsbismaoserdjnbboBgumbjlgqiplthbcsmbfBjphhfdbrhzprdcabvBbtcimasqhpbcBawybnheuBaBosBaihramaiuuplbkcBgBcBuBcuqvlxBlpahagdCwu"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00694B</span><span class="name">富邦美債1-3</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">42.87</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.33%</span></td><td class="n" data-label="量比">0.47</td><td class="n" data-label="建議停損">41.86</td><td class="n d-ok" data-label="停損距離">2.4%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.3%;width:46.7%"></span><span class="pb-stop" style="left:40.3%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:87.0%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 41.86</span><span class="k k-ma">MA20 42.07</span><span class="k k-close">收盤 42.87</span><span class="k k-band">布林 41.07～43.07</span></p></div><p class="desc">近 20 日沿月線，量縮 0.47 倍回測 MA20 止跌；停損：跌破 MA20 42.07 或今日低點 42.86</p></div></td></tr></tbody>
-<tbody class="cand" data-i="10" data-type="回測型" data-kind="etf" data-code="00860B" data-name="群益1-5Y投資級債" data-close="39.21" data-chg="0.31" data-vr="0.46" data-stop="38.27" data-dist="2.4" data-sec="ETF-債券" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlFNawbpBggglnnfidmrBgresmaqudtednicBmBioicnhBqmmrsniqowkicBhmoiqfopipnfaaddBfBdbcsjBbubzBvqdsaeBbrjcmuqjsvfhjBapqubBdhuukBuBkBiBcbBcvkilBaBeiwyacambafciogjehetckjabldfgceefBipdjhajcrfcBcchblcndthuxdBppcaBhaidbcaaeBguhkhbsccgBkdddabehhbhdcwasefibifhnkibfieaBhhgBbwjbCrBfaavaaaaaaacaaaabacacaaaaaabaabaaabaaabaacacbaadbaadhaaaabcdaaaacaaaacaaaeaaaaacaaaaaaaaaacaaaacaabaaaeababaafaabejdhcaabebbadaababbaabaaaahaaaaaajaagaeaacaafaaeaaaaiaabaaabaagaaaaaaaacabbaabbaacacdabbabdaaadcaaaaaaaacaaaacaacaeaaaaaaaaceeaaaaaaaFNmbbaaacaabaabbbaaccceccecacacceggiiegiigigegiiimkkgggeigiegcececcabdddbdddffjhhhfffhhhfbdbdbbddbaaaaabaceggiiikikkmkmomoaFNzaaaaaaaaaaaaabaababaaaaabaaabcacaacacccccccceeeeeeceeeeeegeeeeececcececcecccaccacaaaacacaaaaababaabbbabaabcaacaacaaccccavbdaaccaaaaaabdaababceiecacaabckiieedeggaeecaaaddhhdacabhbabffhhdbgoiiceicacicadbdbbbddadbhfbfhdaacaabacakswyquikececegeKmJgKkKrIxIzFfNfJjLqJcKvJgJcLsKiJsJuJsIvMeZzKfFfJjNkKtJcTfPyJsKdJlJjIvMwJgJsKvJnSpIvKpJzKrIxGgPpIxIvLvIzEuFtKfEnEkJeIvSpIvKiKpJzKiKpNvLhMyLaIvKkMiIvJnLhMbIzJjIvLxFhKtKdFhIxJeIvIvJgJjJpJuLjGgJgIxJjIxOcLhLsJpIxLaIvIvHpNkKbJcTtNrHrFdLaNkJeJcEkaLmdqDdjpBpBenBccCgBpbaolggBdsGoeBtgmGblFqCqBlfeDzCvBijcqiCifkjmDvzCalrBeBcEhBhqCxBvBuBgDiBuCiqkDhuBkiBeirBjkBppBasBjghgCrsiBjBdBotnBogekBaBdbffzDewBceaBfzBdvBwjcEkCkCfBzuCnBtohhGfsqaBaBaBcmblnbfghuceuysBcBmBaccanfdBcBwBuBoBekbBcBcBccmfbgmwuskxnfagdepjzBlBjBfBbBbBbBxClBzBlrtBlljBbCfBdxbcinvvlcyBiuBimgadsesBgydhmyBeCiCwDiDiCmCqBgBcwesBgyBgBkBlwoawsobjrndfghqacmoimsenjnthfuBgyqentigenfrldckicdBdpfaedcnfrvrlfdbtBblasmdqqbzagyuwaffeqBcBeqwafhjkdisippcooBkBoBoBiimvttBflafcedCqs"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00860B</span><span class="name">群益1-5Y投資級債</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">39.21</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.31%</span></td><td class="n" data-label="量比">0.46</td><td class="n" data-label="建議停損">38.27</td><td class="n d-ok" data-label="停損距離">2.4%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.3%;width:45.8%"></span><span class="pb-stop" style="left:40.3%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:86.1%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 38.27</span><span class="k k-ma">MA20 38.47</span><span class="k k-close">收盤 39.21</span><span class="k k-band">布林 37.52～39.42</span></p></div><p class="desc">近 20 日沿月線，量縮 0.46 倍回測 MA20 止跌；停損：跌破 MA20 38.47 或今日低點 39.21</p></div></td></tr></tbody>
-<tbody class="cand" data-i="11" data-type="回測型" data-kind="etf" data-code="00727B" data-name="國泰優選非投等債" data-close="39.34" data-chg="0.38" data-vr="0.43" data-stop="38.51" data-dist="2.1" data-sec="ETF-債券" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlFOgkhcogmjljecdmhBknfuamiyajeaifesBkkbijdBcsspBepwpBaBgqheBjjuugryaqatffqlbBfBldbsjlmkBdBlohwaeBhxlsgskbBiBdhfghzlihjfBmkgBoweBsbuxuhBsqglsBencegrBflaoobbelbBjkmlCrllxDhjdbgalrvnnvncrnlBkzeffhvhBbBhwxhvrsdrbehbopdeswrorviphcBefivptwwgnjloucwcgjlbpbhibhpcBffvhhhBaxcBhBdijDnhdfhgfbafaafbeabaaaaicfbddgcaaaaaacaabbfceacajaaeaaadabfabdhdabbadbaaaaeaadadaaaabaaagaacacfadcbdgbbeaacagaaajebhaeabaebcaaacaaafabbdbbeacabaaaaabcacodaafaabaaabaaaaacabaacaaaalaacacaaaaaaaaacacabaaadkbagkaaaabcaadbaaaaecdkbaaaaabheaadabahabaFOobbbaaacaaaaabbcccceccgececeeeeigigggigiiigggikkkiieggggigegeececcbdddabdbddhffhdffhhhddbbabbdbbbbbdbfacccecgeeeggiimkkoaFOhaaaacaacaccacacaaacaccacccaccccecccccccceceecegeeeeeeeegeggeeegeeeceeceececcccccccaacacacacaaaaabbabbbbababaaaaaacaacacasabbbacaaabaabdgcbcbcgigceecaaageeacabeececgbceebbhdbbbfjdbchbhbjdekkicegcaeieafbdbbbhdabbbdbdfdeecacaaaaegiommiigmkiacaSxDtDxHdPoMmDtEnFdDzDqEdDxGvEdEoDpDxDxEtDtDjDxDiDlFmDsQoFwEgDsDzDpDtDpEuDsDtDrErDqDlDpEeFmxDyEhDvDgDpFiDkDtDxDwEhDiDwDeEeDoDtEfDkEwDtHbReHnGjGhFvFyDnDiEtDsEhFrEyDqDpGlDxDpKmDxDjDqDxEfFoEbDiIoEaDwDyFbEgFcDtDmEeDwGuHjGgIwEnEjDsHwFrZzDmFiGwEbaGvdcBoEqCpagtEpDnehsckfaBdghbafnseFcBaircFdvfkbaaklbbgiBbeidvBcojaicjbchchgccicBkFeBqqBalElBpBfpvryqlawtlCseBfbcClqidBwbrasBtmbdjdsBmBcBygxBlqBhIqjsjrhBtgacmowkdjdddgbBamcsmuuBiykkeiaamBkBgwsedswBceyaohmBcBekiBdBjrbbvbfeavzBdnxvBtCrChBxvBbBdnbxBvzxacitBdBhfcsBauBuogcgctvjlpnyBaBeCcCkCaCyCeCgBaBgoBsBsBiosBiBtqggomqchlddbgdyedkeiiqgffhfjhewqcalpeikhglarcqmdhBhBflcclecicnnpchfvBjvhmieqwarcewuufnnmqBaBaqBicfhafvtffffBayuBmBiwBimmrhtiebtjehCmi"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00727B</span><span class="name">國泰優選非投等債</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">39.34</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.38%</span></td><td class="n" data-label="量比">0.43</td><td class="n" data-label="建議停損">38.51</td><td class="n d-ok" data-label="停損距離">2.1%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:38.8%;width:47.7%"></span><span class="pb-stop" style="left:38.8%"></span><span class="pb-ma" style="left:50.3%"></span><span class="pb-close" style="left:86.5%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 38.51</span><span class="k k-ma">MA20 38.71</span><span class="k k-close">收盤 39.34</span><span class="k k-band">布林 37.9～39.51</span></p></div><p class="desc">近 20 日沿月線，量縮 0.43 倍回測 MA20 止跌；停損：跌破 MA20 38.71 或今日低點 39.29</p></div></td></tr></tbody>
-<tbody class="cand" data-i="12" data-type="回測型" data-kind="stock" data-code="6874" data-name="倍力" data-close="74.2" data-chg="1.09" data-vr="0.33" data-stop="69.65" data-dist="6.1" data-sec="科技-資訊服務" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlKYwSxDhGcEbNlBisIcHjCrDjKdKeUgIurBzCbGbJmKeCsLlCaGcCsBiJmErKdEcGbEraItBiEuEtCrErRoDkItqDkSvOdDkCaBjBkEbJjQfCsKwCasDjsEaOwKtEsOvCcCsCaGcCasBjIcDkKeFksEsaYjChGxDvBotEpNwChaEpCitBnEqDwCiDbEqaFjDcBoaBoBoaNbKuDbDcaCBwBnGeSltLoBBrGeDkSyFkIcCrKcHmDkJlOeKuCaMeBzJlCbMeqGuSdIbrIcVoKcHlBzBkItEsEuEbDkCaEaGsBhDjMwIuEsGtDjFkCrDkMuFkGsErBkErBkEsJmGbFkDkGaDkrBzDjJkGtOeIsHlEaEtJmEbGcGrBzEtBiCsBjEsXwBoVoDwChImDwNbGeEqCitBoJgEpEpBotDbaBoDbuChaImCiDwtGxuGxBZnCIuBnSmDvHrNwFjKuaaaDbBsarBjaaCsCbaCaJcBaDkaCbsJlaaaaBaBaLvaarjsaaBjCajaEkaaaGuaDtjjCaaaaDbajraaCjaaCbaaBjaCaaaaraBbCbaCtaDsaCiDwaBeaaaDcIwDcBoDcBeaByDcaDmDmaCsDmaaaaaDwuukBeaaVeaScGeHsDcaCaEcCtGtjBsCsrBjCksaFcBaDjBjaaCsaDbFljBarBsBjaCsCaBaFbsCsDbajiCajFtsEkBrBjaBjBjaraDbImHcGkCtEbBjBjsBaBsCkiaEkasDaBjaBsjBjDsEtCkBrCbaBekkkByBoaBeCiBeakauaDwakBoauDcuCiEqCsaDwkaaakCiEgaBeEgNmaLMwCfClDzClCjChCzCdDfCrEhEfDdBvBvCbBxDpBdlBaBgmsBsBuBuBwCaBqCaCeBmmlhadarfhddjBjCfClCdBrBxBrBzCvCfBrBxBpBpBjCbBlBpBjChBfjlhbdayBwCgByByCcCgBasjbfoesoebbanltxBbBbBbdcouswBcfkgqmDgDgDiCgCaCuBeBmaKQpCgByCgCeBiBgBkBmBkBgBcBayBkBkBeBiBaouertttjhlplnprlhfprtrnlBhphrBdxBbxBlBfBfBjBnBjBfBvxvldjhhhhjbbaecddbaegjnrpprvpvtprpnlffjdfdjlhhhaaecceBcBeBqBeBcBeuwaPsGcFkzDeFeEaCqBoyBsBzhpBrDfElEjSbCpBnCkCmouosmCegBlChGpFlzBaqaibBsdjecdBiDsgfyjoCgEyDqBaccikChDvCrDnFlBtdlpfjaBojBuDsCwDcBuztgcgBbjztfecakavBvCjEdFzhgkfcbBnkedplRgHwHgCcBqCqhdBvCnBnxBazrBbBlBtBdBfBjBjEeDyBsBkquBfDqChxrBiBkBcCpBkBgzBlysBfgorkuBlBlxtfzyrlmesBfBivthmBiijBfBxpDcBdpkpwhqmwBatqCcDlDqBnBqBdkrjBaBqtBkukkgmgpkilpdgkkhmqomBcJcZzSoExJnGsDtCxaDvsnBvCvjrfgicgcaBaBcgahBhBdwicaavnsiafephahhdbfmkcefdfbdehdgkegdhafdkohBeifpaxhaccceaqBcBaikjBdBflfgcieflfjfeaaaefaaadeecaiDmKeHeBuDkxIxGfiDuDrDfBzBtClBrBbdnllBbeByCiByBkBckBeBsBqkmwwuBkqjantrBfxhnrxuwackBfCbBhvpjlBbBzBfaimgisBwsBahagmyywqBeBeBuBuBkBmBaBdBfBlBpBbxBbgcchbbdgoqgqkbegggigxedceEiDgCyqkBaBnxEpCbBfaejiqBkuqmayCeCcBgsgjiumpjaabkfzntxpxlcddhBayccizBlpbciejzfwwwmoqBmgmrhacmkgamkssegdBxBnBnBdpjjukkbgeakomciefbcbccavcfecDkByBgvxdCdBfdHqDw"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6874</span><span class="name">倍力</span><span class="sec">科技-資訊服務</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">74.2</td><td class="n" data-label="漲跌%"><span class="up">▲ +1.09%</span></td><td class="n" data-label="量比">0.33</td><td class="n" data-label="建議停損">69.65</td><td class="n d-wide" data-label="停損距離">6.1%<span class="g">遠</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:28.0%;width:34.7%"></span><span class="pb-stop" style="left:28.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:62.7%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 69.65</span><span class="k k-ma">MA20 72.54</span><span class="k k-close">收盤 74.2</span><span class="k k-band">布林 66.47～78.61</span></p></div><p class="desc">近 20 日沿月線，量縮 0.33 倍回測 MA20 止跌；停損：跌破 MA20 72.54 或今日低點 70.0</p></div></td></tr></tbody>
-<tbody class="cand" data-i="13" data-type="回測型" data-kind="etf" data-code="00682U" data-name="期元大美元指數" data-close="20.94" data-chg="-0.29" data-vr="0.04" data-stop="20.82" data-dist="0.6" data-sec="ETF-商品期貨" data-mkt="上市" data-ch="bEqalejedzeBpfCbgCqhDfiDqjEckEolCYjBiufaCstcwBddBgBauBdpBqBfgrhkumbBfwaChBaBvBuBbfBdtBaBaqBvunfbBmalBwbfeacjdsBaBlBetBaiBqzBasbfeBtBgblagBrkikBasCbztmwerdBjkeggbwvlfoCafeBqleuiBcjqrchabmenlediaaruagsedpdqanuebjjtacBxxovzbBlkdeaaaBlbaajBceamBdacaaaianbcaaghBlcmfaaaaaaaaaBmlcaaCdadaacaaaaaaaaaigaaglaeadabafcataaaabacabdaaacaagaaaaaaaaaaaaadaadfaaaaaaaaaaabaaaaaaapaabaaaaaaaaaabcaaaaaaaaaaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanbakaaafcacadaaaaaaaaacaaawaaaaaaaaaaaaaaaaaaaaaacaaaaaaacbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaCZfdbbbacageeiiggegeeggeegeaccbaabbfdffbbddbffdbbbcacacaeegaceeggggigeeeeeceecacceeadbdbdbddddddbabbdddacgceceigiigggegiggaCZxbabbaaaaaaaaaaacaaaaacacacaacaaaaabaaaababaaaaacaccccaccaccccccccccaccacaaaaaaccaaabcaaaaaaacaccaacaccecccccccccceaceacaBpddhbeeaicbbeicaeaajlhffjabbgbgceakkcabccaadhdhfcaccccbdeaedcbedeiceebabbdfdafdfbaekcabbagcaaabaaaahlacmggkimegcaadadjnppBeqeyFdCmCbSxGkCetZzCkJmBhIrkDxFdEnlBtdBmoBoyKvgBvnFzfzdefBtmgfgDkwdBjBrdtgiigDhzgqBpBlKsBpynqBddvddidDindfiilfDodqddDhBbtfddidizigeetldqfCgfEkiBdCudtdBbBbDkHmvfdaBfgrjdBuoqHmCeBdrJoGpBghDeKfqBrBiDhoBnBlBpmhEglolCcEhirdChqdacaqeamoBhbcjnaBcgaeotDyocjhDvpadfhaBaeabcBdbaBkbcbbbkacaBhfhcicaabbaaecqbBsdkgbBlbarBgCsihjhGbqBeuqCsBoBeBqiaBaBoBsijyhfvxnckexddCbvCdhBbBbBrBxrkwtchjhBayiBwBiywqoebmBehqdqsBumBeBiwkiBhdhrrlBtBdrhoyzBrBxBbfbnpBlvndecuahjeBuBgBeCeBiBcBmBiBuBaBegehjjdbpxhowkgBwmemrteoqpBbevpxxhgketaaBlfBhohdprmBeBidmcccBcugBisgcbdllaorelggBcdimajjBphjrldBfnaiwBcrBbBbhoqactagmqkyefdiBmwmBiickeofavrvtrhfntdBii"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00682U</span><span class="name">期元大美元指數</span><span class="sec">ETF-商品期貨</span><span class="kd">ETF·上市</span></th><td class="n" data-label="收盤">20.94</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.29%</span></td><td class="n" data-label="量比">0.04</td><td class="n" data-label="建議停損">20.82</td><td class="n d-ok" data-label="停損距離">0.6%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:33.0%;width:18.5%"></span><span class="pb-stop" style="left:33.0%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:51.5%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 20.82</span><span class="k k-ma">MA20 20.93</span><span class="k k-close">收盤 20.94</span><span class="k k-band">布林 20.63～21.23</span></p></div><p class="desc">近 20 日沿月線，量縮 0.04 倍回測 MA20 止跌；停損：跌破 MA20 20.93 或今日低點 20.94</p></div></td></tr></tbody>
-<tbody class="cand" data-i="14" data-type="回測型" data-kind="etf" data-code="00849B" data-name="中信EM主權債0-5" data-close="38.33" data-chg="0.6" data-vr="0.03" data-stop="37.44" data-dist="2.3" data-sec="ETF-債券" data-mkt="上櫃" data-ch="bEqalegogBjhCfiDajDukEnlFKopbhqshllteaakvBuxoowruuntByBrkeiaBmeiejamBqgBbBgvwoeBiuzctkmwijoBxBazgffgedBhvrqbcBfokzBjkfwlcpBnbougybBcpthcuxwioBrcwqsBeBgBsBqgecliagBwahBuBjhfcnBjfnfCtnnffeBdadlrdhnCbaBvecczpvbhnlcfxpBkdgbBfpBbnjpicdtprnjmwBbdfhcicrpheBdrvlpdbfBhvrhzvnpftkhbbnlBhlvjaBexhvnBdpBfBlBbvhtnrcCjBhpacbgdbbcfbcdcaaaacebaebbffaaabdbaffaadfadfcchbaabbaaafaebcaaabbcbbaicdhaadafcfcbafbadcaacadcaiaacccbdacaabaaagbbhaaacafaakaaaaaaaaaaaafaebabaaaaaacaemaaaaaaabaabbaaaaaaahaaaaaaaaakaaaaaebaaaabaaaaaaaaaabaaaaddaaaaaaaaaaaidahaaeaaaaaaaadaaanaaFKeaabaccaabcbbbbaacceacccccaceecgggiegeigegegigikiiieggigieececccacddddbdffdhhfhdfffjhhddbbbbabdaaacaaaceeggikkikkkkkommoaFKoaaaacaaaacaaabaabaaaabaaaaaaaaacaacacacccceceeeceeceeeeeeeececeecccecceccccaccacaaaaaaaacaaaaabaaabababaabaccaccaacccccatbaaacaaaaacabbcadacaeieaiacaabecedcdbiibgccagegbdhabacdfhbdhbjddbiikggeiabacgabadacbhddafbdbbfbaaccaaadbeqwBawqoggccecaeJvDzDaDbEyDcCgFbFnBlBoBlZzBuEhHeGzEfEhDdCxEeBrHaCwEiCvCvDhHrCsFoCxGmBwEfEhEgIjEmImIhBmBoBlBoBnBoDqBmBkFnIiMnFpCjgDeEzCyEjCvCwHdDbCvHaCvFdCzGzCvGxDnHaGyHcBzCvDhCvEsEeDcEkDaDbHcEgFuHcCuGyFqEeEiEgCyCvCxDaDcDbGyCvCzFsbCvDhDrCyFnEuIrJmEfDxkeaEwknciCrruBaBjphIiBlBeCgCgIrBalBtBbzBcdqnmBlBwpBccBgChqnouBcBsBqBdCrBfCtCrawabBqCuDoBqkCbCbCzBbuBcdwcpBsavaBqBrBsrBqaBsBxhBlBrxwcmcpBemoBqbbopBdqBpBbnnlcBqaaBcBfBpegBbCguCeCiorBtDjhDrmicoBaocfvnhhenBaemwBkmBaBkqdBihbageBgBayugcgBkBebufkqkBgBkebvlfiifcBrpBlBbBfBdvrrBrCbCdBfztBlrfvBrzvedcjBjzfquBmBeByBaiceubsuBclfmwBiBwCoDgDsDaCiBquqgeBiweBgdkgbkqefltlfbghyckowakqbtsvlhbdwkiejlbukrepbeaqqnnBbpfgghaBjhvjjjagctvtcimfkucreeyooerhkBayBiuBgijlhglggmvnemqBcBiBqBsuclBbzBbzgftidCsu"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00849B</span><span class="name">中信EM主權債0-5</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">38.33</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.60%</span></td><td class="n" data-label="量比">0.03</td><td class="n" data-label="建議停損">37.44</td><td class="n d-ok" data-label="停損距離">2.3%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.9%;width:43.6%"></span><span class="pb-stop" style="left:40.9%"></span><span class="pb-ma" style="left:50.2%"></span><span class="pb-close" style="left:84.5%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 37.44</span><span class="k k-ma">MA20 37.63</span><span class="k k-close">收盤 38.33</span><span class="k k-band">布林 36.68～38.57</span></p></div><p class="desc">近 20 日沿月線，量縮 0.03 倍回測 MA20 止跌；停損：跌破 MA20 37.63 或今日低點 38.33</p></div></td></tr></tbody>
-<tbody class="cand" data-i="15" data-type="突破型" data-kind="stock" data-code="9949" data-name="琉園" data-close="25.1" data-chg="4.8" data-vr="3.32" data-stop="24.19" data-dist="3.6" data-sec="傳產-文化創意" data-mkt="上櫃" data-ch="bEqalegpgBkhCgiDbjDvkEnlDOiBytBnBxCiDlBnBotEpjjBdDcByCrBxCiCsBdGeCrBoaBoaaDwSmuLdCsHhFkByLoBnDbMsjDcFkWrFtjGdKjBoajjaaCrEfBoCiBdtBokByDwjBeaaBnFjkutCsCiByaGeGdBdaBeBxkDcDbtBetBejuBdatuaBykaauChajjFuEfDcDlBdajBdEgChjjaIwCiDluBoBdLnDmBoBnCsFaChaBeDvBxuBeChCrGnFjCsByajaaDbSlBdFuDwFuImCiOzFktIbEgSmFjXmMiChGeKkBokBoktaIcIwBnChtjkChBxDlDbFakaFjCsBeuaDlDlBxaFtDcFukBnkakautByBdtBnBeByBejaBoBxaaBdjakaFtCiDbauakFkCrDwajaIvpaaakaaaaaaaakCsaakaBypupauakfBoaHsCsakzCdaaDwDrzaBtDwaaaCdCduaaaaDhBofByBopBtBeBjzCdaauaaaakzaCsfaBoaaaaaaaaaaafaaCdBoCnfakapaaafkaKkkpakfaaaaafCsaBoafaakBtaaBokBjfuBofBjzffaauapkkapuaBofBtpaBtaazIwBeaCxkaazkffkBofuuaaBeCdaaaaBjBouakzukakakfaaaaafBykafafaaffaafpfffpfkakaByaaafakfakapkaEMmDhEfEfEpEjEzFbEhFdDxCpBpxrrrrrlhdfaaaeiiBkBoBcBgyBaBaBuBsBoByCcBwCgBcuskdhBdBhrvlxBdBrBnBjCbBxCdChxrphecfdbdbgomskkikebeadaaiiigeabbhaecccabaiaiaababeaabdiaEDlaaadabdbhhjjljbhllnpjdffdbdaggfdrxvnrplpnrBbBfBhBlBpBlBpBftjdfffdfddbbaaccccbccceceeieceacacaaabhjffbfhjjhnnnrhffbceacacacgccegaBNhBwatCdDjGbIbHpQtNdItCrihrnavxhjndcakkBaGeDwqslekBomfBwwBoBmBfBjBhzowBoBgBeBcuBgBomaeBtCnEfIvDbCfCvBjiccaaaaefbBidlhhdagbabalnlvhaaaBteecgbafawagaaccebaacaBgomdfchgebetdegrlcseieebedgdcgmBmpkhggedfwpZzCtCiwhmBkpempmhBakgjejlgedgcdggdhccfiCkfgigccfcgfcbbbbbjjkwgcmbcbeccbiLarxrmcgdbhbinahebcdbbabagbacgdagbbdchabcaaaemgcablddageKiBawabKfnrfccjdiadabfaabbadaacbcabacwaccbxaadacababbaeceicbabhbadaacEkgigcEjdhfbaaeiNflhfdgceikcegiouoiquqBcsuqsqosCeBskodgiBeugBgwuBaBdBlBdBnCbBlBdxtnjlphabaegkqoqmkghbbaekmkwccacbagbdabcacbabaaececebdbbkbgdfdddebbbbsHtBeBcywyqoqoeggemmeagiemccaaadeBeqnjvhfochmcceBnBlzzBhnfceikgaimkikkkokiecblfdbcggemffdbfdefdabaaaaadaaeccacdbdaibefdbdbgabaaogzi"><tr class="r1"><th scope="row" class="nm"><span class="tag t-break">突破型</span><br><span class="code">9949</span><span class="name">琉園</span><span class="sec">傳產-文化創意</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">25.1</td><td class="n" data-label="漲跌%"><span class="up">▲ +4.80%</span></td><td class="n" data-label="量比">3.32</td><td class="n" data-label="建議停損">24.19</td><td class="n d-mid" data-label="停損距離">3.6%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:75.0%"></span><span class="pb-risk" style="left:41.2%;width:55.1%"></span><span class="pb-stop" style="left:41.2%"></span><span class="pb-ma" style="left:41.2%"></span><span class="pb-close" style="left:96.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 24.19</span><span class="k k-ma">MA20 24.19</span><span class="k k-close">收盤 25.1</span><span class="k k-band">布林 23.57～24.81</span></p></div><p class="desc">今日突破，布林縮口後；停損：長紅 K 低點 23.85、MA20 24.19，取較近者</p></div></td></tr></tbody>
-<tbody class="cand" data-i="16" data-type="突破型" data-kind="stock" data-code="1528" data-name="恩德" data-close="27.65" data-chg="9.94" data-vr="2.77" data-stop="26.1" data-dist="5.6" data-sec="傳產-電機機械" data-mkt="上市" data-ch="bEqalegogBjhCfiDajDukEnlDXtBxHhBdJqFjDvEqEgFkIbGxFjEgSwUuFaNbJfNvBeGntkBeuBdkBeEzBxCrKtEqkDbGoBoBdJpaBntFtDwEzLdDbBoaChEfjJpGdFjHiDwDcByBeaDmaDcaaChDbBdujkBnFaDckBxBnByEzDmaOqGdHhOqQeKkCiGnDwSwGxDvBnkCsGnBxEpatCrEpDlRiJpEqFaDbGyDwFtKuFtGnPaNlTgkFaHsBeJpGyDwBxBnDmKaIwFuDbIbBdPkLoJgHhaFkDbEgDmGyBejkFkjFaKkCrBeDwGnBnBoJqaDcCiEqBnFaJgEgtuCsDmkFkIcDcBxDvDvBejBeBdaDbBoaEqDcutaBeBoEptByCsuCrFaDbuLxLyGoJzNlGxBdMsDvLnJgEgaEzCrDmCiGoCikBoBoDcPjJqBeIlFuEpByCiIlGykSvIwKjBepfEgfCnaCiBjapaBoByaaaaCizBjElzBjzzfBjBoazpaBokCdBepBtfBjkBoBekaauuukfpafBtfffkfapBokBjffBeBjukpafzakpzuffaaaaaCnFfakaCduFfBeCnkkazBeffBeaDwEgEbCdCxGtFapCiCnByBoaCxupkDmBeBefzBtpBjpafuaaBeaCdaByakfBjkBtzkfkfkakBjzfuakCsffBjEgffpkBtfDckuzupCdpupkkBepakkBefByafzpaaaaBeaafappukByuppBjkuaufppukfaafCdkfpBtafCnauuaECunBxBvBbzBlBlbskhBhBnjiBcmmadhbcjacdhtnhnnBlCpCpBvBlBfBfBbzBjBfBlBzCdCdBxBxBzBlCfCnCpCpClCfBrBrBnBhBbBbvhfnnjddgwBgwqkicgcuiasBqCiCmCcCiDgCyCoCiCiCmCiCcCcByByBaBcBiBkedaeiljkcdkcBcaDTkdfnagkmmgieegsBaBcBawmoikigikkoggdfjjfjjjpnpBbzxvBbBhvprxBbBjBlBrBjBfBbzzzvtvvrvzBbxvttBbBjBjBfBdvxvtnpvnfdaaaoiiiegegegegeeqmoqsuwBaBgBeBaBgwBgaLtqphxcnCbcpvsBcBdzBuEkBemaaicdiabeeiomBoBasCpGlEnDbqbwqBickCgBymqqBcBsCmCuDeeBhCfBjBvCdCnBxDfCppjtvpddfxCtBfxnfbfaDguaCeGgGwFcCkCiFiCgBkwmaBhBrDfDhEbBvDdFxDthcabeBptBcgfBkaCuCnDvDrCqDfDcBoBzCzEeDbCzCrByFnHoZzGrEiCtCoCnCaBnBfCrBbBrBpCcBgBcBsxwzBkvuzrquBbnnBfwmpnnmwBhyrmknihjllkjijjhhfjmmkjihkhfBwDtBbFcIiTsPlGhEeMlTbDxEeCaDrBuBnBxBjzBfBeBcElIrCuEvDwGqUpGuGbFdDaKvGlRkaDsxahegxpckaoijoBuJgBoBaBdBzJhBxBbpandakpcahldejaabhacdbgafaafdeiecbdhfdbcbcaabababacccaababbsBkgByDgHeEsCcjBqfEpvvDnGxxxfBbfdhBgDcqBmBcyEuBqmoBlDxdEoiCctBfzblpbgsdpvjBiCsCmydBfvBhztnhhfajlnBdnhlikglhhfnajBbznhhlfvzBbbmswyyBaBaBcywmgegggeosqkeibeeBiodBaCcCmCayBaCeBaiadbrvBdzzBbBhBjipdgdkqbuanupBaChdlhqeaksucjnaBiCgBoavBnxBbrhbceegbbbraecqokhbbahgdplaeeagjjjmwwwsmqimecdjjffbfeieddblabwcnoBiBguhfuhtvvnzxzpnlnnyakqgoqaqblonwdGkFa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-break">突破型</span><br><span class="code">1528</span><span class="name">恩德</span><span class="sec">傳產-電機機械</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">27.65</td><td class="n" data-label="漲跌%"><span class="up">▲ +9.94%</span></td><td class="n" data-label="量比">2.77</td><td class="n" data-label="建議停損">26.1</td><td class="n d-mid" data-label="停損距離">5.6%<span class="g">中</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:86.9%"></span><span class="pb-risk" style="left:68.9%;width:27.4%"></span><span class="pb-stop" style="left:68.9%"></span><span class="pb-ma" style="left:47.1%"></span><span class="pb-close" style="left:96.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 26.1</span><span class="k k-ma">MA20 24.87</span><span class="k k-close">收盤 27.65</span><span class="k k-band">布林 22.42～27.33</span></p></div><p class="desc">今日突破，布林縮口後；停損：長紅 K 低點 26.1、MA20 24.87，取較近者</p></div></td></tr></tbody>
+<tbody class="cand" data-i="0" data-type="回測型" data-kind="stock" data-code="1777" data-name="生泰" data-close="77.1" data-chg="-0.26" data-vr="0.71" data-stop="75.78" data-dist="1.7" data-sec="生技醫療" data-mkt="上櫃" data-ch="cEqalfgngBihCeiCzjDtkEmlJYpCfaFeatusaBlusBmrsBmBlBmFbHgrraCwaaaFtsarFdDsBlsBmIuIaFwCyCeBlCdDqFkChGeCiuaDbChDbuuuutBoMiGyBoBntaBnaDbatuBotBnGyBnBnChBotGyuDvuaaNbBoCiBoDcBoBnBnBoChtDcuaImaBoCiuCiChEqEpFjDcDvBoChKaCiCiuuBnsCgaItaDsDqDpaBmCfrCxDrrBlruDrCdDptaCvaBlBlFcraaFeDraBlaDrJlFcCxCdDqBmDpFjCiGxFjtDbtCiCiGdaatBnBnKtBoCiChuBnCiaBnEpDbtChBnChIlaBoCiChaJfCiBotDvBnKaCiBnBnGdBnuDcaDbuttDbGxaGxChBnBnBoDbtGeuGyDvBoJzDbIlBnuBoBdakaCfaaBmtaCfkBmjDhtBvBcatasCeaaataBvajaajatjBcBcjBckjaBeauBokaaaaakBykauakaaaaaaBoaaBoaaaaaaaaaaBeaaaaaauuauuakkaaBeaaBeBeaBoaaBeuakaaaBoCikByuakCosaajkaBctjktatjktaaaaBdkBcsakkatBlatjasaBwatCfEbtaCikkBeuDmCiEgBoDcByBeBeaaByCikEgaCsDwuaBeByBouaBeDcDwByCiCiaCiBoBoBoDmaBoByBeuBeCsByByaaCiByaauaaCiCsByBoCsBeCiByCiCsBeuaByEgCiaJYubbfceageiegiigkkaaimmmkimiccecfddbdisBiBaBeBeBaBcBiBgBmByByByBwByBqBuBsBsBiwqBeBiBoBmBkBaBcuokmquywBcBcwwueecaceenfdbcccafffaaccckkmqBcBgBaoqimkwBcBgBeBcBaaKAwdfabcaadhfbbeacecbaaaacbcbabbbdbbdbegkmoomkqqqsuusqqsoqsoqwBaBaBayywywuwwwuwwwwwwuyywuwuqsuuwywywusommooqqoqmmmikmmkqqqqskaCvccBbecbgefaagheenaaqentqkgebbhdueigcqCkCyDcCuBwBeBoCcBiByBmBaojBxBzCxDrEpDjBzxBkCyCcsowckeeadjBbBfzBjBtCtDpjomaeceBmsicbaabdaeaaakiyBgBgBmbqbnbfjpahlfhzDgKqGhCvGhCkCkCvDgIaFwBtJtGsJcTbVwIaIlDsFqEdJiDgCqGcBzMdJiBiJnSqEzJzCkGsGsPjVqEzTbNfMoLgMjQmQmMuIrDgGhCkHeKvEiBnEiGyHjGsRcEiDgIaDgBzGyDxBiGhGyIgDxBnJiFqMdHeNwIlZzOhMuLsMdVaWyDbJnDbIgDsLgOnCqCqwEzJzDbWcGcDmIlNfFwMjNfHjOcLmLmPvTbVaPjRoUoNwMoaEmCmltBojDfBjesBkhCuBkmFiIarsCdFjHboCblgxBeCklBkGqCvikBbEtEeEqBcEyCqBdEdCyzBicBbDpEbFpCfwmBxubBjBaGeaBliBjGbBcgCrBgCamaeBenBqBiEyjIewCixBmBxDkDvvDrFbHrDiCafCfBdClBveHwCcppEcGnCoDyliCijBcEsCuBoCkByCbDjixddiieegeaceecegaehieccgeeclhffpffdasBeBkBiBesimsisomedlppljhjhuBawmecffnnnlhjlcbflhhggfdddBfvnhaebdbdfaecsooqmmgmbnfnhlkmokkcmfdiccacabbacbacbahgcbaccabjhddjcbceuywskahdchcadfnprlhdbdauyoeddjhnhjdabdiebdabmibbaaxjbekkeaeabgeeqkgicedchrflfhmmkgcbdNsBqBaEqakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1777</span><span class="name">生泰</span><span class="sec">生技醫療</span><span class="kd">個股·上櫃</span></th><td class="n" data-label="收盤">77.1</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.26%</span></td><td class="n" data-label="量比">0.71</td><td class="n" data-label="建議停損">75.78</td><td class="n d-ok" data-label="停損距離">1.7%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:36.6%;width:45.8%"></span><span class="pb-stop" style="left:36.6%"></span><span class="pb-ma" style="left:49.8%"></span><span class="pb-close" style="left:82.4%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 75.78</span><span class="k k-ma">MA20 76.16</span><span class="k k-close">收盤 77.1</span><span class="k k-band">布林 74.83～77.5</span></p></div><p class="desc">近 20 日沿月線，量縮 0.71 倍回測 MA20 止跌；停損：跌破 MA20 76.16 或今日低點 76.5</p></div></td></tr></tbody>
+<tbody class="cand" data-i="1" data-type="回測型" data-kind="stock" data-code="6952" data-name="大武山" data-close="39.6" data-chg="-0.5" data-vr="0.7" data-stop="39.19" data-dist="1.0" data-sec="傳產-其他" data-mkt="上市" data-ch="cEqalfgqgBlhChiDcjDukEnlFOlDvjuChBejktBeBxBxaCiDlBeDwEfaChCsDlChkBoutjkkjBdkBnChDwaajDvkaChuChCiDcBojkjEfCsjDlkHrCrOqChEfLoFkKkKkDbDvDbEfJpDcCrDwDmByCrBouBeBytIlJgIctBxatBxBoByByuEpChkCiaauBdCsaBdakaCiBnDwBnuChGekaCrjBeBnSwuByDvCiJqGyBoFaHikCsaBoBeFaDlCsauChBnBetBykDckChjDwkChCiBoDvDlChDcDwEftCiDcBojaIlkkEzByatBetMiFaGnChBnMrBoKjFjFkBoDcHiEqGdBdHhEfBxBnHiGnBdBnBxaCiFtuIlChChBnCrBnDbtEqCsaGdajEfBeCrDvCrDlBeaGdBnGxEftCiBojaaGnBntaEvaaCnaaBjByauapaaCxBtuBypBtaBoCxkDhBykkfBjkaaakaBtaaaaCiaaBjfaaafaaaaaaByazkGoaaEqaBoBeCiBjaEvBtaaaakaCsaaukaBoBoCnFffafazaaaaaaaaapCxCdCnpaaaBtaapaapfaaazaaBjaBefkffBeaCdpaaaaaappByaafaBeBoufauaaaBtFfaCikCizkBtaBjEqpaDhDcaaDmaCxaaaDhzaaBeakCiaaafakaaBoBtfafByaaapauCxzDrBtpaaaaCnCnaaaaBouaBeazuaByaaBtapaaFSlttxBdBfBjBbBfzvxljjdejjpjjlnhhjjhjhffjjfldfhlffflhdbbbdfdbdhpvbafiuBeBwBqBgBauiooquBcyBkBqwBcBiimifdcegwuBawmgkkkiigwibbacegieebmqqiimgaFYxxttzxvxvtxxxvxtprpllnnnnnlnlljllljhhhhljllnprpnnljlhhhfhlfhjbaekigeebcaccgecegggcimkkkkiikmmkkikkkmkmomommmmmmomqqqusooaJasocdBfCdBhClClBvBvfligdabntkwkeabbdldcafmdBfhlmhgukscdbdfdcdbibBqBudacuBsEaFkDeBwBcmbajfblrCdDlxBnDhtfstlcierdtfhfpljjdhDdnfbaaidoggbBaogcdafLfJeGeEvEoFfCgCmDtDfLfHdJrBkXrFjGrFfCzEiDmEwLrHsFyDtDtCzDaJtOkFrJxHlJjDmCfCkDgNvDvDvDtFbEpEfIiIvHfJkHuDmGyJoCeCnMbDfZzFwFdQaEhOvUcJlDtFiCzEsFjDzCyCevBzBeGdCzJoBciDmFzBoBhDaDtFbCkEnDfCuPmCzoFhoBjDmEbDaFkCtCgMmDsDuCroClBpBqCuGfByCkEaCrClaIuicBfCjCjCtBllnCkCaCwxIgCjdBtqHtrtCqBwsclDlBxBoEiuCsBubEjBjCzBrBuesosDreBuCcwByBmBztBaCxCbDkBlGoBoBaBqkElFsBuExkErGdBrcxhBnBjBbBiiDmjhBbBgDfcBcchiBicjEegBnuvFrgBkxCaolDiirarDzvvcCgfiBabBlhBZhBdpurBaBcBuBgCoyhiCohBgEmowvCavCdxyBuBeBaBmBwBmoBcdBpCeCaBuBkBttjBvnBxqDgEcDcDaCeBnBcsCbBdGvHhGiDinJcLmRiVqOcHiCqCbJzFxHhDdaBcBrndmBmeHbBoHiEsBqulCjBdeBgBcDhExDxBnBnBnxBxkcBdBdvxytCigqBpDkCsBuBbBlnBzDpdgBibBgBeBiuBoaxjBqziCyvjBpwBnCfvwBiqiquklavBxBmBaueChBbnBpfBjBaCyDaBqBeiCtajCnBhFnEvHaDinHgHwKwMeDqClFrIhMzHfGtCduBozekuBocFrCiGoDcapBnCtBfcyqCzDrCdeceqhBoBaddecBmbCigmBjCwBusBtBrrBpdBkDcBaDukacaakacaakacadaakacadaakacaakacaakacaakbkacaakjacadaakauapa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">6952</span><span class="name">大武山</span><span class="sec">傳產-其他</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">39.6</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.50%</span></td><td class="n" data-label="量比">0.70</td><td class="n" data-label="建議停損">39.19</td><td class="n d-ok" data-label="停損距離">1.0%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:38.1%;width:24.4%"></span><span class="pb-stop" style="left:38.1%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:62.5%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 39.19</span><span class="k k-ma">MA20 39.39</span><span class="k k-close">收盤 39.6</span><span class="k k-band">布林 38.61～40.17</span></p></div><p class="desc">近 20 日沿月線，量縮 0.7 倍回測 MA20 止跌；停損：跌破 MA20 39.39 或今日低點 39.5</p></div></td></tr></tbody>
+<tbody class="cand" data-i="2" data-type="回測型" data-kind="etf" data-code="00634R" data-name="富邦上証反1" data-close="3.47" data-chg="-0.86" data-vr="0.69" data-stop="3.39" data-dist="2.3" data-sec="ETF-槓桿反向" data-mkt="上市" data-ch="cEqalfgngBihCeiCzjDtkEmlLpciiebfgdddelilfkiqcbcrfcefhiedobjbwfcgfbmfniyllhbgambghcbhejccahkfckcdkafabefichaecbececadahegsabgdaccaaiwjbkaqnebebmdfafffdecacaafgfigjfpdlbqeddegjaepagapicdcejgkfpgebcbclcfddcmaibbcefefjdcjagbabaffeadbacabbbcbahfjeafcbdabejldcdfrkdeaghcdbbaaaaacabaaaaaaaabbbbaaaaacacbccacacbaaaacaaabbbaaaaccaaaaaaaaaaaaaaabacaaaaabaaaaaaabbcaaaaaaaaaaaaaaadaaaaaaaaabfaccbbcaaacdacbdabbabaaaaabbbaababadbccbabbcebbcbaadbcabbabadbaadabccaacaabbabbbcacabbaabbabbbaccfaaacbaaaafcaababbaaababbabbaLxbaaaaaaabaabaabaacacaaabaabaaaaaaacacaabcaaacccaaaaaccaaabaaabaabaaaaacaabaaacaaacacaacacaaaacacccacccacceccccececcccecaMkabaaabaabaababababaaabaababbabaababaaaabaaaaacabaaaaaacaaaaaaaaaaaaaaaaaacaaaaaaaacaaaacaaaacaaacaaacaacaacaccacacaccacaiaabaaaaaaabcaaccaacaaaaaaaaaaaaaaaaaaaabcaaaeadaabaaabaaaaacaaaadaaaaaaaaaaaaaaaaaadaabcaaaaaaeeaeaaacaaagaccccbbbcaaabBbDvIzEfCcBeEyBmDkeFfCiKtCtyEtEbDaRdBcBwBgFuEfBzDpBhBzBsBwEnHhGpFjxInErDvCgCmDlUxEjHtEoOpMwEmEwBaBzBcCiFyJrOvDvEuLaFrEcCqZzCfHcJsLlDnUvHyGnNmDciBkdFojDfhfvbBdgepBqBgudbDrDgiCvnpBssdqmgFjBzFkBtBayuHkCwfcBqEeCfCrBnaDvbwjacmCzhtBqBbDsfifsDbFucBdBdBeFfksaBlBbakCkBwBmjBqBbBbBhsCbGoeCgwEmDfcBdBlFbErvmDmFcBeyCcBpEhlImDloCgDoIzHmkBhudIdCpCpDdBbBelcBxdvaabqcgbduwfBcgBfpcBbcbnBwuBymiBtlumhhiBhfBaogBPbkDeFkFuEgBuDkBsgvsCxkDfEbeCwHkGoEqEiCdDnCdhBzDxlBahEgCutBfGaCuCwEaBggDuyDrnGwBmCtErElBtBjCoBkCujgnCxBfDzCnBjzDfqBfhCyDaBeEaDcoilwBfBkBqBhBbiubBcBkCeCgBofhCvBduGaEoCsDqBisuwibCaHyCqyDiCaFyhizfBjByhCtCvwCyEeDqBqrwtBtCfnDjbCxCzyCyGaEeBuBcEfEnClnBtCxkBmeDuBwBjBjEoBeyBsxBlBqxElBbFafDnElDjlbDcBmCipbpClnCtxekBlBycuDgCqqCuBovvBhaBruwBrBfeohswBiBaiBdzCvxwEwCsqBitBftpxBbuFkeBhwjCwCrBpCjBhBzBexCrdqkBaEYwakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00634R</span><span class="name">富邦上証反1</span><span class="sec">ETF-槓桿反向</span><span class="kd">ETF·上市</span></th><td class="n" data-label="收盤">3.47</td><td class="n" data-label="漲跌%"><span class="down">▼ -0.86%</span></td><td class="n" data-label="量比">0.69</td><td class="n" data-label="建議停損">3.39</td><td class="n d-ok" data-label="停損距離">2.3%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.8%;width:22.4%"></span><span class="pb-stop" style="left:45.8%"></span><span class="pb-ma" style="left:51.4%"></span><span class="pb-close" style="left:68.2%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 3.39</span><span class="k k-ma">MA20 3.41</span><span class="k k-close">收盤 3.47</span><span class="k k-band">布林 3.24～3.57</span></p></div><p class="desc">近 20 日沿月線，量縮 0.69 倍回測 MA20 止跌；停損：跌破 MA20 3.41 或今日低點 3.44</p></div></td></tr></tbody>
+<tbody class="cand" data-i="3" data-type="回測型" data-kind="etf" data-code="00646" data-name="元大S&amp;P500" data-close="79.55" data-chg="2.25" data-vr="0.57" data-stop="78.26" data-dist="1.6" data-sec="ETF-海外" data-mkt="上市" data-ch="cEqalfgngBihCeiCzjDtkEmlKWsCsuEzuBnGeByDcBntBxEqBykBoFtByKjCsEfDbGeHiDcBxDbkEpkDcGdGoDmCikBoDmByBnkCiBeCsCiGdkkCiCrEpFkIbDcFtKuEqGyJqDvBnDmkDbuBeDbHhBdDmGdaBoaattBnChByIcFjCrDbtBdCiktBoCiBoGeaDlBxByCsBxaEqCiBoDmBdEqIlJgCraBoBxBnBytChDbEpBoNmBxaCijBdkDlBxBnBeBeCsChtChjBotCiCrByChkBntkCsaEqCrBdDwFtCrjaBnBxBdCsBdutBdtCsjDvtDcDmBnByBeBdChEpChkBeuatBejBeCiFauakkBnBdBoBotBytkBxaakBdBnBxauBdkBdDbjtGoBnDbkuBdkBnBxBdDvjHrCrBdBekBoBnatkBoByChapkkzkaaaaaffkkkfkfkkukkfpapkaaafffkffpffBeakfapaffaakpzaaffaafaakfaazafpafaafaapfkpfaffuufffafkafaapfuaffauakfBekfauakafpfkkuaffafpupakaffakakfuafkfkafBezaaukffakkfBjuzpkfuuzuapfapaupukkkkkfapzpaffkfzppffkkfkkfkfazfapfkakukkfpzkapapppufkuupkCikaKNyBuBqBkBgBeBkBoBqBoBiBgBkBeBiBcowggbldmqocahhbhddabikyuBaBiBauuosuBayoBckibmqwBeBcyBaBasqBaumgooesowgalztftvvxBbtljlbcggcaekkicosBcBaBiuBgBcBcBawkosskagwaKDsqusqosuwwwwwywyBayswuswwBcBcBeBcyBaBeBeBgBeBgBcyBcBaBaywwwysuuusosomkomsusqqqqssokikikgigggiikookgeeggiiimmkgiggeggigigkikikmkmmoieadeaJrosjjnfhjztBpBrbBdfhzppiBcehalbaccakdfbfqBcyqatiBeBkicbpBbxCrBjxglcBwEaBsBcBmBissoahdjxhBrBhDbtcqbahtzfpBfBhbctbawseagmcckBcBcBemulojlflacnBdzbrrGjDdFkGcJlKdKpLvIwEeGiEwFfHiEyElFbDtZzGwNpEnDhFwEcDzFaGeHmEnDnFxGaHdDuDpFbFnFeMkCiIhHnEwLkEnGjDqCbClBzFeXkKqCuCrIpEtPwCsDaHfDoCtDiLsFuHyFmDiEsDpEhGeFnIeFdEfIcIpMeIpHlFgDbDnCvCyFgCuEfDnKtFiDdHvBxDgDcGoDtNfHfKvMuFfNkGyDcDtFpDyEtDfZqJlFfEiFoFsaKzEpEvCrCkBmDaCqBcCbBnChCppitcpHmuDsfdIbBbDveBeqgfkbbhahftDmnBiublytBnBdDpzlHyDkeiBkHlCcbenlFhiDmpBuBeaCvvBlgyBkqbuBgBqBkBiBdCfDjChBvabgiDeaeBmrCzvBiBpEoBoDeCmqcdDbDpeDtvaIuBomdyHxiKmiejhnbcedflbbbbnlBftBbBdjgiefdnlbpaikgkmogeggkkfffahpdtjvgmyBmukokabahzvlxtljjhjjnfmahljjdabciiuqgaeicckmmqkqfmeccbhbfjnvpqBeabnjlcccbdhccacjfthjlgusiachbehimkigkgabcacelhfbflanbjmqwBckacbjhflvpdlfaaeccabescbddbegcgiiqkbfacbbegegagnedfbfjbfhjndubOsnBaTCtakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00646</span><span class="name">元大S&amp;P500</span><span class="sec">ETF-海外</span><span class="kd">ETF·上市</span></th><td class="n" data-label="收盤">79.55</td><td class="n" data-label="漲跌%"><span class="up">▲ +2.25%</span></td><td class="n" data-label="量比">0.57</td><td class="n" data-label="建議停損">78.26</td><td class="n d-ok" data-label="停損距離">1.6%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:33.0%;width:55.5%"></span><span class="pb-stop" style="left:33.0%"></span><span class="pb-ma" style="left:49.8%"></span><span class="pb-close" style="left:88.5%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 78.26</span><span class="k k-ma">MA20 78.65</span><span class="k k-close">收盤 79.55</span><span class="k k-band">布林 77.58～79.73</span></p></div><p class="desc">近 20 日沿月線，量縮 0.57 倍回測 MA20 止跌；停損：跌破 MA20 78.65 或今日低點 79.15</p></div></td></tr></tbody>
+<tbody class="cand" data-i="4" data-type="回測型" data-kind="etf" data-code="00727B" data-name="國泰優選非投等債" data-close="39.61" data-chg="0.69" data-vr="0.52" data-stop="38.59" data-dist="2.6" data-sec="ETF-債券" data-mkt="上櫃" data-ch="cEqalfgngBihCeiCzjDtkEmlFOlhcogmjljecdmhBknfuamiyajeaifesBkkbijdBcsspBepwpBaBgqheBjjuugryaqatffqlbBfBldbsjlmkBdBlohwaeBhxlsgskbBiBdhfghzlihjfBmkgBoweBsbuxuhBsqglsBeCccegrBflaoobbelbBjkmlCrllxDhjdbgalrvnnvncrnlBkzeffhvhBbBhwxhvrsdrbehbopdeswrorviphcBefivptwwgnjloucwcgjlbpbhibhpcBffvhhhBaxcBhBdijDnhvfhgfbafaafbeabaaaaicfbddgcaaaaaacaabbfceacajaaeaaadabfabdhdabbadbaaaaeaadadaaaabaaagaacacfadcbdgbbeaacagaaajebhaeabaebcfaacaaafabbdbbeacabaaaaabcacodaafaabaaabaaaaacabaacaaaalaacacaaaaaaaaacacabaaadkbagkaaaabcaadbaaaaecdkbaaaaabheaadabahabaaFOnbbaaacaaaaabbcccceccgececeeeeigigggigiiigggikkkiieggggigegeececcbdddabdbddhffhdffhhhddbbabbdbbbbbdbfacccecgeeeggiimkkoqaFOhaaacaacaccacacaaacaccacccaccccecccccccceceecegeeeeeeeegeggeeegeeeceeceececcccccccaacacacacaaaaabbabbbbababaaaaaacaacaccasbbbacaaabaabdgcbcbcgigceecaaageeacabeececgbceebbhdbbbfjdbchbhbjdekkicegcaeieafbdbbbhdabbbdbdfdeecacaaaaegiommiigmkiacagDtDxHdPoMmDtEnFdDzDqEdDxGvEdEoDpDxDxEtDtDjDxDiDlFmDsQoFwEgDsDzDpDtDpEuDsDtDrErDqDlDpEeFmxDyEhDvDgDpFiDkDtDxDwEhDiDwDeEeDoDtEfDkEwDtHbReHnGjGhFvFyDnDiEtDsEhFrEyDqDpGlDxDpKmDxDjDqDxEfFoEbDiIoEaDwDyFbEgFcDtDmEeDwGuHjGgIwEnEjDsHwFrZzDmFiGwEbEtaGtcBoEqCpagtEpDnehsckfaBdghbafnseFcBaircFdvfkbaaklbbgiBbeidvBcojaicjbchchgccicBkFeBqqBalElBpBfpvryqlawtlCseBfbcClqidBwbrasBtmbdjdsBmBcBygxBlqBhIqjsjrIlhBnacmowkdjdddgbBamcsmuuBiykkeiaamBkBgwsedswBceyaohmBcBekiBdBjrbbvbfeavzBdnxvBtCrChBxvBbBdnbxBvzxacitBdBhfcsBauBuogcgctvjlpnyBaBeCcCkCaCyCeCgBaBgoBsBsBiosBiCoBdggomqchlddbgdyedkeiiqgffhfjhewqcalpeikhglarcqmdhBhBflcclecicnnpchfvBjvhmieqwarcewuufnnmqBaBaqBicfhafvtffffBayuBmBiwBimmrhtiebtjeBahCqkBaBGhakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00727B</span><span class="name">國泰優選非投等債</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">39.61</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.69%</span></td><td class="n" data-label="量比">0.52</td><td class="n" data-label="建議停損">38.59</td><td class="n d-ok" data-label="停損距離">2.6%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:38.8%;width:56.9%"></span><span class="pb-stop" style="left:38.8%"></span><span class="pb-ma" style="left:50.0%"></span><span class="pb-close" style="left:95.7%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 38.59</span><span class="k k-ma">MA20 38.79</span><span class="k k-close">收盤 39.61</span><span class="k k-band">布林 37.96～39.62</span></p></div><p class="desc">近 20 日沿月線，量縮 0.52 倍回測 MA20 止跌；停損：跌破 MA20 38.79 或今日低點 39.5</p></div></td></tr></tbody>
+<tbody class="cand" data-i="5" data-type="回測型" data-kind="stock" data-code="1456" data-name="怡華" data-close="15.5" data-chg="0.0" data-vr="0.37" data-stop="15.11" data-dist="2.5" data-sec="建材營造" data-mkt="上市" data-ch="cEqalfgngBihCeiCzjDtkEmlCBhEptuaChjjukkBdBnBnuGoDcEqDbjtkByDcjEqCsuEptDbBnjBeDbuaBoBnBxDvEqBnCitkDlDmjDbBdDwauBdBeutuaukDlaBxCiktChjDwDbkEgBxBxByCsBeDbaDbFuChBoujDbaaBeDmChBxFutkBeCiBxChBdEgCitByuBnDvChBdIcujaaDcCraaByIcBdCraBykutjBdBdBojChIvChBduBeChjFkChkEpChBeGeDmBoFuCsjBeByuBoEguOgDbBotBojDmDlBoaBeEfjauaDbBdaChBdBeEqaBeCrByBnkuBnDwkEfByByChtBduBoFkDlCiJgaChDcDmByBeBxkCsGdBojBnDbBoCiCsEpChtaBnByCiBoBeJzutBxkEpCsujfaBekBoauBefkfpakaBjpkaaBoBjaBeaBjaaaakaaapBokaapaffkakkpaaapkakukkkBjufaBtByBtaBeCnBekaaaaaByaaBekafaaBtzBeapukaakakkazuuBjzBekaakpakaapakaazaafaaaaakBtzpkBjaazBtBtBjkBtauzuBtByBoBouBeuBjaCxfBtBofapBjBezCiaaBjauauCsupafuByaBjaaafkpaaBeaaazppuBjaaaupkDckafafkBofaBezpkfafpppBeufafpaupzzapupaCBmnplflhlhddhjhfgdcfaaikomwBaBcuuooqsogebabdafdfltpjnjdddbaadackcabdbebdbgdbcadbcebbfgcieeceeakgbikieiigigmimmoigeiooiimiegaCBaaacaaabababbbacceccacccgcceaaaaebbaaabbdbdaaabaacaaaeccaabacccccceeaceccgecabcaabcbbbdfdbbaabeaccececeeeggeceeegegeggeeaDtblhegigeecegmibjkxbakoysBgBkBccbjpBdBrBxpfcbeqaiccjtBvvpcfdjabafacjgbagafaicjgceaabgiaddkacgeahjaahaobgmuibpkokqqdlphgapeakccaBtzkjipmjpCyBpBarCaBoDbCpDrBmBfCbBqEdDpBmEyDeDcDlBwBzCbCiBbBdCfBgBsBvhEtBvClBeBpBtBeBgBdhBcChrBjvrrsqCdqBhBarBhBklBeyuBlndBwyxCmuBotysBqkZzHnCjEcCqCiBpCoCdCwEkBqBfCsCvBiEfBhDdCrBlBzCpBnuBrBmEjBehBduDtzvoaDuBfBdCzrldacBakgeonqqBgfdjjeweBcqjbeBdlhxhchfijBcgihoBfflblhmfcgdrafobiccjihaefaclkcfuidbarklKcCqsyyJlCjctcwangaBfBacebcxorrcfudffffbefhlDzDrCfBnCzClBztbohBfBzpEyGqIyEqDiByBsCwEmDcFwGoFiczDpEjEbCnErDfCrzCbDhFptBtofgCnwkCbClBiBcBoiBiBqsBgyBkBiBrBjCpfgjCdBxBqBblDcytBaCyDgaaClCqeBkBqwBvBnBfbCseBlDmCaBsCgDiBaBjCbBoCwBkCmCggDdEnErCqCmBmymCqjnrDqDxCxBblBjtfwBgBkmhviEwFcGaBiaBbBbcBkaCeCgyDlDrEzEpDlBnCzBdnBadBbCtBuoCiBiBiBdBuBeBdBdCaBmBmkyBccmgmkCfBjCdgmbBlzCcpcCyovsCeByBbvCpByhoubCdBlzeCibBlCuBcqyBqpChClyBuiBcsBbDnDzDfDgCmBemcBszxvdDmBaBaCHeakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">1456</span><span class="name">怡華</span><span class="sec">建材營造</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">15.5</td><td class="n" data-label="漲跌%"><span class="flat">平 0.00%</span></td><td class="n" data-label="量比">0.37</td><td class="n" data-label="建議停損">15.11</td><td class="n d-ok" data-label="停損距離">2.5%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:45.9%;width:21.2%"></span><span class="pb-stop" style="left:45.9%"></span><span class="pb-ma" style="left:50.3%"></span><span class="pb-close" style="left:67.1%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 15.11</span><span class="k k-ma">MA20 15.19</span><span class="k k-close">收盤 15.5</span><span class="k k-band">布林 14.33～16.04</span></p></div><p class="desc">近 20 日沿月線，量縮 0.37 倍回測 MA20 止跌；停損：跌破 MA20 15.19 或今日低點 15.3</p></div></td></tr></tbody>
+<tbody class="cand" data-i="6" data-type="回測型" data-kind="stock" data-code="2939" data-name="永邑-KY" data-close="24.55" data-chg="1.24" data-vr="0.32" data-stop="23.9" data-dist="2.6" data-sec="傳產-貿易百貨" data-mkt="上市" data-ch="cEqalfgogBjhCfiDajDukEmlDRatGxaChtCrDvkBotkDbGxCrkkBxIwaFtFjImDlCiDwDbCiEfJfDbtEfkkaBxFuBntkaEfjjaCsByChtaEpNwHrCsDlCsDvEfBnaFkFkGoEfDvEqEzBdDbGejuuBnCrGeBntutCiBxByChCiChBdBdaMiDvEpkCraFaMskEqGyCsDwFjaGyBdBdBnDmEzaCrDwBxDcuBoBdCiBntGyDvGeChBdtaBnuCikFauIwtBoIvaDcJqjBdaEftCiDmCsDcBoBejjauFjBnktjBekuCrCrEfBeukCsMrJqBxDcBnDwFkDmBeDvIwFtBeBoCrBeByCitaLeDbBnBeGnBykDvaBxByBxtBnaBeCitMhCsuBdCsBoDbOfjEpEfCrDwFktGnBoDcEqDlaaDbBxByCrBnBnkBdapzaakkkBjCdaafaaaDcCipCnaaafaafaByaByzGtukaakaaakaCiCiafkuaaCnaElkaBjaafaaaaazafauaaaapBjaaaaaaaaaaakkaaaaaaaakfBjBtByaakByBjkupuuaBeaafaafpaaafzakafByCxukaaauaByaaDmfBouaBefkBjuuBopaaaBeCdBezzuuaaapBjzBeaaCiakpakkpBeElCdaaaaaaakaaaazapazBtaBeuaakfazaakauaBoaaaCikaafaBjakapafakDhBeaaDSmafjtBfBdBbzzzxBfBlBnBnBlBlzBbBhBnvxtlnfjzBbBdBfvrrvlxzrlBbvBbBfxzvlfnmaebghjlndgqmgiaabgmfgaagioqomcfbgbccgokccaecwwBcBmBmBsBkBoBsBwBuBuByBcBiBkBoBoBsBoBawuaDRoogbbbbffffdffdbbabjrrrpnnpnrtvxxxxvxtvrprrtvzvttttvrtrtrttvvrnljnjjlljjjdffdbhhdbfdfhfhfbecceaceiikoosqquqqquqskqoqqsuuaDxdBcBcBipsBwBiqogaBgBisggxBjBfzxzzBdthjkwmBmBmBeBaBaijnbehbnBtBtDjDhxhmBgaccbdmqmdiBkibmabccjlcaaiapBdBpjapbcdbfBbCgmaaajeDeCeCsDqDiDeBoBaBwygprarBrBxDhElErBtClBrnmBkhBeBbpBcpwjwkCbwBjBvyBoCxBiwmnqwvpBbCpDcwExzybBeBgBbBswBrwBosjkqBysvCnKpJbDrsBfChBvBuzvGsBmBfqkwkzgdtpgmBcmgmbUeDsmBpDvZztBfkqBbBonBfzCxFgBjCgFvEgCnCwBcFpEpCaCvxBuyrnBgCdChCxBvraBaccbnecdedfcfoamkeduajdlvfaceuyaBsapBfcBlciigdejflbeaewEaCwBeblDjCvtedBudfddChlbddachckbdcdHqBicmBoCiBfilBhJxihieuBmkkByoBbqldedbbBlBnnxeeoyofiBbdplnlnrjfbbdrpjffqochmgkskmeprnrjfddmigiibacckmgggfBcgkeibhjfgsBcocmadhgegecfkeacagacbcbfffwibdffeBeyBcBiBgBemesiadalnrhlfdbfbpajdfbddaegiahfaeesoehmcikcgfrpjjdcccoiggedbaagiaaahsbefchjjfgouefchhjccacbhgcbbbcbcdadddduefbhdeBaooskihlahjnhpjpdfaccacdDeFiBaRpacaakacaakacadaakacadaakacaakacaakacaakacaakacaeacadaapeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">2939</span><span class="name">永邑-KY</span><span class="sec">傳產-貿易百貨</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">24.55</td><td class="n" data-label="漲跌%"><span class="up">▲ +1.24%</span></td><td class="n" data-label="量比">0.32</td><td class="n" data-label="建議停損">23.9</td><td class="n d-ok" data-label="停損距離">2.6%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:41.7%;width:43.3%"></span><span class="pb-stop" style="left:41.7%"></span><span class="pb-ma" style="left:49.7%"></span><span class="pb-close" style="left:85.0%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 23.9</span><span class="k k-ma">MA20 24.02</span><span class="k k-close">收盤 24.55</span><span class="k k-band">布林 23.33～24.72</span></p></div><p class="desc">近 20 日沿月線，量縮 0.32 倍回測 MA20 止跌；停損：跌破 MA20 24.02 或今日低點 24.4</p></div></td></tr></tbody>
+<tbody class="cand" data-i="7" data-type="回測型" data-kind="etf" data-code="00856B" data-name="永豐1-3年美公債" data-close="38.81" data-chg="0.34" data-vr="0.18" data-stop="37.77" data-dist="2.7" data-sec="ETF-債券" data-mkt="上櫃" data-ch="cEqalfgugBmhCiiDbjDukEmlFMdfbBdbccBmldBadrbhxbcfiaepoeaBagBgtfhdkeCmrBqBfcBumdfcfaBkgeCatazqqkCbBycBlmhvegxgipBpjyupwBjDreaeganBnicoBifBaeBhnwspcBkoxjBocBmBmBiBeaBarojhBkCcpBaBgBaagcaaaaciafascauakgbbaqqfanacugaajaharfalaezaaabdaaaaBcabfBantcaeaaaaaaaaaxpepgCqhdadawwacbaBecamaaaabdjdaraoabqjaaawazaizbzdadaaaabaaaaaaaaaaaaaaaaaaaaaacaaaaaaaaabaaaaaaaabaaaaaaadacaaaaaaaaaaaadaaaaaaabaaaaaaeaaaaabaaaacfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaaaabaaahebaaiaaaaaaaaaaaaeaaaaaaaaaaaaaafgaaaaaaaaaaaaaaaaaaaabaaaaaaaaaeaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaFMlfddfdbaabacaabbbadbbbbaaacacaaaaacegggeiiiiiggigikikikggegicccccccbaaffdbdddhjjhjhfjjhhffdbdhdddaceccceikkmkmikmmmoooqoaFMfcaccaacaaacaacaacaababbbaabababbabaacaaaaacacaeccececececeececececcceacccccccaacaacaabaaaacabcbabaaabbaaacaccaaacccaeccaBfjjdbbfaaaacaaacecaaaaacbacbgcabaacoeocciieaadaceciafjjabddhbbdbdhdcackkcacbbykgiaccgccbjhbbfjltpcegccgegmqsqqmkcdckbagiBseBlcjeeIzyeCmenhcCkcjeCqDiDkwBaCblejhpBdccBhcBhcLcjcGpcejjcehBouewBlCfhhhZzDzBlBuhCxcccjccycBfCoBupBfjSjjeBhDmGanFaeyncDmFychncBfehBwXlwchlBlcEneslccBdBzGpeBjBfhjaBrBhmjppaDcibyaDjhaabbaBakBigifBdBhdhpibbkdcaEkjaCeaEjacCpcamgagogdafJuumqaJfBpnpaBbaiaiBasdmjGkpdaBiEzcByjzCfdpCijbeBhBxaaoJkdaapIthBubelaBtkoCmaoapCnhDxcavrjfBcoiBcwcadvrllbaehgkiBeBcBuwmcbigCeBeCcokBuBoBamgbhuqmBuqgthceBrabBjxBbBpBfxBnBbrzCfBzvclivDpCnBzBfrjnBnthiBmBeBwBsmauBgqqBqBusiBmBeCcCwDeDgCmCoBiBemduCawBeBqBureephbcBemguiffjvnffeggdikgwqBccflldbBkiBajlsmdlptrgcbBadjBbndaBneczjlvjalbibzpmBamBadChBbhisumhioBaBsBeBmBadngqbbuuhnmgwBiBiBeggtrBfBjjsjbkkdCqBaBaLvaakacaakacaakbkapmaakapacaakacaakacadfcaakapacaeacbpacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">00856B</span><span class="name">永豐1-3年美公債</span><span class="sec">ETF-債券</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">38.81</td><td class="n" data-label="漲跌%"><span class="up">▲ +0.34%</span></td><td class="n" data-label="量比">0.18</td><td class="n" data-label="建議停損">37.77</td><td class="n d-ok" data-label="停損距離">2.7%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:40.7%;width:49.4%"></span><span class="pb-stop" style="left:40.7%"></span><span class="pb-ma" style="left:49.8%"></span><span class="pb-close" style="left:90.1%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 37.77</span><span class="k k-ma">MA20 37.96</span><span class="k k-close">收盤 38.81</span><span class="k k-band">布林 36.99～38.94</span></p></div><p class="desc">近 20 日沿月線，量縮 0.18 倍回測 MA20 止跌；停損：跌破 MA20 37.96 或今日低點 38.68</p></div></td></tr></tbody>
+<tbody class="cand" data-i="8" data-type="回測型" data-kind="etf" data-code="009806" data-name="台新標普500" data-close="14.15" data-chg="2.54" data-vr="0.11" data-stop="13.95" data-dist="1.4" data-sec="ETF-海外" data-mkt="上櫃" data-ch="cEqalfgngBihCeiCzjDtkEmlBXzydxgfsomffjBciaczsBtitlBgBeoljczcmBjBmBaicqkedgecqkBdefqvpBaxiBbBymBeBsnhBaercbpzdmBbdkbaafblmBgBhbtbiseceeqBidvjqijcuybBcjoxwjcmhtkbthxcCsbhmacghhffgkjhnicldbkvlffcccCcflcvrhbndkeagbldmbjhwcddccfpceiajfcegqaedcibceegbkavBibecJorByadbalasafdcefdcvbaBsakakeijckiabfbbbadadaaaaabaaabacaaaaaaaaaaaaccbbebcaaadaaaaaaaaaaadaaaabacaabaaaaaaaaaaaaabaaaaaaaaaaaaabaaaeaaaaabaaaaaabaaabaaaaaaacaadacabcbaaaabaaabaaaabaaacaeaaaaaaaaaaaadaaabaaacaaaaabbbaaaaaaaaddacacaaacabaaabbabaaaabaaiaaaabababcaahaabfdaacabadaaBWikgiggigiiggggggceccbbaccccabababaaaccgcggeeececgeceeaacceeeegeeceecaecaecccabddadfdddbbabaccecaccecceeigggegegeccceaaaeaBUieeececegeeeegeegeeeeeeegegegegggggegegegeeeeeeceececccecceececececcacccaccacaccccccaaccccaecccaccaccaccccccccceccccacbcaBvegbadbdbddhhbfddfbbagabcbaaaaaeabcaegeeabaggaaadfdpjdcbaiqigiieccababfafflbacaaadfbdffbbbacmgcaceaacgeeacbabbbbaadfdabbBkBxpCqChBnLiCdCdEhBbwBtBdDgCilqBplIaBkFlCbnnDzFqHdtDdBvElDxBuDtBbvzfbsBanxnnciGsFyfvEqcBbHrBkDaBdBgFlFoCgBvnBbtDdeGkDbCwDrChDcCdnvcqpzBeeZzdvmitBbWcYpCpHannfjCmHcBrPopGcBoiBwhOdRyftmgDsgGbgaDmCnciBhcDuqfwfEddjlodleBbCgkBygaCzBaeCacBcvnBfkghBlBdpBldcdggbjbCiCebgBuCrBxDagrmcxBshihBtBxirCkuyeyBjhzBdvzpgeaKefahcKbiIoJqyCofIpJtvBvCqmGecBmCfnFldDgGoalcFnFraCcbhTwyirpvjbehrzbbdhBfnBzBnBvBxrkqcjfBdvjBjauuqBaywkkkgqqnlndvBffzpBjkqBkCkBisBgycbfvBnBlvBpBlxtrnpnvfujjxthimkmmyBsBggdkmaaqBeuBkqydkbbefvnnBbBfBrBjBcCigfzttfagfjrggcbtbBfntroBgBeoaepferqBcwqsqiabbdeetnpbpvclbrwyBiBwqakepppxBjzhvpacggcebkBebalfesqmkkqBeojpdcjfgqgsbetbllbjxhjrrxlBqbCubBaBDaakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-pull">回測型</span><br><span class="code">009806</span><span class="name">台新標普500</span><span class="sec">ETF-海外</span><span class="kd">ETF·上櫃</span></th><td class="n" data-label="收盤">14.15</td><td class="n" data-label="漲跌%"><span class="up">▲ +2.54%</span></td><td class="n" data-label="量比">0.11</td><td class="n" data-label="建議停損">13.95</td><td class="n d-ok" data-label="停損距離">1.4%<span class="g">近</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:92.6%"></span><span class="pb-risk" style="left:33.9%;width:43.0%"></span><span class="pb-stop" style="left:33.9%"></span><span class="pb-ma" style="left:48.9%"></span><span class="pb-close" style="left:76.9%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 13.95</span><span class="k k-ma">MA20 14.02</span><span class="k k-close">收盤 14.15</span><span class="k k-band">布林 13.81～14.24</span></p></div><p class="desc">近 20 日沿月線，量縮 0.11 倍回測 MA20 止跌；停損：跌破 MA20 14.02 或今日低點 14.12</p></div></td></tr></tbody>
+<tbody class="cand" data-i="9" data-type="突破型" data-kind="stock" data-code="2471" data-name="資通" data-close="54.6" data-chg="4.0" data-vr="23.79" data-stop="50.89" data-dist="6.8" data-sec="科技-資訊服務" data-mkt="上市" data-ch="cEqalfgngBihCeiCzjDtkEmlHBhFbEhBwaCmBmutDqCdBmCeZeCvaCwHdaBmFtDpEiFuEhGmCvtEhsBjJjCeCesHyCyBmGnCeCdCvFbEkCeIrBjCwBtBxDwtEpDbDbGyCiCiCiEfjImEqaBoBnBxGxBdkkjBeEgBykFaatDbBoDlCrauCiImGeBoDcGeuHrDbDbtDwBoEpFjCiBoBnCiatDvuGxBdBoDmuttChImJpUkQeCwFcFcBvBuClBltuFbDqstXtFuaEhHeYntCwaCvDpFaGlFauEiEhBkGmsCdBjEzCxsHyCgBmFuDqCxtHyBkaByBoDvuDwDcDvCsDbEpChEgaGdEpaBnBdByEgBxkuBeBnEfBxBeFjaDwDcCrBeCskCrtuFjEqGdChDcMiEqDcuatEqKaChaDwFjtaDctGeBojuKaEqEqaGdEgQdJzaatBgBvkBcjajBcasFuCxjCxCfCnCeDgCeCxakjaBukttBcBcttDqtBctBcjakaBcaaBvCdkaBeuBeEvzBokuzCskkBeauafuuuuufkkauaauBoaBjaCiFuIwakCiBoakFkCikaaaEqkaBekaCsFkaBjBtGeaaaaaFuDwLyjsjBufoaBlBlaBcBvsaCxCxBvkaBcaCoajCoattjakataBcaatsCejBcBljBvsCxBcpkBoupElakaaaufakzCiBtupuakafkaBeaBokaaafkfCnkuCiuByaaByauByukaauaaBoBoaaaaaaCsuBeBtkpuCsaHHnpBvBnBdBjBfrpflnnsooqeswuwBgBmBiBkBgBeBawwiivpfhgdbaejjdvtpnphchltttthpncmigqqecicckuyswsoosehfhdkBcBgBiBqBsBgwqoookiioqssobhtzBfBbpnllhtkBoaHEdbbafdbccebccusosocecbaaecegceecgagiggcieejdafhabaabddhdddccciokmmigeegeedddbcaaccbdadceiimqmkieeegceggigiiiegegiimgiemuaGwByssypvceachrCyBuBmBwkyyelxnBfrzBhBxBpClBlBnbaltkbdbdqfaambkmcdqBcBofzBrpBfzcBmBaywmabfabjtBtnikipvabbfdBaByBmBqCmBubbfjeedjhtBjBpBxBpekBiyrBzrhaiprBuGohBdBdhgfhlnpuqkFfCwBcBisvlrkiplojmjghohhfBahktgehsgissxBnplhmvmhgehgenjhiiemgdfffgdekhfhegeddgCoEpBitCaBgxoBaljggntdeiihippedtkeehnuDtZzaqgilbbhhecgeaBwyegeBtxfhddaabcbbbcbbaidcecjaefceecoedddhabadfbbecaacdcabbabaaacaaaaababayBumisnBlhcphhddcbaabdcecabebdacbeBkKkhGnKnLnHhFhBpiBiyEcBwDaEmXyQkMuMaDeCcCgDhFzBpCwBnDmazErDlEfLbHdDxCnEgFqFmBdsBjDpGxBzcGvGlCpDhDxedDpEzGbBgDeEsFuBkBcHsJyHsHgEgBqElErDjCnChxCqDoDaGgEsCunoCrElDrCldGmJuIoIuLgIwaDfFpFrBxvExIpFhDfEbBpBlBzEtDhIdHjEjpifrCfFgDnNsXqPlFjEzrBcDuEqEmDiFcCiCwDiSiIqEaCoEzExDrHnIbCzBgCpCaBfBtEjCnCpHnCxgBiGoGgEwBjkBjCtEzaBqEdDbqbnCwCaBdCbClDwEqEyEwkbFkGaDcCctCrHbFrDrCdBndCsCyByEcCaeCpBdDnEfCtBfuGaHmEyEeFiCiFfGrHjFvBtnDpFxCbapBmBgqBtfEbCpgDiDiCgBmbFwCfLyRmhGsBqBaQSbakacaakacaakapacaakapacaakacaakacaakacaakacaakauakapacaeacaa"><tr class="r1"><th scope="row" class="nm"><span class="tag t-break">突破型</span><br><span class="code">2471</span><span class="name">資通</span><span class="sec">科技-資訊服務</span><span class="kd">個股·上市</span></th><td class="n" data-label="收盤">54.6</td><td class="n" data-label="漲跌%"><span class="up">▲ +4.00%</span></td><td class="n" data-label="量比">23.79</td><td class="n" data-label="建議停損">50.89</td><td class="n d-wide" data-label="停損距離">6.8%<span class="g">遠</span></td></tr><tr class="r2"><td colspan="6"><div class="inner"><div><div class="pb" aria-hidden="true"><span class="pb-track"></span><span class="pb-band" style="left:3.7%;width:67.8%"></span><span class="pb-risk" style="left:37.7%;width:58.6%"></span><span class="pb-stop" style="left:37.7%"></span><span class="pb-ma" style="left:37.7%"></span><span class="pb-close" style="left:96.3%"></span></div><p class="pb-key"><span class="vh">價位：</span><span class="k k-stop">停損 50.89</span><span class="k k-ma">MA20 50.89</span><span class="k k-close">收盤 54.6</span><span class="k k-band">布林 48.74～53.03</span></p></div><p class="desc">昨日突破、今日回測守住，箱型整理後，布林縮口後；停損：長紅 K 低點 50.2、MA20 50.89，取較近者</p></div></td></tr></tbody>
 </table></div><p class="empty" id="cnone" hidden>沒有符合篩選條件的標的。</p></div></section>
 <section class="band alt" id="hist" aria-labelledby="hist-h"><div class="wrap stack"><h2 id="hist-h">每日歷史</h2><p class="cap14">每個交易日收盤後新增一天，保留最近 120 個交易日。下面的長條是每天的候選標的檔數（紅色是突破型，灰色是回測型），點長條或用上面的日期列就能切換到那一天；需要網路載入，沒有網路時只看得到之前開過的日期。</p><div class="htrend needs-js" id="htrend" hidden></div></div></section>
 <section class="band" id="help" aria-labelledby="help-h"><div class="wrap stack help">
@@ -311,14 +316,15 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
 <li>停損距離：<span class="d-ok">近</span> 3% 以內，停損很近；<span class="d-mid">中</span> 3%～6%，普通；<span class="d-wide">遠</span> 超過 6%，停損很遠，一旦停損虧損會偏大。</li>
 <li>價位圖：一條刻度上畫出收盤（圓點）、MA20（灰線）、建議停損（橘線，橘色粗段是收盤到停損的距離），有資料時灰色底是布林通道上下軌；實際數字寫在圖下方。</li>
 <li>K 線圖：每一列都有「K 線圖」按鈕（點那一列也可以），展開近 120 個交易日的日 K 線，附 MA20、MA60、布林上下軌、成交量與 MACD，並畫出建議停損線。圖上的價格是約略值，精確數字看表格；候選太多時只有前面的標的有圖。按 Esc 或「收起」關閉。</li>
+<li>K 線圖的指標與縮放：圖下方的「主圖」「副圖」按鈕選要看的指標（MA5、MA10、MA20、MA60、布林；成交量、KD、MACD、RSI），副圖標題的「−」可以關掉該面板，選擇會記在這個瀏覽器。「60 日」「120 日」「全部」「−」「+」「重設」調整顯示範圍；電腦可用 Ctrl＋滾輪縮放、拖曳平移，手機兩指縮放、單指左右拖曳。滑鼠移到圖上或手機點一下會顯示十字線與當天數值；圖有焦點時可用 ← → 移動、+ − 縮放、Esc 取消。MA5、MA10、KD、RSI 由頁面依圖上的約略價格計算，可能和看盤軟體差一點。</li>
 <li>類股：官方的產業別，例如「科技-半導體」「航運」；ETF 依代號最後一碼與名稱分成主動式、高股息、科技、海外、市值型、債券等；旁邊的小框寫個股或 ETF 與上市／上櫃；候選標的可以用「類股」選單篩選。</li>
 <li>頁面右上角可切換自動（跟著電腦或手機）／淺色／深色，選擇記在這個瀏覽器；無痕或封鎖網站資料時只在這次有效。手機上表格會改成一張一張的卡片。</li>
-<li>歷史紀錄：每個交易日收盤後新增一天，保留最近 120 個交易日。日期列的 ◀ ▶ 或選單可以切換到過去的某一天（過去的日期只列出當天的候選標的，沒有圖和篩選）。標的名稱旁的「新增」表示前一個交易日沒有上榜，「續留・第 N 天」表示連續上榜的天數。</li>
+<li>歷史紀錄：每個交易日收盤後新增一天，保留最近 120 個交易日。日期列的「前一天」「後一天」或選單可以切換到過去的某一天（過去的日期只列出當天的候選標的，沒有圖和篩選）。標的名稱旁的「新增」表示前一個交易日沒有上榜，「續留・第 N 天」表示連續上榜的天數。</li>
 <li>加到主畫面：手機瀏覽器的選單有「加入主畫面」（iPhone 用 Safari 的分享選單），之後像 App 一樣開啟。看過的頁面沒有網路也能開，但資料不一定是最新的，瀏覽器也可能清掉離線資料。</li>
 </ul>
 <p class="cap14">本頁僅供程式與技術分析研究，不是投資建議，也不保證任何績效。資料可能延遲、缺漏或有誤，請以交易所公告為準。投資決定與後果由使用者自行承擔。</p>
 </div></section>
-</main><nav class="bnav" id="bnav" aria-label="快速切換"><a href="#cands">今日</a><a href="#hist">歷史</a><a href="#help">說明</a></nav><footer><div class="wrap"><p class="fine">資料日期 2026-11-04｜僅供研究，非投資建議。</p></div></footer>
+</main><nav class="bnav" id="bnav" aria-label="快速切換"><a href="#cands">今日</a><a href="#hist">歷史</a><a href="#help">說明</a></nav><footer><div class="wrap"><p class="fine">資料日期 2026-11-05｜僅供研究，非投資建議。</p></div></footer>
 <script>
 (function () {
   var d = document;
@@ -385,7 +391,65 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
     return sort;
   }
 
-  var chN = 0, chAll = [], chTimer = 0;
+  var chN = 0, chAll = [], chTimer = 0, CH_K = 'twss-ind';
+  var CH_MAIN = ['ma5', 'ma10', 'ma20', 'ma60', 'bb'], CH_SUB = ['vol', 'kd', 'macd', 'rsi'];
+  var CH_NM = { ma5: 'MA5', ma10: 'MA10', ma20: 'MA20', ma60: 'MA60', bb: '布林', vol: '成交量', kd: 'KD', macd: 'MACD', rsi: 'RSI' };
+  var chOn = { ma20: true, ma60: true, bb: true, vol: true, macd: true };
+  (function () {
+    var v = null;
+    try { v = localStorage.getItem(CH_K); } catch (e) { }
+    if (typeof v === 'string' && /^[a-z0-9,]*$/.test(v)) {
+      chOn = {};
+      v.split(',').forEach(function (k) { if (CH_NM.hasOwnProperty(k)) { chOn[k] = true; } });
+    }
+  })();
+  function chSave() {
+    var v = CH_MAIN.concat(CH_SUB).filter(function (k) { return chOn[k]; }).join(',');
+    try { localStorage.setItem(CH_K, v); } catch (e) { }
+  }
+  function chSma(a, n) {
+    var r = [], s = 0, i;
+    for (i = 0; i < a.length; i++) {
+      s += a[i];
+      if (i >= n) { s -= a[i - n]; }
+      r.push(i >= n - 1 ? s / n : null);
+    }
+    return r;
+  }
+  function chKD(h, l, c, w) {
+    var K = [], D = [], k = 50, q = 50, i, j, hh, ll, rv;
+    for (i = 0; i < c.length; i++) {
+      if (i < 8) { K.push(null); D.push(null); continue; }
+      hh = -Infinity; ll = Infinity;
+      for (j = i - 8; j <= i; j++) { if (h[j] > hh) { hh = h[j]; } if (l[j] < ll) { ll = l[j]; } }
+      rv = hh > ll ? (c[i] - ll) / (hh - ll) * 100 : 50;
+      k = k * 2 / 3 + rv / 3; q = q * 2 / 3 + k / 3;
+      K.push(i < w ? null : k); D.push(i < w ? null : q);
+    }
+    return [K, D];
+  }
+  function chRSI(c, n, w) {
+    var r = [], g = 0, s = 0, i, x;
+    for (i = 0; i < c.length; i++) {
+      x = i ? c[i] - c[i - 1] : 0;
+      if (i <= n) {
+        if (x > 0) { g += x; } else { s -= x; }
+        if (i === n) { g /= n; s /= n; }
+      } else {
+        g = (g * (n - 1) + Math.max(x, 0)) / n; s = (s * (n - 1) + Math.max(-x, 0)) / n;
+      }
+      r.push(i < n || i < w ? null : (g + s > 0 ? g / (g + s) * 100 : 50));
+    }
+    return r;
+  }
+  function chWin(n, a, m) {
+    m = Math.max(Math.min(n, 20), Math.min(n, Math.round(m)));
+    return [Math.max(0, Math.min(n - m, Math.round(a))), m];
+  }
+  function chZoom(n, a, m, f, t) {
+    var m2 = chWin(n, 0, m * f)[1];
+    return chWin(n, a + t * (m - m2), m2);
+  }
   function chDec(s) {
     if (!/^[A-Za-z]+$/.test(s || '')) { return null; }
     var p = 0, bad = false, o = {}, n, t, j, ver, b;
@@ -417,13 +481,13 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
       return a;
     }
     ver = u(); n = u(); o.n = n; o.e = u() - 2;
-    if (bad || ver !== 1 || n < 2 || n > 400) { return null; }
+    if (bad || ver !== 2 || n < 2 || n > 400) { return null; }
     o.mo = u(); o.dy = u();
     t = u();
     if (t > 40) { return null; }
     o.tk = [];
     for (j = 0; j < t; j++) { o.tk.push([u(), u()]); }
-    o.c = []; o.op = []; o.h = []; o.l = []; o.up = []; o.lo = []; o.v = []; o.dea = [];
+    o.c = []; o.op = []; o.h = []; o.l = []; o.up = []; o.lo = []; o.v = []; o.dea = []; o.gd = []; o.off = [];
     o.c.push(u());
     for (j = 1; j < n; j++) { o.c.push(o.c[j - 1] + z()); }
     for (j = 0; j < n; j++) { o.op.push(o.c[j] + z()); }
@@ -436,110 +500,434 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
     }
     for (j = 0; j < n; j++) { o.v.push(u()); }
     o.mv = grp(n);
-    u();
+    o.me = u() - 10;
     o.dif = run(n); o.osc = run(n);
     for (j = 0; j < n; j++) { o.dea.push(o.dif[j] - o.osc[j]); }
     b = u();
     o.wk = [b % 2 === 1, Math.floor(b / 2) % 2 === 1, Math.floor(b / 4) % 2 === 1, z() / 100, z() / 100];
+    o.yr = 2000 + u(); o.vk = u();
+    for (j = 0; j < n - 1; j += 2) {
+      t = u();
+      if (t === 25) { o.gd.push(u(), u()); } else { o.gd.push(Math.floor(t / 5), t % 5); }
+    }
     if (bad || p !== s.length) { return null; }
+    o.off[n - 1] = 0;
+    for (j = n - 2; j >= 0; j--) { o.off[j] = o.off[j + 1] + o.gd[j] + 1; }
+    o.m5 = chSma(o.c, 5); o.m10 = chSma(o.c, 10);
+    b = chKD(o.h, o.l, o.c, 22); o.k = b[0]; o.kd = b[1];
+    o.r5 = chRSI(o.c, 5, 25); o.r10 = chRSI(o.c, 10, 40);
     return o;
   }
-  function chSvg(o, w, stop, close, id) {
-    var n = o.n, st = Math.pow(10, o.e), dec = Math.max(0, -o.e), i, k;
-    var small = w < 520, hp = small ? 160 : 220, hv = small ? 44 : 56, hm = small ? 56 : 72, ty = 8;
-    var x0 = 4, x1 = w - 56, slot = (x1 - x0) / n, bw = Math.max(1, slot * 0.66);
-    var yv = ty + hp + 10, ym = yv + hv + 10, ht = ym + hm + 20;
-    var lo = Infinity, hi = -Infinity;
-    function r1(x) { return Math.round(x * 10) / 10; }
-    function px(j) { return x0 + (j + 0.5) * slot; }
-    function ext(a) {
-      for (var j = 0; j < a.length; j++) {
-        if (a[j] !== null) { if (a[j] < lo) { lo = a[j]; } if (a[j] > hi) { hi = a[j]; } }
-      }
+  function r1(x) { return Math.round(x * 10) / 10; }
+  function chP(cls, dd) { return dd ? '<path class="' + cls + '" d="' + dd + '"/>' : ''; }
+  function chT(cls, x, y, an, s) {
+    return '<text class="' + cls + '" x="' + r1(x) + '" y="' + r1(y) + '" text-anchor="' + an + '">' + s + '</text>';
+  }
+  function chX(g, j) { return g.x0 + (j - g.a + 0.5) * g.slot; }
+  function chLine(g, a, f) {
+    var s = '', on = false, j;
+    for (j = g.a; j < g.a + g.m; j++) {
+      if (a[j] !== null) { s += (on ? 'L' : 'M') + r1(chX(g, j)) + ' ' + r1(f(a[j])); on = true; }
     }
-    var sv = stop === null ? null : stop / st, cv = close === null ? o.c[n - 1] : close / st;
-    ext(o.l); ext(o.h); ext(o.m20); ext(o.m60); ext(o.up); ext(o.lo); ext([cv]);
-    if (sv !== null) { ext([sv]); }
+    return s;
+  }
+  function p2(v) { return (v < 10 ? '0' : '') + v; }
+  function chDate(o, i) {
+    var x = new Date(o.yr, o.mo - 1, o.dy - o.off[i]);
+    return p2(x.getMonth() + 1) + '/' + p2(x.getDate());
+  }
+  function chBar(g, x, y, hh) { return 'M' + r1(x - g.bw / 2) + ' ' + r1(y) + 'h' + r1(g.bw) + 'v' + r1(Math.max(1, hh)) + 'h' + r1(-g.bw) + 'z'; }
+  function chCls(o, i) { return o.c[i] > o.op[i] ? 'u' : (o.c[i] < o.op[i] ? 'd' : 'f'); }
+  function chMain(c, g) {
+    var o = c.o, n = o.n, a = g.a, b = a + g.m, st = Math.pow(10, o.e), dec = Math.max(0, -o.e), i, k, x;
+    var hp = g.small ? 160 : 220, ty = 8, lo = Infinity, hi = -Infinity, last = b === n, ht = ty + hp + 20;
+    function one(v) { if (v !== null) { if (v < lo) { lo = v; } if (v > hi) { hi = v; } } }
+    function ext(arr) { for (var j = a; j < b; j++) { one(arr[j]); } }
+    var sv = c.stop === null ? null : c.stop / st, cv = c.close === null ? o.c[n - 1] : c.close / st;
+    ext(o.l); ext(o.h);
+    if (chOn.ma5) { ext(o.m5); }
+    if (chOn.ma10) { ext(o.m10); }
+    if (chOn.ma20) { ext(o.m20); }
+    if (chOn.ma60) { ext(o.m60); }
+    if (chOn.bb) { ext(o.up); ext(o.lo); }
+    if (last) { one(cv); one(sv); }
     var pad = (hi - lo) * 0.05 || 1;
     lo -= pad; hi += pad;
-    function py(x) { return ty + (hi - x) / (hi - lo) * hp; }
-    function line(a, f) {
-      var s = '', on = false, j;
-      for (j = 0; j < a.length; j++) {
-        if (a[j] !== null) { s += (on ? 'L' : 'M') + r1(px(j)) + ' ' + r1(f(a[j])); on = true; }
-      }
-      return s;
-    }
-    function pth(cls, dd) { return dd ? '<path class="' + cls + '" d="' + dd + '"/>' : ''; }
-    function txt(cls, x, y, an, s) {
-      return '<text class="' + cls + '" x="' + r1(x) + '" y="' + r1(y) + '" text-anchor="' + an + '">' + s + '</text>';
-    }
-    var wk = { u: '', d: '', f: '' }, bd = { u: '', d: '', f: '' }, vb = { u: '', d: '', f: '' };
-    var vm = 1, vy0 = yv + hv, ob = { u: '', d: '' };
-    for (i = 0; i < n; i++) { if (o.v[i] > vm) { vm = o.v[i]; } if (o.mv[i] !== null && o.mv[i] > vm) { vm = o.mv[i]; } }
-    var mm = 1;
-    for (i = 0; i < n; i++) { mm = Math.max(mm, Math.abs(o.dif[i]), Math.abs(o.dea[i]), Math.abs(o.osc[i])); }
-    var yz = ym + hm / 2;
-    function vy(x) { return vy0 - x / vm * hv; }
-    function my(x) { return yz - x / mm * (hm / 2 - 2); }
-    for (i = 0; i < n; i++) {
-      k = o.c[i] > o.op[i] ? 'u' : (o.c[i] < o.op[i] ? 'd' : 'f');
-      var x = px(i), ya = py(Math.max(o.op[i], o.c[i])), yb = py(Math.min(o.op[i], o.c[i]));
+    if (sv !== null && (sv < lo || sv > hi)) { sv = null; }
+    function py(v) { return ty + (hi - v) / (hi - lo) * hp; }
+    var wk = { u: '', d: '', f: '' }, bd = { u: '', d: '', f: '' };
+    for (i = a; i < b; i++) {
+      k = chCls(o, i); x = chX(g, i);
+      var ya = py(Math.max(o.op[i], o.c[i])), yb = py(Math.min(o.op[i], o.c[i]));
       wk[k] += 'M' + r1(x) + ' ' + r1(py(o.h[i])) + 'V' + r1(py(o.l[i]));
-      bd[k] += 'M' + r1(x - bw / 2) + ' ' + r1(ya) + 'h' + r1(bw) + 'v' + r1(Math.max(1, yb - ya)) + 'h' + r1(-bw) + 'z';
-      vb[k] += 'M' + r1(x - bw / 2) + ' ' + r1(vy(o.v[i])) + 'h' + r1(bw) + 'V' + r1(vy0) + 'h' + r1(-bw) + 'z';
-      if (o.osc[i] !== 0) {
-        var y1 = my(o.osc[i]), y2 = Math.min(y1, yz), hh = Math.max(1, Math.abs(y1 - yz));
-        ob[o.osc[i] > 0 ? 'u' : 'd'] += 'M' + r1(x - bw / 2) + ' ' + r1(y2) + 'h' + r1(bw) + 'v' + r1(hh) + 'h' + r1(-bw) + 'z';
-      }
+      bd[k] += chBar(g, x, ya, yb - ya);
     }
     var yc = py(cv), ys = sv === null ? -99 : py(sv), cl = yc, sl = ys;
-    if (sv !== null && Math.abs(yc - ys) < 13) { if (ys >= yc) { sl = yc + 13; } else { cl = ys + 13; } }
+    if (sv !== null && last && Math.abs(yc - ys) < 13) { if (ys >= yc) { sl = yc + 13; } else { cl = ys + 13; } }
+    if (!last) { cl = -99; }
     var grid = '', labs = '', f, gy;
     for (i = 0; i < 3; i++) {
       f = [0.1, 0.5, 0.9][i];
       gy = py(lo + (hi - lo) * f);
-      grid += 'M' + x0 + ' ' + r1(gy) + 'H' + r1(x1);
-      if (Math.abs(gy - cl) > 9 && Math.abs(gy - sl) > 9) { labs += txt('cx-t', x1 + 4, gy + 4, 'start', ((lo + (hi - lo) * f) * st).toFixed(dec)); }
+      grid += 'M' + g.x0 + ' ' + r1(gy) + 'H' + r1(g.x1);
+      if (Math.abs(gy - cl) > 9 && Math.abs(gy - sl) > 9) { labs += chT('cx-t', g.x1 + 4, gy + 4, 'start', ((lo + (hi - lo) * f) * st).toFixed(dec)); }
     }
-    var out = '<svg viewBox="0 0 ' + w + ' ' + Math.round(ht) + '" role="img" aria-labelledby="cht-' + id + ' chd-' + id + '">';
-    out += '<title id="cht-' + id + '"></title><desc id="chd-' + id + '"></desc>';
-    out += pth('cx-grid', grid + 'M' + x0 + ' ' + r1(vy0) + 'H' + r1(x1) + 'M' + x0 + ' ' + r1(yz) + 'H' + r1(x1));
-    out += pth('cx-bb', line(o.up, py) + line(o.lo, py));
-    out += '<g class="cg-p">' + pth('cx-wu', wk.u) + pth('cx-wd', wk.d) + pth('cx-wf', wk.f);
-    out += pth('cx-up', bd.u) + pth('cx-dn', bd.d) + pth('cx-fl', bd.f) + '</g>';
-    out += pth('cx-ma60', line(o.m60, py)) + pth('cx-ma20', line(o.m20, py));
-    if (sv !== null) { out += pth('cx-stop', 'M' + x0 + ' ' + r1(ys) + 'H' + r1(x1)); }
-    out += '<circle class="cx-cl" cx="' + r1(px(n - 1)) + '" cy="' + r1(yc) + '" r="3.5"/>';
-    out += labs + txt('cx-tb', x1 + 4, cl + 4, 'start', '收 ' + (close === null ? (o.c[n - 1] * st).toFixed(dec) : close));
-    if (sv !== null) { out += txt('cx-ts', x1 + 4, sl + 4, 'start', '停損 ' + stop); }
-    out += '<g class="cg-v">' + pth('cx-up', vb.u) + pth('cx-dn', vb.d) + pth('cx-fl', vb.f) + '</g>' + pth('cx-mv5', line(o.mv, vy));
-    out += txt('cx-t', x1 + 4, yv + 10, 'start', '量') + txt('cx-t', x1 + 4, ym + 10, 'start', 'MACD');
-    out += '<g class="cg-m">' + pth('cx-up', ob.u) + pth('cx-dn', ob.d) + '</g>' + pth('cx-dea', line(o.dea, my)) + pth('cx-dif', line(o.dif, my));
-    var prev = -99, yd = ym + hm + 14, lc = x1 - 15, t, xx;
+    var out = '<svg viewBox="0 0 ' + g.w + ' ' + ht + '" role="img" aria-labelledby="cht-' + c.id + ' chd-' + c.id + '">';
+    out += '<title id="cht-' + c.id + '"></title><desc id="chd-' + c.id + '"></desc>';
+    out += chP('cx-grid', grid);
+    if (chOn.bb) { out += chP('cx-bb', chLine(g, o.up, py) + chLine(g, o.lo, py)); }
+    out += '<g class="cg-p">' + chP('cx-wu', wk.u) + chP('cx-wd', wk.d) + chP('cx-wf', wk.f);
+    out += chP('cx-up', bd.u) + chP('cx-dn', bd.d) + chP('cx-fl', bd.f) + '</g>';
+    if (chOn.ma60) { out += chP('cx-ma60', chLine(g, o.m60, py)); }
+    if (chOn.ma20) { out += chP('cx-ma20', chLine(g, o.m20, py)); }
+    if (chOn.ma10) { out += chP('cx-ma10', chLine(g, o.m10, py)); }
+    if (chOn.ma5) { out += chP('cx-ma5', chLine(g, o.m5, py)); }
+    if (sv !== null) { out += chP('cx-stop', 'M' + g.x0 + ' ' + r1(ys) + 'H' + r1(g.x1)) + chT('cx-ts', g.x1 + 4, sl + 4, 'start', '停損 ' + c.stop); }
+    if (last) {
+      out += '<circle class="cx-cl" cx="' + r1(chX(g, n - 1)) + '" cy="' + r1(yc) + '" r="3.5"/>';
+      out += chT('cx-tb', g.x1 + 4, cl + 4, 'start', '收 ' + (c.close === null ? (o.c[n - 1] * st).toFixed(dec) : c.close));
+    }
+    out += labs;
+    var prev = -99, yd = ty + hp + 14, lc = g.x1 - 15, t, xx;
     for (i = 0; i < o.tk.length; i++) {
-      t = o.tk[i]; xx = px(t[0]);
-      if (xx >= 14 && xx - prev >= 28 && lc - xx >= 28) { out += txt('cx-t', xx, yd, 'middle', t[1] + '月'); prev = xx; }
+      t = o.tk[i];
+      if (t[0] < a || t[0] >= b) { continue; }
+      xx = chX(g, t[0]);
+      if (xx >= 14 && xx - prev >= 28 && lc - xx >= 28) { out += chT('cx-t', xx, yd, 'middle', t[1] + '月'); prev = xx; }
     }
-    out += txt('cx-t', x1, yd, 'end', (o.mo < 10 ? '0' : '') + o.mo + '/' + (o.dy < 10 ? '0' : '') + o.dy);
-    return out + '</svg>';
+    out += chT('cx-t', g.x1, yd, 'end', chDate(o, b - 1));
+    return out + chP('cx-x', 'M0 0') + '</svg>';
+  }
+  function chSub(c, g, k) {
+    var o = c.o, a = g.a, b = a + g.m, h = k === 'vol' ? (g.small ? 44 : 56) : (g.small ? 56 : 72), y1 = 4 + h, i, x, mx = 1, out = '';
+    var bx = { u: '', d: '', f: '' };
+    function yv(v) { return y1 - v / mx * h; }
+    function yp(v) { return y1 - v / 100 * h; }
+    if (k === 'vol') {
+      for (i = a; i < b; i++) { mx = Math.max(mx, o.v[i], o.mv[i] === null ? 0 : o.mv[i]); }
+      for (i = a; i < b; i++) { x = yv(o.v[i]); bx[chCls(o, i)] += chBar(g, chX(g, i), x, y1 - x); }
+      out = chP('cx-grid', 'M' + g.x0 + ' ' + y1 + 'H' + r1(g.x1)) + '<g class="cg-v">' + chP('cx-up', bx.u) + chP('cx-dn', bx.d) + chP('cx-fl', bx.f) + '</g>';
+      out += chP('cx-mv5', chLine(g, o.mv, yv));
+    } else if (k === 'macd') {
+      for (i = a; i < b; i++) { mx = Math.max(mx, Math.abs(o.dif[i]), Math.abs(o.dea[i]), Math.abs(o.osc[i])); }
+      var yz = 4 + h / 2;
+      var my = function (v) { return yz - v / mx * (h / 2 - 2); };
+      for (i = a; i < b; i++) {
+        if (o.osc[i] !== 0) { x = my(o.osc[i]); bx[o.osc[i] > 0 ? 'u' : 'd'] += chBar(g, chX(g, i), Math.min(x, yz), Math.abs(x - yz)); }
+      }
+      out = chP('cx-grid', 'M' + g.x0 + ' ' + r1(yz) + 'H' + r1(g.x1)) + '<g class="cg-m">' + chP('cx-up', bx.u) + chP('cx-dn', bx.d) + '</g>';
+      out += chP('cx-dea', chLine(g, o.dea, my)) + chP('cx-dif', chLine(g, o.dif, my));
+    } else {
+      out = chP('cx-gd', 'M' + g.x0 + ' ' + r1(yp(80)) + 'H' + r1(g.x1) + 'M' + g.x0 + ' ' + r1(yp(20)) + 'H' + r1(g.x1));
+      out += chP('cx-grid', 'M' + g.x0 + ' ' + r1(yp(50)) + 'H' + r1(g.x1));
+      out += chT('cx-t', g.x1 + 4, yp(80) + 4, 'start', '80') + chT('cx-t', g.x1 + 4, yp(50) + 4, 'start', '50') + chT('cx-t', g.x1 + 4, yp(20) + 4, 'start', '20');
+      if (k === 'kd') { out += chP('cx-d', chLine(g, o.kd, yp)) + chP('cx-k', chLine(g, o.k, yp)); } else { out += chP('cx-d', chLine(g, o.r10, yp)) + chP('cx-k', chLine(g, o.r5, yp)); }
+    }
+    return '<svg viewBox="0 0 ' + g.w + ' ' + (y1 + 4) + '" aria-hidden="true">' + out + chP('cx-x', 'M0 0') + '</svg>';
   }
   function chNum(a) {
     var v = parseFloat(a);
     return isFinite(v) && v > 0 ? v : null;
   }
+  function chSw(cls) {
+    if (cls === 'bar') { return '<path class="cx-up" d="M2 1h8v8h-8z"/><path class="cx-dn" d="M14 1h8v8h-8z"/>'; }
+    if (cls === 'dot') { return '<circle class="cx-cl" cx="12" cy="5" r="3.5"/>'; }
+    return '<path class="cx-' + cls + '" d="M0 5H24"/>';
+  }
   function chLegend(c) {
-    var ul = d.createElement('ul'), it = [['bar', 'K 棒：紅漲綠跌'], ['m20', 'MA20'], ['m60', 'MA60'], ['bb', '布林上下軌']];
+    var it = [['bar', 'K 棒：紅漲綠跌']];
+    CH_MAIN.forEach(function (k) { if (chOn[k]) { it.push([k === 'bb' ? 'bb' : k, k === 'bb' ? '布林上下軌' : CH_NM[k]]); } });
     if (c.stop !== null) { it.push(['stop', '建議停損']); }
-    it.push(['dot', '收盤'], ['mv', '量與 5 日均量'], ['dif', 'DIF'], ['dea', 'DEA'], ['osc', 'MACD 柱：紅正綠負']);
-    ul.className = 'chk';
+    it.push(['dot', '收盤']);
+    if (chOn.vol) { it.push(['mv5', '5 日均量']); }
+    if (chOn.kd) { it.push(['k', 'K'], ['d', 'D']); }
+    if (chOn.macd) { it.push(['dif', 'DIF'], ['dea', 'DEA'], ['bar', 'MACD 柱：紅正綠負']); }
+    if (chOn.rsi) { it.push(['k', 'RSI5'], ['d', 'RSI10']); }
+    if (chOn.kd || chOn.rsi) { it.push(['gd', '80／20 參考線']); }
+    c.lg.textContent = '';
     it.forEach(function (x) {
-      var li = d.createElement('li');
-      li.className = 'lg-' + x[0];
-      li.textContent = x[1];
-      ul.appendChild(li);
+      var li = d.createElement('li'), sp = d.createElement('span');
+      li.innerHTML = '<svg viewBox="0 0 24 10" aria-hidden="true">' + chSw(x[0]) + '</svg>';
+      sp.textContent = x[1];
+      li.appendChild(sp);
+      c.lg.appendChild(li);
     });
-    return ul;
+  }
+  function chBtn(cls, s, lab) {
+    var b = d.createElement('button');
+    b.type = 'button'; b.className = cls; b.textContent = s;
+    if (lab) { b.setAttribute('aria-label', lab); }
+    return b;
+  }
+  function chEl(tag, cls, s) {
+    var e = d.createElement(tag);
+    if (cls) { e.className = cls; }
+    if (s) { e.textContent = s; }
+    return e;
+  }
+  function chFlip(k) {
+    chOn[k] = !chOn[k];
+    chSave();
+    chAll.forEach(function (x) {
+      if (!x.o) { return; }
+      x.dirty = true;
+      if (x.pan && !x.pan.hidden) { chRender(x); }
+    });
+  }
+  function chChips(c, box, keys, lab) {
+    box.setAttribute('role', 'group');
+    box.setAttribute('aria-label', lab);
+    box.appendChild(chEl('span', '', lab));
+    keys.forEach(function (k) {
+      var b = chBtn('chip', CH_NM[k]);
+      b.addEventListener('click', function () { chFlip(k); });
+      c.cb[k] = b;
+      box.appendChild(b);
+    });
+  }
+  function chUi(c) {
+    var v = c.view, z = chEl('div', 'chz'), mi = chEl('div', 'chi'), si = chEl('div', 'chi'), q = chEl('div', 'chq');
+    z.setAttribute('role', 'group');
+    z.setAttribute('aria-label', '顯示範圍');
+    c.rb = [];
+    [[60, '60 日', '顯示最近 60 日'], [120, '120 日', '顯示最近 120 日'], [0, '全部', '顯示全部']].forEach(function (p) {
+      var b = chBtn('chip', p[1], p[2]);
+      b._r = p[0];
+      b.addEventListener('click', function () { chSet(c, p[0] ? c.o.n - p[0] : 0, p[0] || c.o.n); });
+      c.rb.push(b);
+      z.appendChild(b);
+    });
+    c.zo = chBtn('chip', '−', '縮小：看更多天');
+    c.zi = chBtn('chip', '+', '放大：看更少天');
+    c.zr = chBtn('chip', '重設', '重設縮放與十字線');
+    c.zo.addEventListener('click', function () { chZ(c, 1.5); });
+    c.zi.addEventListener('click', function () { chZ(c, 1 / 1.5); });
+    c.zr.addEventListener('click', function () { c.x = -1; chSet(c, 0, c.o.n, true); });
+    z.appendChild(c.zo); z.appendChild(c.zi); z.appendChild(c.zr);
+    c.hint = chEl('span', 'chg');
+    z.appendChild(c.hint);
+    c.ro = chEl('p', 'cho');
+    c.live = chEl('span', 'vh');
+    c.live.setAttribute('aria-live', 'polite');
+    q.tabIndex = 0;
+    q.setAttribute('role', 'group');
+    q.setAttribute('aria-label', 'K 線圖區：左右鍵移動十字線，加號放大，減號縮小，Esc 取消十字線');
+    c.cb = {};
+    c.sp = {};
+    c.mh = chEl('span', 'chv');
+    var mp = chEl('div', 'chs'), hh = chEl('div', 'chh');
+    hh.appendChild(chEl('span', 'chn', '價格'));
+    hh.appendChild(c.mh);
+    c.main = chEl('div');
+    mp.appendChild(hh); mp.appendChild(c.main);
+    q.appendChild(mp);
+    CH_SUB.forEach(function (k) {
+      var p = { box: chEl('div', 'chs'), hd: chEl('div', 'chh'), val: chEl('span', 'chv'), svg: chEl('div') }, x = chBtn('chx', '−', '關閉' + CH_NM[k] + '面板');
+      p.hd.appendChild(chEl('span', 'chn', CH_NM[k]));
+      p.hd.appendChild(p.val);
+      p.hd.appendChild(x);
+      x.addEventListener('click', function () { chFlip(k); if (c.cb[k]) { c.cb[k].focus(); } });
+      p.box.appendChild(p.hd); p.box.appendChild(p.svg);
+      c.sp[k] = p;
+      q.appendChild(p.box);
+    });
+    chChips(c, mi, CH_MAIN, '主圖');
+    chChips(c, si, CH_SUB, '副圖');
+    c.plot = q;
+    v.appendChild(z); v.appendChild(c.ro); v.appendChild(q); v.appendChild(mi); v.appendChild(si); v.appendChild(c.live);
+    chEvents(c);
+  }
+  function chGeo(c) {
+    var w = c.w, x1 = w - 56;
+    return { w: w, small: w < 520, x0: 4, x1: x1, a: c.a, m: c.m, slot: (x1 - 4) / c.m, bw: Math.max(1, (x1 - 4) / c.m * 0.66) };
+  }
+  function chRender(c) {
+    var t0 = Date.now(), o = c.o, g = chGeo(c), last = o.n - 1, de = [], st = Math.pow(10, o.e);
+    function fm(v) { return (v * st).toFixed(Math.max(0, -o.e)); }
+    c.g = g;
+    c.dirty = false;
+    c.main.innerHTML = chMain(c, g);
+    c.main.querySelector('title').textContent = c.code + ' ' + c.name + ' 近 ' + o.n + ' 日 K 線圖';
+    de.push('最後收盤 ' + (c.close === null ? fm(o.c[last]) : c.close));
+    if (c.stop !== null) { de.push('建議停損 ' + c.stop); }
+    if (o.m20[last] !== null) { de.push('MA20 約 ' + fm(o.m20[last])); }
+    if (o.m60[last] !== null) { de.push('MA60 約 ' + fm(o.m60[last])); }
+    de.push('MACD 柱狀體' + (o.osc[last] > 0 ? '為正（紅）' : (o.osc[last] < 0 ? '為負（綠）' : '為零')));
+    c.main.querySelector('desc').textContent = de.join('，');
+    CH_SUB.forEach(function (k) {
+      var p = c.sp[k];
+      p.box.hidden = !chOn[k];
+      p.svg.innerHTML = chOn[k] ? chSub(c, g, k) : '';
+    });
+    CH_MAIN.concat(CH_SUB).forEach(function (k) { c.cb[k].setAttribute('aria-pressed', chOn[k] ? 'true' : 'false'); });
+    c.rb.forEach(function (b) {
+      var m = b._r ? Math.min(b._r, o.n) : o.n;
+      b.setAttribute('aria-pressed', c.m === m && c.a + c.m === o.n ? 'true' : 'false');
+    });
+    c.zi.disabled = c.m <= Math.min(o.n, 20);
+    c.zo.disabled = c.m >= o.n;
+    c.hint.textContent = '顯示 ' + c.m + '／' + o.n + ' 日（' + chDate(o, c.a) + '–' + chDate(o, c.a + c.m - 1) + '）';
+    chLegend(c);
+    c.xp = [];
+    for (var i = 0, ps = c.plot.querySelectorAll('svg'); i < ps.length; i++) {
+      c.xp.push([ps[i].querySelector('.cx-x'), +ps[i].getAttribute('viewBox').split(' ')[3]]);
+    }
+    if (c.x >= 0) { c.x = Math.max(c.a, Math.min(c.a + c.m - 1, c.x)); }
+    chCross(c);
+    chRead(c);
+    c.ms = Date.now() - t0;
+  }
+  function chCross(c) {
+    var x = c.x >= 0 ? r1(chX(c.g, c.x)) : -1;
+    c.xp.forEach(function (p) { p[0].setAttribute('d', x < 0 ? 'M0 0' : 'M' + x + ' 0V' + p[1]); });
+  }
+  function chRead(c) {
+    var o = c.o, i = c.x >= 0 ? c.x : c.a + c.m - 1, st = Math.pow(10, o.e), ms = Math.pow(10, o.me), s, mv = [];
+    function fm(v) { return v === null || v === undefined ? '－' : (v * st).toFixed(Math.max(0, -o.e)); }
+    function f1(v) { return v === null || v === undefined ? '－' : v.toFixed(1); }
+    function f2(v) { return (v * ms).toFixed(2); }
+    function vz(v) { return v === null ? '－' : String(Math.round(v / 675 * o.vk)); }
+    s = chDate(o, i) + (c.x >= 0 ? '' : '（最後一根）') + '  開 ' + fm(o.op[i]) + '  高 ' + fm(o.h[i]) + '  低 ' + fm(o.l[i]) + '  收 ' + fm(o.c[i]);
+    if (i > 0 && o.c[i - 1] > 0) { s += '  漲跌 ' + ((o.c[i] - o.c[i - 1]) / o.c[i - 1] * 100).toFixed(2) + '%'; }
+    c.ro.textContent = s + '  量約 ' + vz(o.v[i]) + ' 張';
+    if (chOn.ma5) { mv.push('MA5 ' + fm(o.m5[i])); }
+    if (chOn.ma10) { mv.push('MA10 ' + fm(o.m10[i])); }
+    if (chOn.ma20) { mv.push('MA20 ' + fm(o.m20[i])); }
+    if (chOn.ma60) { mv.push('MA60 ' + fm(o.m60[i])); }
+    if (chOn.bb) { mv.push('布林 ' + fm(o.up[i]) + '／' + fm(o.lo[i])); }
+    c.mh.textContent = mv.join('  ');
+    c.sp.vol.val.textContent = '量約 ' + vz(o.v[i]) + ' 張  5 日均量約 ' + vz(o.mv[i]) + ' 張';
+    c.sp.kd.val.textContent = 'K ' + f1(o.k[i]) + '  D ' + f1(o.kd[i]);
+    c.sp.macd.val.textContent = 'DIF ' + f2(o.dif[i]) + '  DEA ' + f2(o.dea[i]) + '  OSC ' + f2(o.osc[i]);
+    c.sp.rsi.val.textContent = 'RSI5 ' + f1(o.r5[i]) + '  RSI10 ' + f1(o.r10[i]);
+  }
+  function chSay(c) {
+    clearTimeout(c.lt);
+    c.lt = setTimeout(function () { c.live.textContent = c.hint.textContent + '。' + c.ro.textContent; }, 600);
+  }
+  function chSet(c, a, m, force) {
+    var r = chWin(c.o.n, a, m);
+    c.pa = null;
+    if (!force && r[0] === c.a && r[1] === c.m) { return; }
+    c.a = r[0]; c.m = r[1];
+    chRender(c);
+  }
+  function chZ(c, f) {
+    var t = c.x >= 0 ? (c.x - c.a + 0.5) / c.m : 1, r = chZoom(c.o.n, c.a, c.m, f, t);
+    chSet(c, r[0], r[1]);
+  }
+  function chLater(c, a, m) {
+    c.pa = [a, m];
+    if (c.raf) { return; }
+    c.raf = 1;
+    var go = function () { if (!c.raf) { return; } c.raf = 0; if (c.pa) { chSet(c, c.pa[0], c.pa[1]); } };
+    if (window.requestAnimationFrame) { window.requestAnimationFrame(go); }
+    setTimeout(go, 50);
+  }
+  function chIdx(c, cx) {
+    var sv = c.main.querySelector('svg'), g = c.g, r, x;
+    if (!sv || !g) { return -1; }
+    r = sv.getBoundingClientRect();
+    if (!r.width) { return -1; }
+    x = (cx - r.left) * g.w / r.width;
+    return Math.max(g.a, Math.min(g.a + g.m - 1, g.a + Math.floor((x - g.x0) / g.slot)));
+  }
+  function chPx(c) {
+    var sv = c.main.querySelector('svg'), r = sv ? sv.getBoundingClientRect() : null;
+    return r && r.width ? r.width / c.g.w * c.g.slot : 1;
+  }
+  function chAt(c, i) {
+    if (i === c.x) { return; }
+    c.x = i;
+    chCross(c);
+    chRead(c);
+  }
+  function chEvents(c) {
+    var q = c.plot, P = {}, np = 0, gs = null;
+    function two() {
+      var ids = [], k;
+      for (k in P) { if (P.hasOwnProperty(k)) { ids.push(P[k]); } }
+      return ids.length < 2 ? null : [Math.abs(ids[0].x - ids[1].x) + Math.abs(ids[0].y - ids[1].y), (ids[0].x + ids[1].x) / 2];
+    }
+    function gone(e) {
+      if (P[e.pointerId]) { delete P[e.pointerId]; np--; }
+      if (gs && (gs.k === 'z' || gs.id === e.pointerId)) { clearTimeout(gs.tm); gs = null; }
+    }
+    q.addEventListener('pointerdown', function (e) {
+      var t = e.target, w;
+      if (e.pointerType === 'mouse' && e.button !== 0) { return; }
+      while (t && t !== q) { if (t.tagName === 'BUTTON') { return; } t = t.parentNode; }
+      P[e.pointerId] = { x: e.clientX, y: e.clientY };
+      np++;
+      if (np === 2) {
+        if (gs) { clearTimeout(gs.tm); }
+        w = two();
+        if (w) { gs = { k: 'z', d0: Math.max(20, w[0]), a0: c.a, m0: c.m, t: (chIdx(c, w[1]) - c.a + 0.5) / c.m }; }
+        return;
+      }
+      gs = { k: '', x0: e.clientX, a0: c.a, id: e.pointerId, px: chPx(c) };
+      if (e.pointerType !== 'mouse') {
+        gs.tm = setTimeout(function () { if (gs && gs.k === '') { gs.k = 'x'; chAt(c, chIdx(c, gs.x0)); } }, 350);
+      }
+    });
+    q.addEventListener('pointermove', function (e) {
+      var p = P[e.pointerId], w, r;
+      if (p) { p.x = e.clientX; p.y = e.clientY; }
+      if (gs && gs.k === 'z') {
+        w = two();
+        if (w && w[0] > 10) { r = chZoom(c.o.n, gs.a0, gs.m0, gs.d0 / w[0], gs.t); chLater(c, r[0], r[1]); }
+        return;
+      }
+      if (gs && gs.id === e.pointerId) {
+        if (gs.k === '' && Math.abs(e.clientX - gs.x0) > 8) {
+          gs.k = 'p';
+          clearTimeout(gs.tm);
+          try { q.setPointerCapture(e.pointerId); } catch (er) { }
+        }
+        if (gs.k === 'p') { chLater(c, gs.a0 - (e.clientX - gs.x0) / gs.px, c.m); } else if (gs.k === 'x') { chAt(c, chIdx(c, e.clientX)); }
+        return;
+      }
+      if (!gs && e.pointerType === 'mouse') { chAt(c, chIdx(c, e.clientX)); }
+    });
+    q.addEventListener('pointerup', function (e) {
+      var i;
+      if (gs && gs.id === e.pointerId && gs.k === '') {
+        i = chIdx(c, e.clientX);
+        chAt(c, e.pointerType !== 'mouse' && i === c.x ? -1 : i);
+      }
+      gone(e);
+    });
+    q.addEventListener('pointercancel', gone);
+    q.addEventListener('pointerleave', function (e) {
+      if (e.pointerType === 'mouse' && !gs) { chAt(c, -1); }
+    });
+    q.addEventListener('wheel', function (e) {
+      var dx = e.deltaX, dy = e.deltaY, r, b = c.pa || [c.a, c.m];
+      if (e.ctrlKey && dy) {
+        e.preventDefault();
+        r = chZoom(c.o.n, b[0], b[1], dy > 0 ? 1.2 : 1 / 1.2, (chIdx(c, e.clientX) - c.a + 0.5) / c.m);
+        chLater(c, r[0], r[1]);
+      } else if (dx && Math.abs(dx) > Math.abs(dy)) {
+        e.preventDefault();
+        chLater(c, b[0] + dx / chPx(c), b[1]);
+      }
+    }, { passive: false });
+    q.addEventListener('keydown', function (e) {
+      var k = e.key, i;
+      if (k === 'ArrowLeft' || k === 'ArrowRight') {
+        e.preventDefault();
+        i = c.x < 0 ? c.a + c.m - 1 : Math.max(0, Math.min(c.o.n - 1, c.x + (k === 'ArrowLeft' ? -1 : 1)));
+        if (i < c.a || i >= c.a + c.m) { c.x = i; chSet(c, i < c.a ? i : i - c.m + 1, c.m); } else { chAt(c, i); }
+        chSay(c);
+      } else if (k === '+' || k === '=' || k === '-' || k === '_') {
+        e.preventDefault();
+        chZ(c, k === '+' || k === '=' ? 1 / 1.5 : 1.5);
+        chSay(c);
+      } else if ((k === 'Escape' || e.keyCode === 27) && c.x >= 0) {
+        e.stopPropagation();
+        chAt(c, -1);
+      }
+    });
   }
   function chBuild(c) {
     var tr = d.createElement('tr'), td = d.createElement('td'), box = d.createElement('div');
@@ -562,28 +950,18 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
     c.pan = tr; c.box = box;
   }
   function chDraw(c) {
-    var w = Math.max(300, Math.min(980, Math.round(c.box.clientWidth))), o = c.o, ti, de, parts, last, wl, cb;
-    function fm(v) { return (v * Math.pow(10, o.e)).toFixed(Math.max(0, -o.e)); }
-    if (c.drawn && Math.abs(w - c.w) <= 40) { return; }
-    if (!c.drawn) { o = c.o = chDec(c.s); }
+    var w = Math.max(300, Math.min(980, Math.round(c.box.clientWidth))), o = c.o, wl, cb;
+    if (c.drawn && !c.dirty && Math.abs(w - c.w) <= 40) { return; }
     c.w = w;
-    if (!o) {
-      c.view.textContent = '這檔的線圖資料有問題，無法顯示';
-      c.drawn = true;
-      return;
-    }
-    c.view.innerHTML = chSvg(o, w, c.stop, c.close, c.id);
-    ti = c.view.querySelector('title'); de = c.view.querySelector('desc');
-    ti.textContent = c.code + ' ' + c.name + ' 近 ' + o.n + ' 日 K 線圖';
-    last = o.n - 1;
-    parts = ['最後收盤 ' + (c.close === null ? fm(o.c[last]) : c.close)];
-    if (c.stop !== null) { parts.push('建議停損 ' + c.stop); }
-    if (o.m20[last] !== null) { parts.push('MA20 約 ' + fm(o.m20[last])); }
-    if (o.m60[last] !== null) { parts.push('MA60 約 ' + fm(o.m60[last])); }
-    parts.push('MACD 柱狀體' + (o.osc[last] > 0 ? '為正（紅）' : (o.osc[last] < 0 ? '為負（綠）' : '為零')));
-    de.textContent = parts.join('，');
     if (!c.drawn) {
-      c.rest.appendChild(chLegend(c));
+      o = c.o = chDec(c.s);
+      c.drawn = true;
+      if (!o) { c.view.textContent = '這檔的線圖資料有問題，無法顯示'; return; }
+      c.a = 0; c.m = o.n; c.x = -1;
+      chUi(c);
+      c.lg = d.createElement('ul');
+      c.lg.className = 'chk';
+      c.rest.appendChild(c.lg);
       wl = d.createElement('p');
       wl.className = 'chw';
       wl.textContent = '週 MACD：DIF ' + o.wk[3].toFixed(2) + (o.wk[0] ? '（零軸上）' : '（零軸下）') + '、柱 ' + o.wk[4].toFixed(2) + (o.wk[1] ? (o.wk[2] ? '（紅，剛翻紅）' : '（紅）') : '（綠）');
@@ -597,7 +975,7 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
       cb.addEventListener('click', function () { chToggle(c, false); c.btn.focus(); });
       c.rest.appendChild(cb);
     }
-    c.drawn = true;
+    if (o) { chRender(c); }
   }
   function chToggle(c, force) {
     var op = c.pan ? c.pan.hidden : true;
@@ -755,7 +1133,7 @@ body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
     var TODAY = bar.getAttribute('data-day') || '', TC = ymd(TODAY);
     var h2 = el('cands-h'), view = el('hview'), trend = el('htrend'), nav = el('bnav');
     var h2txt = h2 ? h2.textContent : '', days = [], cache = {}, shown = '', cur = '', hid = [], sum0 = '';
-    var stat = mk('p', 'status'), sel = mk('select'), prev = mk('button', 'chip', '◀'), next = mk('button', 'chip', '▶');
+    var stat = mk('p', 'status'), sel = mk('select'), prev = mk('button', 'chip', '前一天'), next = mk('button', 'chip', '後一天');
     var gone = mk('div', 'hgone');
     var DOW = ['日', '一', '二', '三', '四', '五', '六'];
     function dow(s) { var p = s.split('-'); return '星期' + DOW[new Date(+p[0], +p[1] - 1, +p[2]).getDay()]; }
