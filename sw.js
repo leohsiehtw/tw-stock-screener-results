@@ -1,8 +1,8 @@
-var VER = '20261112-0aa1c704';
+var VER = '20261113-eb7794ea';
 var SHELL = 'twss-shell-' + VER;
 var DATA = 'twss-data';
 var PRE = ['./', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
-var DAYS = ["history/20261112.json", "history/20261111.json", "history/20261110.json", "history/20261109.json", "history/20261106.json"];
+var DAYS = ["history/20261113.json", "history/20261112.json", "history/20261111.json", "history/20261110.json", "history/20261109.json"];
 function warm(name, list) {
   return caches.open(name).then(function (c) {
     return Promise.all(list.map(function (u) { return c.add(new Request(u, { cache: 'reload' })).catch(function () { }); }));
